@@ -6,7 +6,7 @@ Scene is a web application inspired by SoundCloud, BandCamp, and Spotify. Scene 
 
 [heroku]: https://localscene.herokuapp.com
 
-## See the complete Full-Stack Project Proposal README:
+### See the complete Full-Stack Project Proposal README:
 
 * [docsREADME][docsREADME]
 
