@@ -5,5 +5,5 @@ import ReactDOM from 'react-dom';
 document.addEventListener('DOMContentLoaded', () => {
     // render app into the root container
     const root = document.getElementById('root');
-    ReactDOM.render(<h1>Welcome to Scene!</h1>, root);
+    ReactDOM.render(<h1>app rendered</h1>, root);
 });
