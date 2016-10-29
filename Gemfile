@@ -34,6 +34,9 @@ gem 'rails_12factor'
 # Performance monitoring
 gem 'newrelic_rpm'
 
+# Generate site up
+# gem 'sitemap_generator'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
