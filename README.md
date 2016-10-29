@@ -1,24 +1,13 @@
-# README
+# scene
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Scene is a web application inspired by SoundCloud, BandCamp, and Spotify. Scene was built using Ruby on Rails and React/Redux.
 
-Things you may want to cover:
+[Heroku link][heroku]
 
-* Ruby version
+[heroku]: https://localscene.herokuapp.com
 
-* System dependencies
+## See the complete Full-Stack Project Proposal README:
 
-* Configuration
+* [docsREADME][docsREADME]
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[docsREADME]: docs/wireframes

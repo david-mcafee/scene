@@ -9,7 +9,7 @@
 
 ## Minimum Viable Product
 
-Scene is a web application inspired by SoundCloud, BandCamp, and Spotify. Scene was built using Ruby on Rails and React/Redux. By the end of Week 9, this app will, at a minimum, satisfy the following criteria with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
+Scene is a web application inspired by SoundCloud, BandCamp, and Spotify. Scene was built using Ruby on Rails and React/Redux. By the end of Week 9, this app will, at a minimum, satisfy the following criteria with adequate styling, smoothing and bug-free navigation, and adequate seeds to demonstrate the feature:
 
 - [ ] New account creation, login, and guest/demo login
 - [ ] A production README
@@ -19,11 +19,6 @@ Scene is a web application inspired by SoundCloud, BandCamp, and Spotify. Scene 
 - [ ] Comments
 - [ ] User and/or artist pages
 - [ ] **BONUS** Wave forms, playlists, or likes?
-
-api-endpoints.md
-component-hierarchy.md
-sample-state.md
-schema.md
 
 ## Design Docs
 * [View Wireframes][wireframes]
