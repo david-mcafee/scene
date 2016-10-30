@@ -27,11 +27,11 @@ Scene is a web application inspired by SoundCloud, BandCamp, and Spotify. Scene 
 * [Sample State][sample-state]
 * [DB schema][schema]
 
-[wireframes]: docs/wireframes
-[api-endpoints]: docs/api-endpoints.md
-[component-hierarchy]: docs/component-hierarchy.md
-[sample-state]: docs/sample-state.md
-[schema]: docs/schema.md
+[wireframes]: /wireframes
+[api-endpoints]: /api-endpoints.md
+[component-hierarchy]: /component-hierarchy.md
+[sample-state]: /sample-state.md
+[schema]: /schema.md
 
 ## Implementation Timeline
 
@@ -39,7 +39,7 @@ Scene is a web application inspired by SoundCloud, BandCamp, and Spotify. Scene 
 
 **Objective:** Functioning Rails project with front-end authentication
 
-### Phase 2: Notes Model, API, and components (2 days)
+### Phase 2: Songs Model, API, and components (2 days)
 
 **Objective:** Notes can be created, read, edited and destroyed through
 the API.
