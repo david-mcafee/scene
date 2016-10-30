@@ -10,4 +10,4 @@ Scene is a web application inspired by SoundCloud, BandCamp, and Spotify. Scene 
 
 * [docsREADME][docsREADME]
 
-[docsREADME]: docs/wireframes
+[docsREADME]: docs/README.md
