@@ -29,9 +29,9 @@ Scene is a web application inspired by SoundCloud, BandCamp, and Spotify. Scene 
 
 [wireframes]: docs/wireframes
 [api-endpoints]: docs/api-endpoints.md
-[component-hierarchy]: component-hierarchy.md
-[sample-state]: sample-state.md
-[schema]: schema.md
+[component-hierarchy]: docs/component-hierarchy.md
+[sample-state]: docs/sample-state.md
+[schema]: docs/schema.md
 
 ## Implementation Timeline
 
