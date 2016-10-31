@@ -1,7 +1,8 @@
 ## Component Hierarchy
 
 - **AppContainer**
-  - NavigationBar (home section)
+  - **NavigationBarContainer**
+  - NavigationBar
   - MainContent (home section)
     - SplashPage
     - **ArtistIndexContainer**
