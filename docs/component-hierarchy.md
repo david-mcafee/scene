@@ -23,11 +23,10 @@
             - CreateComment
             - CommentIndex
   - Footer (bonus)
-  - AudioPlayer (home section)
-    - **AudioPlayerContainer**
-      - AudioPlayer
-        - Player
-        - SongInfo
+  - **AudioPlayerContainer**
+    - AudioPlayer
+      - Player
+      - SongInfo
 
 
 ## Routes
