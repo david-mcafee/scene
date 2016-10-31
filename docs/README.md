@@ -57,6 +57,8 @@ the API.
 **Objective** Users can create comments on tracks, comments can be displayed by clicking a track on the artist page
 
 ### Bonus Features (TBD)
+- [ ] Implement browse or search interface for finding local artists (via search and/or map and/or listing)
 - [ ] Infinite scroll for track comments
 - [ ] Customizable artist pages
+- [ ] Search (track, artist)
 - [ ] Original: Wave forms, playlists, or likes.
