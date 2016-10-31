@@ -16,6 +16,7 @@ column name | data type | details
 id          | integer   | not null, primary key
 title       | string    | not null, indexed
 image_url   | string    | not null
+audio_url   | string    | not null
 artist_id   | integer   | not null, foreign key (references users), indexed
 created_at  | dateTime  | not null
 updated_at  | dateTime  | not null
