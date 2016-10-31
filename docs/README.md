@@ -50,7 +50,7 @@ the API.
 
 ### Phase 4: Artist Pages (2 days)
 
-**Objective** Artists can create artist pages, which will display a banner, all uploaded tracks, and comments for those tracks
+**Objective** Artists can create artist pages, which will display a banner, all uploaded tracks, and placeholder section for track comments (to be fully implemented in Phase 5).
 
 ### Phase 5: Comments (2 day)
 
