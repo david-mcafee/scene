@@ -4,14 +4,13 @@
   - NavigationBar (home section)
   - MainContent (home section)
     - SplashPage
+    - Homepage
+      - ArtistBox
     - **AuthFormContainer**
       - AuthForm
     - **NewTrackContainer**
       - NewTrack
         - UploadTrackButton
-    - **HomepageContainer**
-      - Homepage
-        - ArtistBox
     - **ArtistPageContainer**
       - ArtistPage
         - Header
@@ -36,3 +35,5 @@
 | "/home" | "HomeContainer" |
 | "home/sign-up" | "AuthFormContainer" |
 | "home/log-in" | "AuthFormContainer" |
+| "home/new-track" | "NewTrackContainer" |
+| "home/artist/:artist-id" | "ArtistPageContainer" |
