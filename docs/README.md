@@ -35,24 +35,24 @@ Scene is a web application inspired by SoundCloud, BandCamp, and Spotify. Scene 
 
 ## Implementation Timeline
 
-### Phase 1: Backend Setup and Front End User Authentication (2 days)
+### Phase 1: Backend Setup and Front End User Authentication (2 days, 11/1/16 - 11/2/16, 11:59pm)
 
 **Objective:** Functioning Rails project with front-end authentication. New account creation, login, and guest/demo login.
 
-### Phase 2: Tracks Model, API, and Components (1 days)
+### Phase 2: Tracks Model, API, and Components (1 days, 11/3/16)
 
 **Objective:** Tracks can be created, read, updated and destroyed through
 the API.
 
-### Phase 3: Continuous Play of Tracks (2 days)
+### Phase 3: Continuous Play of Tracks (2 days, 11/5/16)
 
 **Objective** Tracks can be played continuously without being interrupted by user activity across the application.
 
-### Phase 4: Artist Pages (2 days)
+### Phase 4: Artist Pages (3 days, 11/8/16)
 
 **Objective** Artists can create artist pages, which will display a banner, all uploaded tracks, and placeholder section for track comments (to be fully implemented in Phase 5).
 
-### Phase 5: Comments (2 day)
+### Phase 5: Comments (3 days, 11/11/16, 6:00pm)
 
 **Objective** Users can create comments on tracks, comments can be displayed by clicking a track on the artist page
 
