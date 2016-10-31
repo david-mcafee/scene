@@ -3,31 +3,30 @@
 **HomeContainer**
  - NavigationBar (home section)
  - MainContent (home section)
-  + SplashPage
-  + **AuthFormContainer**
+  - SplashPage
+  - **AuthFormContainer**
    - AuthForm
-  + **NewTrackContainer**
+  - **NewTrackContainer**
    - NewTrack
-    + UploadTrackButton
-  + **HomepageContainer**
+    - UploadTrackButton
+  - **HomepageContainer**
    - Homepage
-    + ArtistBox
-
-  + **ArtistPageContainer**
+    - ArtistBox
+  - **ArtistPageContainer**
    - ArtistPage
-    + Header
-    + **TrackIndexContainer**
+    - Header
+    - **TrackIndexContainer**
      - TrackIndex
-    + **TrackCommentsContainer**
+    - **TrackCommentsContainer**
       - TrackComments
-       + CreateComment
-       + CommentIndex
+       - CreateComment
+       - CommentIndex
  - Footer (bonus)
  - AudioPlayer (home section)
-  + **AudioPlayerContainer**
+  - **AudioPlayerContainer**
    - AudioPlayer
-    + Player
-    + SongInfo
+    - Player
+    - SongInfo
 
 ## Routes
 
