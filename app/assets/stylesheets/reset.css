@@ -16,34 +16,39 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit; /* everything will trickle down */
+  font: inherit; /* NOTE: everything will trickle down */
   vertical-align: baseline;
 
-  /* see video */
   text-align: inherit;
   text-decoration: inherit;
   color: inherit;
-  background: transparent; /* not inherit - remember cats example */
+  background: transparent; /* NOTE: not inherit */
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1.5;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
