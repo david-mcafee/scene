@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Api::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
@@ -18,3 +18,5 @@ class UsersController < ApplicationController
     params.require(:user).permit(:username, :password)
   end
 end
+
+# $.ajax({method: 'POST', url: '/api/session', data: {user: {username: "user1", password: "password1"}}})
