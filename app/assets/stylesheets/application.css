@@ -24,4 +24,24 @@
    color: #6d6e70;
  }
 
+ .login-signup {
+   background-color: red;
+ }
+
+ .current {
+   background-color: blue;
+ }
+
+ .header-group {
+   background-color: green;
+ }
+
+ .header-name {
+   background-color: yellow;
+ }
+
+ .header-button {
+   background-color: orange;
+ }
+
  /*font family? "Helvetica Neue", Helvetica, sans-serif*/
