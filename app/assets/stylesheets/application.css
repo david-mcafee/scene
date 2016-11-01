@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  background-color: #121314;
+  text: white;
+ }
+
+ .navigation {
+   background-color: #1c1c1f;
+   text: #ffffff;
+ }
+
+ /*font family? "Helvetica Neue", Helvetica, sans-serif*/

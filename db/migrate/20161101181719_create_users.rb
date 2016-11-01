@@ -4,9 +4,9 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :username, null: false
       t.string :email, null: false
       t.boolean :artist, null: false
-      t.string :banner_url, null: false
+      t.string :banner_url
       t.string :password_digest, null: false
-      t.string :session_token, null: false
+      t.string :session_token
 
       t.timestamps
     end
