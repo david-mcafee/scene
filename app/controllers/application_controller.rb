@@ -30,6 +30,6 @@ class ApplicationController < ActionController::Base
 
   def require_signed_in!
     # NOTE: research "base"
-    render json: {base: ['invalid credentials'], status: 401 if !current_user}
+    render json: {base: ['invalid credentials']}, status: 401 if !current_user
   end
 end
