@@ -12,7 +12,8 @@ class SessionForm extends React.Component {
         username: "",
         password: "",
         email: "",
-        banner_url: ""
+        banner_url: "",
+        artist: "false"
     };
     // NOTE: review from React curriculum
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -127,8 +128,7 @@ class SessionForm extends React.Component {
               </label>
               <br />
               <br />
-                <input type="radio" name={this.state.artist} value="false" onChange={this.update("artist")}/>fan
-                <input type="radio" name={this.state.artist} value="true" onChange={this.update("artist")}/>artist
+                <input type="radio" name={this.state.artist} value="false" onChange={this.update("artist")} checked={this.state.artist==="false"}/>fan     <input type="radio" name={this.state.artist} value="true" onChange={this.update("artist")} checked={this.state.artist==="true"}/>artist    <em>(required)</em>
               <br />
               <br />
 
@@ -161,8 +161,10 @@ class SessionForm extends React.Component {
                   className="login-input" />
               </label>
               <br />
-
-              <input type="submit" value="submit" />
+              <br />
+              <input type="submit" value="submit" />&nbsp;
+              {this.props.formType === "login" ?
+                <button onClick={this.guestLogin.bind(this)}>demo</button> : <p></p>}
 
             </div>
 
@@ -170,8 +172,7 @@ class SessionForm extends React.Component {
 
         </form>
 
-        {this.props.formType === "login" ?
-          <button onClick={this.guestLogin.bind(this)}>demo</button> : <p></p>}
+
 
       </div>
     );
