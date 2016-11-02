@@ -19,9 +19,9 @@ const Nav = ({ currentUser, logout }) => {
   return(
     <div className="navigation">
       <ul>
-        <li>scene</li>
-        <li>home</li>
-        <li>upload</li>
+        <li><Link to="/">scene</Link></li>
+        <li><Link to="/">home</Link></li>
+        <li><Link to="/upload">upload</Link></li>
         <li>{currentUser ? personalGreeting(currentUser, logout) : sessionLinks()}</li>
       </ul>
     </div>
