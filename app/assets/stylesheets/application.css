@@ -14,26 +14,51 @@
  *= require_self
  */
 
- * {
+ body {
   background-color: #121314;
   color: white;
  }
 
  .navigation {
-   background-color: #1c1c1f;
-   color: #6d6e70;
+   background-color: #1c1c1e;
+   color: white;
+ }
+
+ .navigation ul {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .navigation ul li {
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   display: flex;
+   background-color: blue;
  }
 
  .login-signup {
+   display: flex;
+   width: 250px;
+   background-color: #1c1c1e;
+   color: white;
    background-color: red;
+ }
+
+ .login-signup li {
+   display: flex;
+   justify-content: space-between;
+   background-color: black;
  }
 
  .current {
    background-color: blue;
  }
 
- .header-group {
-   background-color: green;
+ .personal-greeting {
+   background-color: #1c1c1e;
+   color: white;
  }
 
  .header-name {
@@ -58,5 +83,33 @@
 
 .login-input{
 
+}
+
+.main-content{
+  display: flex;
+  align-items: center;
+}
+
+.login-form-container {
+  background-color: #1c1c1e;
+  position: fixed;
+  top: 100px;
+  right:10px;
+  padding: 15px;
+}
+
+.player{
+  width: 100%;
+  position:fixed;
+  bottom:0;
+  background-color: #1c1c1f;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player h4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
 }
  /*font family? "Helvetica Neue", Helvetica, sans-serif*/

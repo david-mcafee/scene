@@ -26,3 +26,7 @@ idx += 1;
 User.create!(username: "user#{idx}", email: "test#{idx}@david-mcafee.com",
   artist: false, password_digest: "#{BCrypt::Password.create("password#{idx}")}")
 idx += 1;
+
+User.create!(username: "nolankurtz", email: "nolan@david-mcafee.com",
+  artist: true, password_digest: "#{BCrypt::Password.create("password#{idx}")}")
+idx += 1;

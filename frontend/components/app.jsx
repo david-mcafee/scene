@@ -8,9 +8,16 @@ import NavContainer from './nav/nav_container';
 
 const App = ({ children }) => (
   <div>
-    <h1>app rendered</h1>
-    <NavContainer />
-    {children}
+    <NavContainer/>
+
+    <div className="main-content">
+      {children}
+    </div>
+
+    <footer className="player">
+      <h4>player</h4>
+      <h4>description</h4>
+    </footer>
   </div>
 );
 
