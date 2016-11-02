@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router';
+
 
 // NOTE: state will be governed by user interface
 // NOTE: review this model
@@ -45,17 +47,17 @@ class SessionForm extends React.Component {
     }
   }
 
-  renderErrors() {
-    return(
-      <ul>
-        {this.props.errors.map((error, i) => (
-          <li key={`error-${i}`}>
-            {error}
-          </li>
-        ))}
-      </ul>
-    );
-  }
+  // renderErrors() {
+  //   return(
+  //     <ul>
+  //       {this.props.errors.map((error, i) => (
+  //         <li key={`error-${i}`}>
+  //           {error}
+  //         </li>
+  //       ))}
+  //     </ul>
+  //   );
+  // }
 
   render() {
     return(
@@ -64,7 +66,6 @@ class SessionForm extends React.Component {
           Welcome!
           <br/>
           {this.props.formType} or {this.navLink()}
-          {this.renderErrors()}
           <div> className="login-form">
             <br/>
             <label> Username:
@@ -80,6 +81,8 @@ class SessionForm extends React.Component {
                 onChange={this.update("password")}
                 className="login-input" />
             </label>
+            <br />
+            <input type="submit" value="Submit" />
           </div>
         </form>
       </div>
