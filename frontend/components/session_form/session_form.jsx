@@ -49,7 +49,7 @@ class SessionForm extends React.Component {
 
   renderErrors() {
     return(
-      <ul>
+      <ul className="errors">
         {this.props.errors.map((error, i) => (
           <li key={`error-${i}`}>
             {error}
@@ -90,7 +90,7 @@ class SessionForm extends React.Component {
                 className="login-input" />
             </label>
             <br />
-            
+
             <input type="submit" value="Submit" />
           </div>
         </form>
