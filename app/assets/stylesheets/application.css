@@ -14,9 +14,37 @@
  *= require_self
  */
 
+ * {
+     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+ }
+
  body {
   background-color: #121314;
   color: white;
+ }
+
+ h1 {
+   font-size: 32px;
+ }
+
+ h2 {
+   font-size: 24px;
+ }
+
+ h3 {
+   font-size: 20px;
+ }
+
+ h4 {
+   font-size: 16px;
+ }
+
+ h5 {
+   font-size: 14px;
+ }
+
+ h6 {
+   font-size: 11px;
  }
 
  .navigation {
@@ -30,18 +58,39 @@
  }
 
  .navigation ul li {
-   padding-left: 15px;
-   padding-right: 15px;
-   padding-top: 15px;
-   padding-bottom: 15px;
    display: flex;
-   background-color: blue;
  }
 
  .nav-button {
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 5px;
+   margin: 10px;
+   border: 1px solid grey;
+ }
+
+ .nav-button-left {
+   padding-left: 45px;
+   padding-right: 45px;
+   padding-top: 17px;
+   padding-bottom: 17px;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   color: #cccccc;
+ }
+
+
+ .nav-button-solid {
    background-color: grey;
-   padding: 10px;
-   border-radius: 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 5px;
+   margin: 10px;
+   border: 1px solid grey;
  }
 
  .login-signup {
@@ -49,26 +98,47 @@
    width: 250px;
    background-color: #1c1c1e;
    color: white;
-   background-color: red;
  }
 
  .login-signup li {
    display: flex;
    justify-content: space-between;
-   background-color: black;
  }
 
- .errors {
-   position: fixed;
-   right: 35px;
-   top: 300px;
-   background-color: rgb(185, 185, 185);
-   color: #1c1c1f;
-   padding: 10px;
-   border-radius: 15px;
+ .personal-greeting {
+   display: flex;
+   width: 250px;
+   background-color: #1c1c1e;
+   color: white;
  }
+
+ .user-box {
+   display: flex;
+   justify-content: space-between;
+   /*background-color: grey;*/
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   margin: 10px;
+   border: 1px solid orange;
+   width: 100px;
+
+ }
+
+ .user-avatar {
+   height: 20px;
+   width: auto;
+ }
+
+
+.personal-greeting {
+  display: flex;
+  justify-content: space-between;
+}
 
  .hide-errors {
+
    display:none;
  }
 
@@ -113,9 +183,21 @@
 .login-form-container {
   background-color: #1c1c1e;
   position: fixed;
-  top: 100px;
+  top: 70px;
   right:10px;
   padding: 15px;
+  width: 300px;
+}
+
+.errors {
+  position: fixed;
+  right: 10px;
+  top: 275px;
+  background-color: rgb(185, 185, 185);
+  color: #1c1c1f;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 12px;
 }
 
 .player{

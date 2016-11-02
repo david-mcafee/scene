@@ -3,24 +3,27 @@ import { Link, withRouter } from 'react-router';
 
 const sessionLinks = () => (
   <ul className="login-signup">
-    <li><Link to="/login" className="nav-button" activeClassName="current">Log in</Link></li>
-    <li><Link to="/signup" className="nav-button" activeClassName="current">Sign up</Link></li>
+    <li><Link to="/login" className="nav-button" activeClassName="current"><h5>Log in</h5></Link></li>
+    <li><Link to="/signup" className="nav-button-solid" activeClassName="current"><h5>Sign up</h5></Link></li>
   </ul>
 );
 
 const personalGreeting = (currentUser, logout) => (
-  <hgroup className="personal-greeting">
-    <h6 className="header-name">{currentUser.username}</h6>
-    <button onClick={logout}>Log Out</button>
-  </hgroup>
+  <ul className="personal-greeting">
+    <li className="user-box">
+      {currentUser.username}
+      <img src="https://i.vimeocdn.com/portrait/622608_640x640" className="user-avatar"></img>
+    </li>
+    <button onClick={logout} className="nav-button-solid">Log Out</button>
+  </ul>
 );
 
 const Nav = ({ currentUser, logout }) => (
     <div className="navigation">
       <ul>
-        <li><Link to="/" className="nav-button">scene</Link></li>
-        <li><Link to="/" className="nav-button">home</Link></li>
-        <li><Link to="/upload" className="nav-button">upload</Link></li>
+        <li><Link to="/" className="nav-button-left"><h5>logo</h5></Link></li>
+        <li><Link to="/" className="nav-button-left"><h5>home</h5></Link></li>
+        <li><Link to="/upload" className="nav-button-left"><h5>upload</h5></Link></li>
         <li>{currentUser ? personalGreeting(currentUser, logout) : sessionLinks()}</li>
       </ul>
     </div>
