@@ -52,6 +52,16 @@
    background-color: black;
  }
 
+ .errors {
+   position: fixed;
+   right: 35px;
+   top: 300px;
+   background-color: rgb(185, 185, 185);
+   color: #1c1c1f;
+   padding: 10px;
+   border-radius: 15px;
+ }
+
  .current {
    background-color: blue;
  }

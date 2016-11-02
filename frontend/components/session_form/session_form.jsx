@@ -47,17 +47,17 @@ class SessionForm extends React.Component {
     }
   }
 
-  // renderErrors() {
-  //   return(
-  //     <ul>
-  //       {this.props.errors.map((error, i) => (
-  //         <li key={`error-${i}`}>
-  //           {error}
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   );
-  // }
+  renderErrors() {
+    return(
+      <ul>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
 
   render() {
     return(
@@ -68,6 +68,9 @@ class SessionForm extends React.Component {
           {this.navLink()}
           <div className="login-form">
             <br/>
+            <div className="errors">
+              {this.renderErrors()}
+            </div>
             <label> Username:
               <input
                 type="text"
