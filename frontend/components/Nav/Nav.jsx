@@ -15,8 +15,7 @@ const personalGreeting = (currentUser, logout) => (
   </hgroup>
 );
 
-const Nav = ({ currentUser, logout }) => {
-  return(
+const Nav = ({ currentUser, logout }) => (
     <div className="navigation">
       <ul>
         <li><Link to="/" className="nav-button">scene</Link></li>
@@ -25,7 +24,6 @@ const Nav = ({ currentUser, logout }) => {
         <li>{currentUser ? personalGreeting(currentUser, logout) : sessionLinks()}</li>
       </ul>
     </div>
-  );
-};
+);
 
 export default Nav;
