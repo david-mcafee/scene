@@ -1,15 +1,15 @@
 ## Component Hierarchy
 
 - **AppContainer**
-  - **NavigationBarContainer**
-  - NavigationBar
+  - **NavContainer**
+  - Nav
   - MainContent (home section)
     - SplashPage
     - **ArtistIndexContainer**
     - ArtistIndex
       - ArtistIndexItem
-    - **AuthFormContainer**
-      - AuthForm
+    - **SessionFormContainer**
+      - SessionForm
     - **NewTrackContainer**
       - NewTrack
         - UploadTrackButton
