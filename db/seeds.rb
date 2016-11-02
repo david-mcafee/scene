@@ -9,6 +9,9 @@
 User.destroy_all
 ActiveRecord::Base.connection.reset_pk_sequence!("users")
 
+User.create!(username:"Guest", email: "guest@david-mcafee.com",
+  artist: true, password_digest: "#{BCrypt::Password.create("password")}")
+
 idx = 1;
 
 User.create!(username: "user#{idx}", email: "test#{idx}@david-mcafee.com",

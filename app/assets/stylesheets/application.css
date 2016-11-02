@@ -68,6 +68,10 @@
    border-radius: 15px;
  }
 
+ .hide-errors {
+   display:none;
+ }
+
  .current {
    background-color: orange;
  }

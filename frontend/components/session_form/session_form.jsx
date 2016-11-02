@@ -39,6 +39,16 @@ class SessionForm extends React.Component {
     this.props.processForm({user});
   }
 
+  // NOTE: need to set user manually
+  // need to set "form type" (see props in container if you don't understand)
+  // "processForm" with the info;
+
+  guestLogin(e){
+    e.preventDefault();
+    const user = {username: "Guest", password: "password"};
+    this.props.processForm({user});
+  }
+
   navLink() {
     if (this.props.formType === "login") {
       return <Link to="/signup">sign up instead?</Link>;
@@ -73,7 +83,7 @@ class SessionForm extends React.Component {
               {this.renderErrors()}
             </div>
 
-            <label> Username:
+            <label>
               <input
                 type="text"
                 placeholder="username"
@@ -83,8 +93,9 @@ class SessionForm extends React.Component {
             </label>
             <br/>
 
-            <label> Password:
+            <label>
               <input
+
                 type="password"
                 placeholder="password"
                 value={this.state.password}
@@ -93,9 +104,14 @@ class SessionForm extends React.Component {
             </label>
             <br />
 
-            <input type="submit" value="Submit" />
+            <input type="submit" value="submit" />
+
           </div>
         </form>
+
+        {this.props.formType === "login" ?
+          <button onClick={this.guestLogin.bind(this)}>demo</button> : <p></p>}
+
       </div>
     );
   }
