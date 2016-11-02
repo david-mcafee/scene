@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, withRouter } from 'react-router';
 
 const sessionLinks = () => (
   <ul className="login-signup">
@@ -17,14 +17,7 @@ const personalGreeting = (currentUser, logout) => (
 
 const Nav = ({ currentUser, logout }) => {
   return(
-    <div className="navigation">
-      <ul>
-        <li><Link to="/" className="nav-button">scene</Link></li>
-        <li><Link to="/" className="nav-button">home</Link></li>
-        <li><Link to="/upload" className="nav-button">upload</Link></li>
-        <li>{currentUser ? personalGreeting(currentUser, logout) : sessionLinks()}</li>
-      </ul>
-    </div>
+    currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
   );
 };
 
