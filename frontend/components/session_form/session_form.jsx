@@ -69,7 +69,9 @@ class SessionForm extends React.Component {
           <div className="login-form">
             <br/>
 
-            {this.renderErrors}
+            <div className="errors">
+              {this.renderErrors()}
+            </div>
 
             <label> Username:
               <input
