@@ -13,13 +13,17 @@ class IndexItem extends React.Component {
   // }
 
   render () {
-    const { title } = this.props.track;
+    const { title, age, image_url, audio_url, user_id} = this.props.track;
 
     // onClick={this.handleClick}
     return (
       <div className="track-index-item">
         <div className="index-item-info">
           <span className="index-item-title">{title}</span>
+          <span className="index-item-user-id">Artist: {user_id}</span>
+          <span className="index-item-audio-url">{audio_url}</span>
+          <span className="index-item-image-url">{image_url}</span>
+          <span className="index-item-age">uploaded {age} ago</span>
         </div>
       </div>
     );

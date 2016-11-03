@@ -284,7 +284,28 @@
 }
 
 .index-item-title {
-  border: 1px solid yellow;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 3px;
+}
+.index-item-user-id {
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 3px;
+}
+.index-item-audio-url {
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 3px;
+}
+.index-item-image-url {
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.index-item-age {
+  border: 1px solid grey;
   border-radius: 2px;
   padding: 3px;
 }

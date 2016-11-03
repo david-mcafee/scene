@@ -34,7 +34,8 @@ User.create!(username: "davidmcafee", email: "me@david-mcafee.com",
   artist: true, password_digest: "#{BCrypt::Password.create("password#{idx}")}")
 idx += 1
 
-
+Track.destroy_all
+ActiveRecord::Base.connection.reset_pk_sequence!("tracks")
 
 idx = 1
 
