@@ -9,18 +9,24 @@ class TrackIndex extends React.Component {
 
   }
   componentDidMount() {
-    // NOTE: request tracks from API
-    this.tracks = this.requestTracks();
+    // NOTE: follow this from container if you forget
+    // this call will be asyncronous, meaning page will load before this
+    // is complete
+    this.props.requestTracks();
   }
+
+  // NOTE: render empty p incase tracks havent rendered yet
 
   render() {
     return(
       <div>
         <h1>tracks: </h1>
-        {this.tracks.map(track => (
+        {this.props.tracks ? this.props.tracks.map(track => (
           <TrackIndexItem track={track} key={track.id} />
-        ))}
+        )) : <p>all tracks</p>}
       </div>
     );
   }
 }
+
+export default TrackIndex;

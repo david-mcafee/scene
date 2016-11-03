@@ -272,17 +272,20 @@
 
 
 .track-index-item {
-  background-color: blue;
-  padding: 1px;
+  border: 1px solid blue;
+  border-radius: 2px;
+  padding: 3px;
 }
 
 .index-item-info {
-  background-color: red;
-  padding: 1px;
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 3px;
 }
 
-.index-item {
-  background-color: yellow;
-  padding: 1px;
+.index-item-title {
+  border: 1px solid yellow;
+  border-radius: 2px;
+  padding: 3px;
 }
  /*font family? "Helvetica Neue", Helvetica, sans-serif*/

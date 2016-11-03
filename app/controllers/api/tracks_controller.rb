@@ -4,7 +4,7 @@ class Api::TracksController < ApplicationController
     cloud_name = ENV['CLOUD_NAME']
     upload_preset = ENV['UPLOAD_PRESET']
 
-    @tracks = Tracks.all
+    @tracks = Track.all
     render :index
   end
 
@@ -49,6 +49,6 @@ class Api::TracksController < ApplicationController
 
   private
   def track_params
-    params.require(:track).permit(:title, :image_url, :audio_url)
+    params.require(:track).permit(:title, :user_id, :image_url, :audio_url)
   end
 end
