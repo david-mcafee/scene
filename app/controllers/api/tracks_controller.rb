@@ -3,7 +3,9 @@ class Api::TracksController < ApplicationController
   def index
     cloud_name = ENV['CLOUD_NAME']
     upload_preset = ENV['UPLOAD_PRESET']
+
     @tracks = Tracks.all
+    render :index
   end
 
   def new

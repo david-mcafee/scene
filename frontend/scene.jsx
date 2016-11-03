@@ -6,7 +6,9 @@ import Root from './components/root';
 import UploadButton from './components/track_upload/upload_button';
 // import ImageList from './components/file_upload/ImageList';
 
-// import { requestTracks } from './actions/track_actions';
+
+
+import { requestTracks } from './actions/track_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
     let store;
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ReactDOM.render(<Root store={store}/>, root);
 
+    // window.store = store;
     // window.requestTracks = requestTracks;
-    // requestTracks();
-    // store.dispatch(requestTracks())
+    // store.dispatch(requestTracks());
 });
