@@ -12,24 +12,61 @@ ActiveRecord::Base.connection.reset_pk_sequence!("users")
 User.create!(username:"Guest", email: "guest@david-mcafee.com",
   artist: true, password_digest: "#{BCrypt::Password.create("password")}")
 
-idx = 1;
+idx = 2
 
 User.create!(username: "user#{idx}", email: "test#{idx}@david-mcafee.com",
   artist: false, password_digest: "#{BCrypt::Password.create("password#{idx}")}")
-idx += 1;
+idx += 1
 
 User.create!(username: "user#{idx}", email: "test#{idx}@david-mcafee.com",
   artist: false, password_digest: "#{BCrypt::Password.create("password#{idx}")}")
-idx += 1;
+idx += 1
 
 User.create!(username: "user#{idx}", email: "test#{idx}@david-mcafee.com",
   artist: false, password_digest: "#{BCrypt::Password.create("password#{idx}")}")
-idx += 1;
-
-User.create!(username: "user#{idx}", email: "test#{idx}@david-mcafee.com",
-  artist: false, password_digest: "#{BCrypt::Password.create("password#{idx}")}")
-idx += 1;
+idx += 1
 
 User.create!(username: "nolankurtz", email: "nolan@david-mcafee.com",
   artist: true, password_digest: "#{BCrypt::Password.create("password#{idx}")}")
-idx += 1;
+idx += 1
+
+User.create!(username: "davidmcafee", email: "me@david-mcafee.com",
+  artist: true, password_digest: "#{BCrypt::Password.create("password#{idx}")}")
+idx += 1
+
+
+
+idx = 1
+
+Track.create!(title: "track#{idx}", image_url: "http://www.david-mcafee.com", audio_url: "http://www.david-mcafee.com", user_id: 5)
+idx += 1
+
+Track.create!(title: "track#{idx}", image_url: "http://www.david-mcafee.com", audio_url: "http://www.david-mcafee.com", user_id: 5)
+idx += 1
+
+Track.create!(title: "track#{idx}", image_url: "http://www.david-mcafee.com", audio_url: "http://www.david-mcafee.com", user_id: 5)
+idx += 1
+
+Track.create!(title: "track#{idx}", image_url: "http://www.david-mcafee.com", audio_url: "http://www.david-mcafee.com", user_id: 5)
+idx += 1
+
+Track.create!(title: "track#{idx}", image_url: "http://www.david-mcafee.com", audio_url: "http://www.david-mcafee.com", user_id: 5)
+idx += 1
+
+
+idx = 1
+
+Track.create!(title: "track#{idx}", image_url: "http://www.david-mcafee.com", audio_url: "http://www.david-mcafee.com", user_id: 6)
+idx += 1
+
+Track.create!(title: "track#{idx}", image_url: "http://www.david-mcafee.com", audio_url: "http://www.david-mcafee.com", user_id: 6)
+idx += 1
+
+Track.create!(title: "track#{idx}", image_url: "http://www.david-mcafee.com", audio_url: "http://www.david-mcafee.com", user_id: 6)
+idx += 1
+
+Track.create!(title: "track#{idx}", image_url: "http://www.david-mcafee.com", audio_url: "http://www.david-mcafee.com", user_id: 6)
+idx += 1
+
+Track.create!(title: "track#{idx}", image_url: "http://www.david-mcafee.com", audio_url: "http://www.david-mcafee.com", user_id: 6)
+idx += 1

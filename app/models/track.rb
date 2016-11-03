@@ -1,5 +1,5 @@
 class Track < ApplicationRecord
-  validates :title, :audio_url
+  validates :title, :audio_url, presence: true
 
   belongs_to :user,
     class_name: "User",

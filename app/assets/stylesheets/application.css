@@ -269,4 +269,20 @@
 .required {
   color: grey;
 }
+
+
+.track-index-item {
+  background-color: blue;
+  padding: 1px;
+}
+
+.index-item-info {
+  background-color: red;
+  padding: 1px;
+}
+
+.index-item {
+  background-color: yellow;
+  padding: 1px;
+}
  /*font family? "Helvetica Neue", Helvetica, sans-serif*/

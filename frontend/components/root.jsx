@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
+import TrackIndexContainer from './track_index/track_index_container';
 
 const Root = ({ store }) => {
 
@@ -25,8 +26,6 @@ const Root = ({ store }) => {
     }
   };
 
-
-
   return(
     <Provider store={store}>
       <Router history={hashHistory}>
@@ -34,6 +33,7 @@ const Root = ({ store }) => {
           <Route path="/login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="/upload" component={SessionFormContainer} onEnter={_ensureLoggedIn}/>
+          <Route path="/tracks" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
         </Route>
       </Router>
     </Provider>
