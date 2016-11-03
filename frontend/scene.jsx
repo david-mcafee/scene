@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 
-import UploadButton from './components/file_upload/upload_button';
+import UploadButton from './components/track_upload/upload_button';
 // import ImageList from './components/file_upload/ImageList';
 
 // import { requestTracks } from './actions/track_actions';

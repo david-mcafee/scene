@@ -3,11 +3,7 @@
 // it and do nothing.
 
 import { fetchBenches } from '../util/track_api_util';
-import {
-  REQUEST_TRACKS,
-  RECEIVE_TRACKS,
-  receiveTracks
-  } from './actions/track_actions';
+import { REQUEST_TRACKS, RECEIVE_TRACKS, receiveTracks } from '../actions/track_actions';
 
 // NOTE: Recall that Redux Middleware employs a currying strategy to
 // link several Middleware to each other and ultimately to the store.
