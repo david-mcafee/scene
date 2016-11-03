@@ -61,16 +61,6 @@
    display: flex;
  }
 
- .nav-button {
-   padding-left: 15px;
-   padding-right: 15px;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   border-radius: 5px;
-   margin: 10px;
-   border: 1px solid grey;
- }
-
  .nav-button-left {
    padding-left: 45px;
    padding-right: 45px;
@@ -81,6 +71,15 @@
    color: #cccccc;
  }
 
+ .nav-button {
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 5px;
+   margin: 10px;
+   border: 1px solid grey;
+ }
 
  .nav-button-solid {
    background-color: grey;
@@ -91,6 +90,8 @@
    border-radius: 5px;
    margin: 10px;
    border: 1px solid grey;
+   color: white;
+   outline: none;
  }
 
  .login-signup {
@@ -114,21 +115,31 @@
 
  .user-box {
    display: flex;
-   justify-content: space-between;
-   /*background-color: grey;*/
-   padding-left: 15px;
-   padding-right: 15px;
-   padding-top: 7px;
-   padding-bottom: 7px;
-   margin: 10px;
-   border: 1px solid orange;
-   width: 100px;
+   align-items: center;
 
+   background-color: transparent;
+   display: flex;
+   justify-content: space-between;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin: 10px;
+   border-left: 1px solid orange;
+   border-right: 1px solid orange;
+   width: 100px;
  }
 
  .user-avatar {
+   display:flex;
    height: 20px;
    width: auto;
+ }
+
+ .user-name {
+   display:flex;
+   font-size: 12px;
+   vertical-align: middle;
  }
 
 
@@ -143,7 +154,7 @@
  }
 
  .current {
-   background-color: orange;
+   background-color: #ffa500;
  }
 
  .personal-greeting {
@@ -177,12 +188,50 @@
 }
 
 .login-input{
-  /*position: absolute*/
-  /*width: 100%;*/
-  /*margin-left: 9px;
-  margin-right: 10px;*/
-  /*margin-top: 5px;
-  margin-bottom: 10px;*/
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.login-input:focus{
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid #ffa500;
+  outline: orange;
+}
+
+.input-button {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  border: 1px solid #ffa500;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+.input-button-solid {
+  background-color: #ffa500;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  border: 1px solid #ffa500;
+  color: white;
+  outline: none;
 }
 
 .main-content{
@@ -196,9 +245,10 @@
   top: 275px;
   background-color: rgb(185, 185, 185);
   color: #1c1c1f;
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
   font-size: 12px;
+  color: white;
 }
 
 .player{
@@ -214,5 +264,9 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
+}
+
+.required {
+  color: grey;
 }
  /*font family? "Helvetica Neue", Helvetica, sans-serif*/

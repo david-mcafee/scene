@@ -11,10 +11,10 @@ const sessionLinks = () => (
 const personalGreeting = (currentUser, logout) => (
   <ul className="personal-greeting">
     <li className="user-box">
-      {currentUser.username}
+      <p className="user-name">{currentUser.username}</p>
       <img src="https://i.vimeocdn.com/portrait/622608_640x640" className="user-avatar"></img>
     </li>
-    <button onClick={logout} className="nav-button-solid">Log Out</button>
+    <li><button onClick={logout} className="nav-button-solid"><h5>Log Out</h5></button></li>
   </ul>
 );
 

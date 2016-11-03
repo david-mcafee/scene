@@ -128,11 +128,11 @@ class SessionForm extends React.Component {
               </label>
               <br />
               <br />
-                <input type="radio" name={this.state.artist} value="false" onChange={this.update("artist")} checked={this.state.artist==="false"}/>fan     <input type="radio" name={this.state.artist} value="true" onChange={this.update("artist")} checked={this.state.artist==="true"}/>artist    <em>(required)</em>
+                <input type="radio" name={this.state.artist} value="false" onChange={this.update("artist")} checked={this.state.artist==="false"}/>fan     <input type="radio" name={this.state.artist} value="true" onChange={this.update("artist")} checked={this.state.artist==="true"}/>artist    <em className="required">(required)</em>
               <br />
               <br />
 
-              <input type="submit" value="submit" />
+              <input type="submit" value="submit" className="input-button"/>
 
             </div>
 
@@ -162,9 +162,9 @@ class SessionForm extends React.Component {
               </label>
               <br />
               <br />
-              <input type="submit" value="submit" />&nbsp;
+              <input type="submit" value="submit" className="input-button"/>
               {this.props.formType === "login" ?
-                <button onClick={this.guestLogin.bind(this)}>demo</button> : <p></p>}
+                <button onClick={this.guestLogin.bind(this)} className="input-button-solid">DEMO ACCOUNT</button> : <p></p>}
 
             </div>
 
