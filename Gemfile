@@ -36,7 +36,11 @@ gem 'newrelic_rpm'
 # Generate site up
 # gem 'sitemap_generator'
 
+# For generating password tokens
 gem 'bcrypt'
+
+# https://github.com/laserlemon/figaro
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
