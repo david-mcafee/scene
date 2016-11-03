@@ -6,6 +6,7 @@ import Root from './components/root';
 import UploadButton from './components/file_upload/upload_button';
 // import ImageList from './components/file_upload/ImageList';
 
+// import { requestTracks } from './actions/track_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
     let store;
@@ -19,4 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById('root');
 
     ReactDOM.render(<Root store={store}/>, root);
+
+    // window.requestTracks = requestTracks;
+    // requestTracks();
 });
