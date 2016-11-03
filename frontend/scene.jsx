@@ -23,4 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // window.requestTracks = requestTracks;
     // requestTracks();
+    // store.dispatch(requestTracks())
 });

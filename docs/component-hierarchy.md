@@ -1,5 +1,7 @@
 ## Component Hierarchy
 
+NOTE: REVISE FOR SPLASH PAGE
+
 - **AppContainer**
   - **NavContainer**
   - Nav
