@@ -1,5 +1,8 @@
+import {
+  RECEIVE_TRACKS,
+  RECEIVE_TRACK } from '../actions/track_actions';
+
 import merge from 'lodash/merge';
-import { RECEIVE_TRACKS } from '../actions/track_actions';
 
 // NOTE: see Root reducer to see how this reducer defines it's own slice
 // of this state... i.e. this ONLY refers to "tracks". state could be
@@ -7,9 +10,12 @@ import { RECEIVE_TRACKS } from '../actions/track_actions';
 
 const TracksReducer = (state = {}, action) => {
   Object.freeze(state);
+
   switch (action.type) {
     case RECEIVE_TRACKS:
-      return action.tracks;
+      return merge({}, action.tracks);
+    case RECEIVE_TRACK:
+      return merge({}, state, {[action.track.id]: action.track});
     default:
       return state;
   }

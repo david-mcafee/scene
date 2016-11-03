@@ -3,6 +3,7 @@ import React from 'react';
 class UploadButton extends React.Component {
   constructor(props) {
     super(props);
+    this.upload = this.upload.bind(this);
   }
 
   // bind to this, so that this is the react component so that
@@ -10,19 +11,21 @@ class UploadButton extends React.Component {
 
   upload(e){
     e.preventDefault();
-    cloudinary.openUploadWidget(
-      window.cloudinary_options,
-      function(error, tracks){
-        if (error === null) {
-            // upload successfull
-            this.props.postImage(tracks[0].url);
-        }
-    }.bind(this));
+
+    cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
+      if (!error) {
+        // upload successfull
+        this.props.postTrack(results[0].url);
+      }
+      }
+    );
   }
 
   render() {
     return (
-      <button onClick={this.upload}>upload track</button>
+      <div>
+        <button onClick={this.upload}>upload track</button>
+      </div>
     );
   }
 }

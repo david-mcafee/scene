@@ -2,22 +2,41 @@
 // to intercept the dispatch, trigger another dispatch, or simply pass on
 // it and do nothing.
 
-import { fetchTracks } from '../util/track_api_util';
-import { REQUEST_TRACKS, RECEIVE_TRACKS, receiveTracks } from '../actions/track_actions';
+import {
+  REQUEST_TRACKS,
+  RECEIVE_TRACKS,
+  POST_TRACK,
+  receiveTracks,
+  receiveTrack
+} from '../actions/track_actions';
+
+import {
+  fetchTracks,
+  postTrack
+} from '../util/track_api_util';
 
 // NOTE: Recall that Redux Middleware employs a currying strategy to
 // link several Middleware to each other and ultimately to the store.
 // You'll need to define 3 functions that wrap one-another
 
 const TracksMiddleware = ({ getState, dispatch }) => next => action => {
+
+  let success;
+  let error = e => console.log(e.responseJSON);
+  let receiveAllTracksSuccess = data => dispatch(receiveTracks(data));
+  let receiveTrackSuccess = track => dispatch(receiveTrack(track));
+  // let removeTrackSuccess = track => dispatch(removeTrack(track));
+
   switch (action.type) {
     case REQUEST_TRACKS:
       // remember, this success callback is sent to the api_util, meaning that
       // if successfully retrieved, a new action creator will be dispatched,
       // (see track_actions), whose type will be RECEIVE_TRACKS, which will
       // then his the reducer
-      const success = data => dispatch(receiveTracks(data));
-      fetchTracks(success);
+      fetchTracks(receiveAllTracksSuccess);
+      return next(action);
+    case POST_TRACK:
+      postTrack(receiveTrackSuccess);
       return next(action);
     default:
       return next(action);

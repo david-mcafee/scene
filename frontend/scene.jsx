@@ -3,12 +3,8 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 
-import UploadButton from './components/track_upload/upload_button';
-// import ImageList from './components/file_upload/ImageList';
 
-
-
-import { requestTracks } from './actions/track_actions';
+// import { requestTracks } from './actions/track_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
     let store;
@@ -29,13 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // test tracks:
-    window.success = () => console.log("success");
-    window.fetchTracks = (success) => {
-      $.ajax({
-        method: "GET",
-        url: "/api/tracks",
-        success,
-        error: () => console.log('error from fetchTracks')
-      });
-    };
+    // window.success = () => console.log("success");
+    // window.fetchTracks = (success) => {
+    //   $.ajax({
+    //     method: "GET",
+    //     url: "/api/tracks",
+    //     success,
+    //     error: () => console.log('error from fetchTracks')
+    //   });
+    // };
 });
