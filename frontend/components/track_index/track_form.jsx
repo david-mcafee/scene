@@ -17,7 +17,7 @@ class TrackForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const track = this.state;
-    this.props.processForm(track});
+    this.props.processForm(track);
   }
 
   upload(e){
@@ -32,7 +32,7 @@ class TrackForm extends React.Component {
         });
       }
       // console.log(this);
-    }
+    }.bind(this)
     );
   }
 
