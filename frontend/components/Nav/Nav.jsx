@@ -18,7 +18,7 @@ const personalGreeting = (currentUser, logout) => (
   </ul>
 );
 
-const Nav = ({ currentUser, logout }) => (
+export const Nav = ({ currentUser, logout }) => (
     <div className="navigation">
       <ul>
         <li><Link to="/" className="nav-button-left"><h5>logo</h5></Link></li>
@@ -28,5 +28,3 @@ const Nav = ({ currentUser, logout }) => (
       </ul>
     </div>
 );
-
-export default Nav;
