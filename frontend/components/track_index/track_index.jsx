@@ -17,7 +17,7 @@ class TrackIndex extends React.Component {
   render() {
     return(
       <div>
-        <UploadButton postTrack={this.postTrack}/>
+        <UploadButton postTrack={this.props.postTrack}/>
 
         <h1>tracks: </h1>
         {this.props.tracks ? this.props.tracks.map(track => (

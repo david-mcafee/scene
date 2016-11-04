@@ -7,16 +7,15 @@ export const fetchTracks = (success) => {
   });
 };
 
-export const uploadTrack = (success, url) => {
+export const postTrack = (success, url) => {
   $.ajax({
-    method: "POST",
     url: "/api/tracks",
-    data: {
-      title: "uploaded_track",
-      image_url: url,
-      audio_url: url,
-      user_id: 5
-    },
+    method: "POST",
+    data: { track: {
+      title: "test title",
+      image_url: "test_image_url",
+      audio_url: url
+    }},
     success
   });
 };

@@ -15,15 +15,18 @@ class UploadButton extends React.Component {
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
       if (!error) {
         // upload successfull
+        console.log(results);
+        // debugger;
         this.props.postTrack(results[0].url);
       }
-      }
+    }.bind(this)
     );
   }
 
   render() {
     return (
       <div>
+        <p>Form goes here</p>
         <button onClick={this.upload}>upload track</button>
       </div>
     );

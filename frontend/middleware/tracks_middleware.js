@@ -39,7 +39,7 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
       fetchTracks(receiveAllTracksSuccess);
       return next(action);
     case POST_TRACK:
-      postTrack(receiveTrackSuccess);
+      postTrack(receiveTrackSuccess, action.url);
       return next(action);
     case DELETE_TRACK:
       deleteTrack(action.id, removeTrackSuccess);

@@ -25,6 +25,7 @@ class IndexItem extends React.Component {
           <span className="index-item-image-url">{image_url}</span>
           <span className="index-item-age">uploaded {age} ago</span>
 
+          
           <button onClick={ () => this.props.deleteTrack(id) }>deletetrack</button>
 
         </div>
