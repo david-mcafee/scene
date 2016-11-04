@@ -20,3 +20,19 @@ export const uploadTrack = (success, url) => {
     success
   });
 };
+
+export const fetchTrack = (id, success) => {
+  $.ajax({
+    method: "GET",
+    url: `api/tracks/${id}`,
+    success
+  });
+};
+
+export const deleteTrack = (id, success) => {
+  $.ajax({
+    url: `api/tracks/${id}`,
+    type: "DELETE",
+    success
+  });
+};
