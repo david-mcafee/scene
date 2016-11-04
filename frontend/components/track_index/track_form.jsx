@@ -83,7 +83,7 @@ class TrackForm extends React.Component {
             <label>
               <input
                 type="text"
-                placeholder="title"
+                placeholder="song title"
                 value={ this.state.title }
                 onChange={ this.update("title")}
                 className="login-input"
