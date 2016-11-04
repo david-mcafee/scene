@@ -313,4 +313,11 @@
   border-radius: 2px;
   padding: 3px;
 }
+
+.album-art {
+  height: 100px;
+  width: auto;
+  opacity: 1;
+  box-shadow: rgba(0,0,0,.1)0 0 0 1px inset;
+}
  /*font family? "Helvetica Neue", Helvetica, sans-serif*/

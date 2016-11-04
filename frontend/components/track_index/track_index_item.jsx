@@ -18,17 +18,13 @@ class IndexItem extends React.Component {
     // onClick={this.handleClick}
     return (
       <div className="track-index-item">
-        <div className="index-item-info">
-          <span className="index-item-title">{title}</span>
-          <span className="index-item-user-id">Artist: {user_id}</span>
-          <span className="index-item-audio-url">{audio_url}</span>
-          <span className="index-item-image-url">{image_url}</span>
-          <span className="index-item-age">uploaded {age} ago</span>
-
-          
-          <button onClick={ () => this.props.deleteTrack(id) }>deletetrack</button>
-
-        </div>
+        <ul className="index-item-info">
+          <li className="index-item-image-url"><img className="album-art"src={image_url}></img></li>
+          <li className="index-item-title">{title}</li>
+          <li className="index-item-user-id">Artist: {user_id}</li>
+          <li className="index-item-age">uploaded {age} ago</li>
+        </ul>
+        <button className="input-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
       </div>
     );
   }

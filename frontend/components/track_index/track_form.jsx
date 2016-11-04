@@ -26,6 +26,7 @@ class TrackForm extends React.Component {
 
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
       if (!error) {
+        console.log(results);
         this.setState({
           ["audio_url"]: results[0].url
         });
