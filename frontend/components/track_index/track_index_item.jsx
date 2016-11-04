@@ -12,6 +12,14 @@ class IndexItem extends React.Component {
   //   hashHistory.push(`benches/${benchId}`);
   // }
 
+  editTrack (id) {
+    return (e) => {
+      e.preventDefault();
+      const url = `/tracks/${id}/edit`;
+      hashHistory.push(url);
+    };
+  }
+
   render () {
     const { id, title, age, image_url, audio_url, user_id} = this.props.track;
 
@@ -24,6 +32,7 @@ class IndexItem extends React.Component {
           <li className="index-item-user-id">Artist: {user_id}</li>
           <li className="index-item-age">uploaded {age} ago</li>
         </ul>
+        <button className="input-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
         <button className="input-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
       </div>
     );

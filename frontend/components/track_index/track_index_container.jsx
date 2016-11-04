@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { postTrack, requestTracks, receiveTracks, deleteTrack } from '../../actions/track_actions';
+import { postTrack, requestTracks, receiveTracks, editTrack, deleteTrack } from '../../actions/track_actions';
 import TrackIndex from './track_index';
 
 // NOTE: review selector in selector file - this is simply for

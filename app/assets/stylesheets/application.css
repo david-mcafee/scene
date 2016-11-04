@@ -122,9 +122,6 @@
    justify-content: space-between;
    padding-left: 10px;
    padding-right: 10px;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   margin: 10px;
    border-left: 1px solid orange;
    border-right: 1px solid orange;
    width: 100px;
@@ -132,7 +129,7 @@
 
  .user-avatar {
    display:flex;
-   height: 20px;
+   height: 40px;
    width: auto;
    border-radius: 25px;
  }
