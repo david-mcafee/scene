@@ -1,8 +1,8 @@
 class Api::TracksController < ApplicationController
 
   def index
-    cloud_name = ENV['CLOUD_NAME']
-    upload_preset = ENV['UPLOAD_PRESET']
+    # cloud_name = ENV['CLOUD_NAME']
+    # upload_preset = ENV['UPLOAD_PRESET']
 
     @tracks = Track.all
     render :index
@@ -13,6 +13,9 @@ class Api::TracksController < ApplicationController
   end
 
   def create
+    # cloud_name = ENV['CLOUD_NAME']
+    # upload_preset = ENV['UPLOAD_PRESET']
+
     @track = Track.new(track_params)
     @track.user_id = current_user.id
 
