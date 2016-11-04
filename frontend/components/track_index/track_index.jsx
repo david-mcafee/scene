@@ -1,6 +1,6 @@
 import React from 'react';
 import TrackIndexItem from './track_index_item';
-import UploadButton from './upload_button';
+import TrackForm from './track_form';
 
 class TrackIndex extends React.Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class TrackIndex extends React.Component {
   render() {
     return(
       <div>
-        <UploadButton postTrack={this.props.postTrack}/>
+        <TrackForm postTrack={this.props.postTrack} processForm={this.props.processForm}/>
 
         <h1>tracks: </h1>
         {this.props.tracks ? this.props.tracks.map(track => (

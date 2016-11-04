@@ -18,7 +18,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = (dispatch) => ({
   requestTracks: () => dispatch(requestTracks()),
   postTrack: (url) => dispatch(postTrack(url)),
-  deleteTrack: (id) => dispatch(deleteTrack(id))
+  deleteTrack: (id) => dispatch(deleteTrack(id)),
+  processForm: track => dispatch(postTrack(track))
 });
 
 export default connect(
