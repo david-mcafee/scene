@@ -134,6 +134,7 @@
    display:flex;
    height: 20px;
    width: auto;
+   border-radius: 25px;
  }
 
  .user-name {
@@ -214,7 +215,10 @@
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 5px;
-  margin: 10px;
+  /*margin-left: 10px;*/
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ffa500;
   background-color: transparent;
   color: white;

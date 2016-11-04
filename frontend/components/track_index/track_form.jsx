@@ -12,6 +12,7 @@ class TrackForm extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.upload = this.upload.bind(this);
+    this.upload1 = this.upload1.bind(this);
   }
 
   handleSubmit(e) {
@@ -25,10 +26,26 @@ class TrackForm extends React.Component {
 
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
       if (!error) {
-        // upload successfull
-        // debugger;
         this.setState({
           ["audio_url"]: results[0].url
+        });
+      }
+      // console.log(this);
+    }.bind(this)
+    );
+  }
+
+  upload1(e){
+    e.preventDefault();
+    // console.log(e.currentTarget.value);
+
+    cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
+      if (!error) {
+        // upload successfull
+        // debugger;
+
+        this.setState({
+          ["image_url"]: results[0].url
         });
       }
       // console.log(this);
@@ -73,20 +90,11 @@ class TrackForm extends React.Component {
               />
             </label>
             <br />
-              <label>
-              <input
-                type="text"
-                placeholder="image_url (optional)"
-                value={ this.state.image_url }
-                onChange={ this.update("image_url")}
-                className="login-input"
-              />
-            </label>
-            <br />
-            <button onClick={this.upload}>upload audio file</button>
+            <button onClick={this.upload1} className="input-button" value="image_url">add image optional</button>
+            <button onClick={this.upload} className="input-button" value="audio_url">add audio required</button>
             <br />
 
-            <input type="submit" value="submit" className="input-button"/>
+            <input type="submit" value="ADD TRACK" className="input-button-solid"/>
 
           </div>
         </form>
