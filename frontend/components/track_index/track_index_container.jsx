@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { postTrack, requestTracks, receiveTracks } from '../../actions/track_actions';
+import { postTrack, requestTracks, receiveTracks, deleteTrack } from '../../actions/track_actions';
 import TrackIndex from './track_index';
 
 // NOTE: review selector in selector file - this is simply for
@@ -17,7 +17,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = (dispatch) => ({
   requestTracks: () => dispatch(requestTracks()),
-  postTrack: (url) => dispatch(postTrack(url))
+  postTrack: (url) => dispatch(postTrack(url)),
+  deleteTrack: (id) => dispatch(deleteTrack(id))
 });
 
 export default connect(

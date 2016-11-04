@@ -21,7 +21,7 @@ class TrackIndex extends React.Component {
 
         <h1>tracks: </h1>
         {this.props.tracks ? this.props.tracks.map(track => (
-          <TrackIndexItem track={track} key={track.id} />
+          <TrackIndexItem track={track} key={track.id} deleteTrack={this.props.deleteTrack}/>
         )) : <p>all tracks</p>}
       </div>
     );

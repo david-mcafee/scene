@@ -13,7 +13,7 @@ class IndexItem extends React.Component {
   // }
 
   render () {
-    const { title, age, image_url, audio_url, user_id} = this.props.track;
+    const { id, title, age, image_url, audio_url, user_id} = this.props.track;
 
     // onClick={this.handleClick}
     return (
@@ -24,6 +24,9 @@ class IndexItem extends React.Component {
           <span className="index-item-audio-url">{audio_url}</span>
           <span className="index-item-image-url">{image_url}</span>
           <span className="index-item-age">uploaded {age} ago</span>
+
+          <button onClick={ () => this.props.deleteTrack(id) }>deletetrack</button>
+
         </div>
       </div>
     );

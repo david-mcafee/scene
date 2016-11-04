@@ -20,7 +20,7 @@ class Api::TracksController < ApplicationController
     @track.user_id = current_user.id
 
     if @track.save
-      render "api/tracks/show"
+      render :show
     else
       render json: @track.errors.full_messages, status: 422
     end
@@ -38,7 +38,7 @@ class Api::TracksController < ApplicationController
     @track = current_user.tracks.find(params[:id])
 
     if @track.update_attributes(track_params)
-      render "api/tracks/show"
+      render :show
     else
       render json: @track.errors.full_messages, status: 422
     end
@@ -47,11 +47,11 @@ class Api::TracksController < ApplicationController
   def destroy
     @track = Track.find(params[:id])
     @track.destroy
-    render "api/tracks/"
+    render :show
   end
 
   private
   def track_params
-    params.require(:track).permit(:title, :user_id, :image_url, :audio_url)
+    params.require(:track).permit(:id, :title, :user_id, :image_url, :audio_url)
   end
 end
