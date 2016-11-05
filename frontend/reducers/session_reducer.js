@@ -1,6 +1,6 @@
 import { RECEIVE_CURRENT_USER, LOGOUT, RECEIVE_ERRORS } from '../actions/session_actions';
 import merge from 'lodash/merge';
-import { hashHistory } from 'react-redux';
+import { hashHistory } from 'react-router';
 
 // session reducer maintains it's own default state.
 
