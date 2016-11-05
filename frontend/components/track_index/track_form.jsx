@@ -4,7 +4,8 @@ class TrackForm extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
+    // use post in store if updating; start with blank post if new
+    this.state = this.props.track || {
       title: "",
       image_url: "",
       audio_url: ""
@@ -18,7 +19,7 @@ class TrackForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const track = this.state;
-    this.props.processForm(track);
+      this.props.processForm(track);
   }
 
   upload(e){

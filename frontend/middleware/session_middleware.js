@@ -20,15 +20,17 @@ import { hashHistory } from 'react-router';
 export default ({ getState, dispatch }) => next => action => {
   const successCallback = user => dispatch(receiveCurrentUser(user));
   const errorCallback = xhr => dispatch(receiveErrors(xhr.responseJSON));
-  const logoutCallback = () => dispatch(hashHistory.push("/"));
-
+  const logoutCallback = () => {
+    hashHistory.push("/");
+    dispatch(next(action));
+  };
   switch(action.type) {
     case LOGIN:
       login(action.user, successCallback, errorCallback);
       return next(action);
     case LOGOUT:
       logout(logoutCallback);
-      return next(action);
+      break;
     case SIGNUP:
       signup(action.user, successCallback, errorCallback);
       return next(action);

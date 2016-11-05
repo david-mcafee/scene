@@ -10,14 +10,14 @@ import {
   UPDATE_TRACK,
   removeTrack,
   receiveTracks,
-  receiveTrack,
-  updateTrack
+  receiveTrack
 } from '../actions/track_actions';
 
 import {
   fetchTracks,
   postTrack,
   deleteTrack,
+  updateTrack,
 } from '../util/track_api_util';
 
 import { hashHistory } from 'react-router';
@@ -35,7 +35,7 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
   let removeTrackSuccess = track => dispatch(removeTrack(track));
   let updateTrackSuccess = track => {
     dispatch(receiveTrack(track));
-    hashHistory.push("/"); //NOTE review this
+    hashHistory.push("/");
   };
 
   switch (action.type) {
@@ -52,6 +52,8 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
     case DELETE_TRACK:
       deleteTrack(action.id, removeTrackSuccess);
     case UPDATE_TRACK:
+      console.log("update middleware entered");
+      debugger;
       updateTrack(action.track, updateTrackSuccess);
       return next(action);
     default:

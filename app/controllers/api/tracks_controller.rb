@@ -35,8 +35,9 @@ class Api::TracksController < ApplicationController
   end
 
   def update
-    @track = current_user.tracks.find(params[:id])
-
+    # @track = current_user.tracks.find(params[:id])
+    @track = Track.find(params[:id])
+    
     if @track.update_attributes(track_params)
       render :show
     else

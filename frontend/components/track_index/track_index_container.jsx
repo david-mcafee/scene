@@ -3,7 +3,7 @@ import {
   postTrack,
   requestTracks,
   receiveTracks,
-  editTrack,
+  updateTrack,
   deleteTrack
   } from '../../actions/track_actions';
 import TrackIndex from './track_index';
@@ -21,10 +21,10 @@ const mapStateToProps = state => ({
 // it has mounted. give it a requestTracks prop that it can use to
 // call a dispatch with the requestTracks() action creator (see actions/track_actions)
 
-const mapDispatchToProps = (dispatch, {location}) => {
+const mapDispatchToProps = (dispatch, { location }) => {
   const formType = location.pathname.slice(1);
   console.log(formType);
-  const processForm = (formType === 'upload') ? postTrack : editTrack;
+  const processForm = (formType === 'upload') ? postTrack : updateTrack;
 
   return {
     requestTracks: () => dispatch(requestTracks()),
