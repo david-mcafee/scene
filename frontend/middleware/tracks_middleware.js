@@ -7,9 +7,11 @@ import {
   RECEIVE_TRACKS,
   POST_TRACK,
   DELETE_TRACK,
+  UPDATE_TRACK,
   removeTrack,
   receiveTracks,
-  receiveTrack
+  receiveTrack,
+  updateTrack
 } from '../actions/track_actions';
 
 import {
@@ -17,6 +19,8 @@ import {
   postTrack,
   deleteTrack,
 } from '../util/track_api_util';
+
+import { hashHistory } from 'react-router';
 
 // NOTE: Recall that Redux Middleware employs a currying strategy to
 // link several Middleware to each other and ultimately to the store.
@@ -29,6 +33,10 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
   let receiveAllTracksSuccess = data => dispatch(receiveTracks(data));
   let receiveTrackSuccess = track => dispatch(receiveTrack(track));
   let removeTrackSuccess = track => dispatch(removeTrack(track));
+  let updateTrackSuccess = track => {
+    dispatch(receiveTrack(track));
+    hashHistory.push("/"); //NOTE review this
+  };
 
   switch (action.type) {
     case REQUEST_TRACKS:
@@ -43,6 +51,9 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
       return next(action);
     case DELETE_TRACK:
       deleteTrack(action.id, removeTrackSuccess);
+    case UPDATE_TRACK:
+      updateTrack(action.track, updateTrackSuccess);
+      return next(action);
     default:
       return next(action);
   }

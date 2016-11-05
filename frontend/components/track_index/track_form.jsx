@@ -80,24 +80,49 @@ class TrackForm extends React.Component {
     return (
       <div className="login-form-container">
         <form onSubmit={ this.handleSubmit } className="login-form-box">
-          <div className="login-form">
-            <label>
-              <input
-                type="text"
-                placeholder="song title"
-                value={ this.state.title }
-                onChange={ this.update("title")}
-                className="login-input"
-              />
-            </label>
-            <br />
-            <button onClick={this.upload1} className="input-button" value="image_url">add image optional</button>
-            <button onClick={this.upload} className="input-button" value="audio_url">add audio required</button>
-            <br />
 
-            <input type="submit" value="ADD TRACK" className="input-button-solid"/>
+          {this.props.formType === "postTrack" ?
+            <div className="login-form">
+              <p>{this.props.formType}</p>
+              <label>
+                <input
+                  type="text"
+                  placeholder="song title"
+                  value={ this.state.title }
+                  onChange={ this.update("title")}
+                  className="login-input"
+                />
+              </label>
+              <br />
+              <button onClick={this.upload1} className="input-button" value="image_url">add image optional</button>
+              <button onClick={this.upload} className="input-button" value="audio_url">add audio required</button>
+              <br />
 
-          </div>
+              <input type="submit" value={this.props.formType} className="input-button-solid"/>
+
+            </div>
+          :
+            <div className="login-form">
+              <p>{this.props.formType}</p>
+              <label>
+                <input
+                  type="text"
+                  placeholder="song title"
+                  value={ this.state.title }
+                  onChange={ this.update("title")}
+                  className="login-input"
+                />
+              </label>
+              <br />
+              <button onClick={this.upload1} className="input-button" value="image_url">add image optional</button>
+              <button onClick={this.upload} className="input-button" value="audio_url">add audio required</button>
+              <br />
+
+              <input type="submit" value={this.props.formType} className="input-button-solid"/>
+
+            </div>
+          }
+
         </form>
       </div>
     );

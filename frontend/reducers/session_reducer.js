@@ -1,5 +1,6 @@
 import { RECEIVE_CURRENT_USER, LOGOUT, RECEIVE_ERRORS } from '../actions/session_actions';
 import merge from 'lodash/merge';
+import { hashHistory } from 'react-redux';
 
 // session reducer maintains it's own default state.
 
@@ -22,7 +23,7 @@ const SessionReducer = (state = _nullUser, action) => {
       const errors = action.errors;
       return merge({}, _nullUser, { errors });
     case LOGOUT:
-      return _nullUser; 
+      return merge({}, _nullUser);
     default:
       return state;
   }

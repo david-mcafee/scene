@@ -1,7 +1,8 @@
 import {
   RECEIVE_TRACKS,
   RECEIVE_TRACK,
-  REMOVE_TRACK } from '../actions/track_actions';
+  REMOVE_TRACK,
+  UPDATE_TRACK } from '../actions/track_actions';
 
 import merge from 'lodash/merge';
 
@@ -21,6 +22,8 @@ const TracksReducer = (state = {}, action) => {
       let newState = merge({}, state);
       delete newState[action.track.id]; // NOTE: REVIEW DELETE
       return newState;
+    // case UPDATE_TRACK:
+    //   retu
     default:
       return state;
   }

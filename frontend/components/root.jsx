@@ -34,6 +34,7 @@ const Root = ({ store }) => {
           <Route path="/signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="/upload" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
           <Route path="/tracks" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
+          <Route path="/tracks/:track_id/edit" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
         </Route>
       </Router>
     </Provider>

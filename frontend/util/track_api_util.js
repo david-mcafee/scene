@@ -31,3 +31,12 @@ export const deleteTrack = (id, success) => {
     success
   });
 };
+
+export const updateTrack = (track, success) => {
+  $.ajax({
+    url: `/api/tracks/${track.id}`,
+    method: "PATCH",
+    data: { track },
+    success
+  });
+};
