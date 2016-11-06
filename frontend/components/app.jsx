@@ -2,6 +2,7 @@
 
 import React from 'react';
 import NavContainer from './nav/nav_container';
+import PlayerContainer from './player/player_container';
 
 // NOTE: children is anything nested (in the routes)
 // currently, login, signup, etc
@@ -14,10 +15,7 @@ const App = ({ children }) => (
       {children}
     </div>
 
-    <footer className="player">
-      <h4>player</h4>
-      <h4>description</h4>
-    </footer>
+    <PlayerContainer />
   </div>
 );
 

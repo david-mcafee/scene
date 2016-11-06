@@ -14,7 +14,8 @@ import { getAllTracks } from '../../reducers/selectors';
 // import TrackForm from '../track_form/track_form';
 
 const mapStateToProps = (state) => ({
-  tracks: getAllTracks(state)
+  tracks: getAllTracks(state),
+  // errors: this.state.errors
 });
 
 // NOTE: The TrackIndex also needs a way to trigger a request for tracks once
