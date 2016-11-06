@@ -318,3 +318,16 @@
   box-shadow: rgba(0,0,0,.1)0 0 0 1px inset;
 }
  /*font family? "Helvetica Neue", Helvetica, sans-serif*/
+
+.player-div {
+  position: absolute;
+  bottom: 0;
+}
+
+.player-section {
+
+}
+
+.react-player {
+
+}

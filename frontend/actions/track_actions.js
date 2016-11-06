@@ -5,6 +5,7 @@ export const DELETE_TRACK = "DELETE_TRACK";
 export const REMOVE_TRACK = "REMOVE_TRACK";
 export const RECEIVE_TRACK = "RECEIVE_TRACK";
 export const UPDATE_TRACK = "UPDATE_TRACK";
+export const PLAY_TRACK = "PLAY_TRACK";
 
 export const requestTracks = () => ({
   type: REQUEST_TRACKS
@@ -39,4 +40,9 @@ export const removeTrack = track => ({
 export const updateTrack = track => ({
   type: UPDATE_TRACK,
   track
+});
+
+export const playTrack = url => ({
+  type: PLAY_TRACK,
+  url
 });

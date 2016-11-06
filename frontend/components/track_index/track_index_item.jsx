@@ -32,6 +32,7 @@ class IndexItem extends React.Component {
           <li className="index-item-user-id">Artist: {user_id}</li>
           <li className="index-item-age">uploaded {age} ago</li>
         </ul>
+        <button className="input-button" onClick={ this.props.playTrack(audio_url) }>PLAY</button>
         <button className="input-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
         <button className="input-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
       </div>
