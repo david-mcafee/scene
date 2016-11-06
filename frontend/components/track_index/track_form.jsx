@@ -5,7 +5,9 @@ class TrackForm extends React.Component {
     super(props);
 
     // use post in store if updating; start with blank post if new
-    this.state = this.props.track || {
+    // this.props.track ||
+
+    this.state = {
       title: "",
       image_url: "",
       audio_url: ""
@@ -21,6 +23,10 @@ class TrackForm extends React.Component {
     const track = this.state;
       this.props.processForm(track);
   }
+
+  // componentWillReceiveProps(newProps) {
+  //   this.setState(newProps.track || { title: "", image_url: "", audio_url: ""});
+  // }
 
   upload(e){
     e.preventDefault();

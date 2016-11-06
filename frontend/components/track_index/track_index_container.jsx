@@ -13,7 +13,7 @@ import TrackIndex from './track_index';
 import { getAllTracks } from '../../reducers/selectors';
 // import TrackForm from '../track_form/track_form';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   tracks: getAllTracks(state)
 });
 
