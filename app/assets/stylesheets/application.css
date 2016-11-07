@@ -390,8 +390,16 @@
   display: flex;
 }
 
-.artist-box {
+.home-index-item {
   display: flex;
-  margin: 10px;
-  background-color: #1c1c1e;
+  border: 1px solid white;
+  margin: 5px;
+}
+
+.home-index-item-info {
+
+}
+
+.home-index-item-name {
+  
 }
