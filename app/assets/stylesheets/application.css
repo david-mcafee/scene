@@ -319,15 +319,63 @@
 }
  /*font family? "Helvetica Neue", Helvetica, sans-serif*/
 
+/* holds everything: */
 .player-div {
+  display: flex;
   position: absolute;
   bottom: 0;
+  background-color: #1c1c1e;
+  color: white;
+  width: 100;
+  padding: 10px;
 }
 
-.player-section {
-
-}
-
+/* not visible */
 .react-player {
+  display: flex;
+}
 
+/* also not visible */
+.player-section {
+  display: flex;
+}
+
+.player-controls {
+  display: flex;
+}
+
+.player-controls table {
+  display: flex;
+}
+
+.player-controls table tr {
+  display: flex;
+}
+
+.player-controls table tr td {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.player-controls table tr td > * {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.player-track-info-box {
+  display: flex;
+}
+
+.player-messages {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    background-color: rgb(185, 185, 185);
+    color: #1c1c1f;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: white;
 }

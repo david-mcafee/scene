@@ -1,0 +1,36 @@
+<h2>State</h2>
+
+<table><tbody>
+  <tr>
+    <th><p>url</p></th>
+    <td className={!this.state.url ? 'faded' : ''}>{this.state.url || 'null'}</td>
+  </tr>
+  <tr>
+    <th>playing</th>
+    <td>{this.state.playing ? 'true' : 'false'}</td>
+  </tr>
+  <tr>
+    <th>volume</th>
+    <td>{this.state.volume.toFixed(3)}</td>
+  </tr>
+  <tr>
+    <th>played</th>
+    <td>{this.state.played.toFixed(3)}</td>
+  </tr>
+  <tr>
+    <th>loaded</th>
+    <td>{this.state.loaded.toFixed(3)}</td>
+  </tr>
+  <tr>
+    <th>duration</th>
+    <td><Duration seconds={this.state.duration} /></td>
+  </tr>
+  <tr>
+    <th>elapsed</th>
+    <td><Duration seconds={this.state.duration * this.state.played} /></td>
+  </tr>
+  <tr>
+    <th>remaining</th>
+    <td><Duration seconds={this.state.duration * (1 - this.state.played)} /></td>
+  </tr>
+</tbody></table>

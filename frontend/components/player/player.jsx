@@ -10,12 +10,13 @@ class Player extends React.Component {
     super(props);
 
     this.state = {
-      url: null,
+      url: this.props.current_song_url,
       playing: false,
       volume: 0.8,
       played: 0,
       loaded: 0,
-      seeking: false
+      seeking: false,
+      duration: 0
     };
 
     // NOTE: review binding to this with class
@@ -27,11 +28,12 @@ class Player extends React.Component {
     this.onSeekChange = this.onSeekChange.bind(this);
     this.onSeekMouseUp = this.onSeekMouseUp.bind(this);
     this.onProgress = this.onProgress.bind(this);
+    this.displayMessages = this.displayMessages.bind(this);
   }
 
   playPause() {
     // debugger;
-    this.setState({ ["playing"]: true });
+    this.setState({ ["playing"]: !this.state.playing });
   }
 
   stop() {
@@ -62,34 +64,51 @@ class Player extends React.Component {
     }
   }
 
+  displayMessages(messages) {
+    console.log("player messages");
+    return(
+        <ul className="errors">
+          Whoops!
+          {messages.map((message, i) => (
+            <li key={`message-${i}`}>
+              {message}
+            </li>
+          ))}
+        </ul>
+    );
+  }
+
   render() {
     return(
 
       <div className="player-div">
         <section className="player-section">
           <ReactPlayer
+            ref={player => ( this.player = player )}
             className='react-player'
-            width={800}
-            height={30}
+            width={0}
+            height={0}
             url={this.state.url}
             volume={this.state.volume}
             playing={this.state.playing}
-            onReady={() => console.log('onReady')}
+            onReady={() => this.setState({["playing"]: true}) }
             onStart={() => console.log('onStart')}
             onPlay={() => this.setState({ ["playing"]: true })}
             onPause={() => this.setState({ ["playing"]: false })}
-            onBuffer={() => console.log('onBuffer')}
+            onBuffer={() => (this.displayMessages(["loading"]))}
             onEnded={() => this.setState({ ["playing"]: false })}
             onError={e => console.log('onError', e)}
             onProgress={this.onProgress}
+            onDuration={duration => this.setState({ duration })}
           />
-
+        </section>
+        <section className="player-controls">
           <table><tbody>
             <tr>
               <th>Controls</th>
               <td>
                 <button onClick={this.stop}>Stop</button>
-                <button onClick={this.playPause}>{'Play'}</button>
+                <button onClick={this.playPause}>{this.state.playing ? 'Pause' : 'Play'}</button>
               </td>
             </tr>
             <tr>
@@ -113,26 +132,28 @@ class Player extends React.Component {
             </tr>
             <tr>
               <th>Played</th>
-              <td><progress max={1} value={this.played} /></td>
+              <td><progress max={1} value={this.state.played} /></td>
             </tr>
             <tr>
               <th>Loaded</th>
-              <td><progress max={1} value={this.loaded} /></td>
+              <td><progress max={1} value={this.state.loaded} /></td>
             </tr>
           </tbody></table>
         </section>
 
-        <section>
+        <section className="player-track-info-box">
           <button onClick={ () => {
-              return(this.setState({ ["url"]: "http://res.cloudinary.com/localscene/video/upload/v1478286295/jsforvaw9qxnt2zu5lkm.mp3" }
+              return(this.setState(
+                {
+                  ["url"]: "http://res.cloudinary.com/localscene/video/upload/v1478286295/jsforvaw9qxnt2zu5lkm.mp3"
+
+                }
             ) );
           }
           }>TEST SONG</button>
         </section>
 
-        <section className="state">
 
-        </section>
       </div>
     );
   }

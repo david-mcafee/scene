@@ -4,7 +4,6 @@ import { hashHistory } from 'react-router';
 class IndexItem extends React.Component {
   constructor(props) {
     super(props);
-    // this.handleClick = this.handleClick.bind(this);
   }
 
   // handleClick() {
@@ -22,7 +21,6 @@ class IndexItem extends React.Component {
 
   render () {
     const { id, title, age, image_url, audio_url, user_id} = this.props.track;
-
     // onClick={this.handleClick}
     return (
       <div className="track-index-item">
@@ -32,7 +30,7 @@ class IndexItem extends React.Component {
           <li className="index-item-user-id">Artist: {user_id}</li>
           <li className="index-item-age">uploaded {age} ago</li>
         </ul>
-        <button className="input-button" onClick={ this.props.playTrack(audio_url) }>PLAY</button>
+        <button className="input-button" onClick={ () => this.props.playTrack(audio_url) }>PLAY</button>
         <button className="input-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
         <button className="input-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
       </div>
