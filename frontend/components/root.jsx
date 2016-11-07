@@ -28,6 +28,9 @@ const Root = ({ store }) => {
   };
 
   // <IndexRoute component={HomeContainer}/>
+  // <Route path="/users/:user_id" component={UserPageContainer} onEnter={_ensureLoggedIn}/>
+
+
   return(
     <Provider store={store}>
       <Router history={hashHistory}>
