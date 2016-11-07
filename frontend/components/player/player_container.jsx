@@ -1,8 +1,9 @@
 import { connect } from 'react-redux';
 import Player from './player';
 
-const mapStateToProps = ({current_song_url}) => ({
-  current_song_url: current_song_url
+const mapStateToProps = ({tracks}) => ({
+  current_song_url: tracks.current_song_url,
+  playing: tracks.playing
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -11,7 +11,7 @@ class Player extends React.Component {
 
     this.state = {
       url: this.props.current_song_url,
-      playing: false,
+      playing: this.props.playing,
       volume: 0.8,
       played: 0,
       loaded: 0,
