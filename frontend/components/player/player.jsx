@@ -108,45 +108,39 @@ class Player extends React.Component {
           />
         </section>
         <section className="player-controls">
-          <table><tbody>
-            <tr>
-              <th>Controls</th>
-              <td>
+          <ul>
+            <li>
                 <button onClick={this.stop}>Stop</button>
                 <button onClick={this.playPause}>{this.state.playing ? 'Pause' : 'Play'}</button>
-              </td>
-            </tr>
-            <tr>
-              <th>Seek</th>
-              <td>
-                <input
-                  type='range' min={0} max={1} step='any'
-                  value={this.state.played}
-                  onMouseDown={this.onSeekMouseDown}
-                  onChange={this.onSeekChange}
-                  onMouseUp={this.onSeekMouseUp}
-                />
-              </td>
-            </tr>
-            <tr>
-              <th>Volume</th>
-              <td>
-                <input type='range' min={0} max={1} step='any' value={this.state.volume} onChange={this.setVolume} />
-              </td>
-
-            </tr>
-            <tr>
-              <th>Played</th>
-              <td><progress max={1} value={this.state.played} /></td>
-            </tr>
-            <tr>
-              <th>Loaded</th>
-              <td><progress max={1} value={this.state.loaded} /></td>
-            </tr>
-          </tbody></table>
+            </li>
+            <li>
+              <p>Seek</p>
+              <input
+                type='range' min={0} max={1} step='any'
+                value={this.state.played}
+                onMouseDown={this.onSeekMouseDown}
+                onChange={this.onSeekChange}
+                onMouseUp={this.onSeekMouseUp}
+              />
+            </li>
+            <li>
+              <p>Volume</p>
+              <input type='range' min={0} max={1} step='any' value={this.state.volume} onChange={this.setVolume} />
+            </li>
+            <li>
+              <p>Played</p>
+              <progress max={1} value={this.state.played} />
+            </li>
+            <li>
+              <p>Loaded</p>
+              <progress max={1} value={this.state.loaded} />
+            </li>
+          </ul>
         </section>
 
         <section className="player-track-info-box">
+          <p>artist name</p>
+          <p>song name</p>
           <button onClick={ () => {
               return(this.setState(
                 {

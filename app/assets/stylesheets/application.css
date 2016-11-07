@@ -322,46 +322,46 @@
 /* holds everything: */
 .player-div {
   display: flex;
+  justify-content: space-between;
   position: absolute;
+  font-size: 10px;
   bottom: 0;
   background-color: #1c1c1e;
   color: white;
-  width: 100;
-  padding: 10px;
+  width: 100%;
 }
 
 /* not visible */
 .react-player {
-  display: flex;
+  display: none;
 }
 
 /* also not visible */
 .player-section {
-  display: flex;
+  display: none;
 }
 
 .player-controls {
   display: flex;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  color: #cccccc;
 }
 
-.player-controls table {
+.player-controls ul {
   display: flex;
+  justify-content: space-between;
+
 }
 
-.player-controls table tr {
+.player-controls ul li {
   display: flex;
+  justify-content: space-between;
 }
 
-.player-controls table tr td {
+.player-controls ul li > * {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.player-controls table tr td > * {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  padding: 15px;
 }
 
 .player-track-info-box {
