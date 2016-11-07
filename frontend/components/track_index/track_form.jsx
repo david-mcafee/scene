@@ -20,7 +20,7 @@ class TrackForm extends React.Component {
   }
 
   componentDidUpdate(){
-    debugger;
+    // debugger;
   }
 
   handleSubmit(e) {
