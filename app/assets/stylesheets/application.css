@@ -381,5 +381,17 @@
 }
 
 .home {
+  display: flex;
   padding: 20px;
+  border: 1px solid #1c1c1e;
+}
+
+.artist-list {
+  display: flex;
+}
+
+.artist-box {
+  display: flex;
+  margin: 10px;
+  background-color: #1c1c1e;
 }

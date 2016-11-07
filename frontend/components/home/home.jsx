@@ -15,7 +15,15 @@ class Home extends React.Component {
   render() {
     return(
       <div className="home">
-        <p>artists:</p>
+        <ul className="artist-list">
+          <p>artists:</p>
+          <li className="artist-box">
+            <p>artist1</p>
+          </li>
+          <li className="artist-box">
+            <p>artist2</p>
+          </li>
+        </ul>
       </div>
     );
   }
