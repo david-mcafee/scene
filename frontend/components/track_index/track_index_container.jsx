@@ -9,13 +9,14 @@ import {
   } from '../../actions/track_actions';
 import TrackIndex from './track_index';
 
-// NOTE: review selector in selector file - this is simply for
-// formatting to an array
-import { getAllTracks } from '../../reducers/selectors';
-// import TrackForm from '../track_form/track_form';
 
-const mapStateToProps = (state) => ({
+
+import { getAllTracks } from '../../reducers/selectors';
+
+
+const mapStateToProps = (state, OwnProps) => ({
   tracks: getAllTracks(state),
+  selectedTrackId: OwnProps.params.track_id
   // errors: this.state.errors
 });
 

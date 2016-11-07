@@ -8,6 +8,7 @@ class TrackForm extends React.Component {
     // this.props.track ||
 
     this.state = {
+      id: this.props.selectedTrackId,
       title: "",
       image_url: "",
       audio_url: ""
@@ -18,7 +19,12 @@ class TrackForm extends React.Component {
     this.upload1 = this.upload1.bind(this);
   }
 
+  componentDidUpdate(){
+    debugger;
+  }
+
   handleSubmit(e) {
+    // debugger;
     e.preventDefault();
     const track = this.state;
       this.props.processForm(track);

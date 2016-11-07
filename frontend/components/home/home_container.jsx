@@ -1,14 +1,17 @@
-// NOTE: passes as props to the presentational component currentUser from the state
-// and the logout action creator to props
-
 import { connect } from 'react-redux';
 import Home from './home';
+import {
+  receiveUsers,
+  requestUsers } from '../../actions/user_actions';
 
-const mapStateToProps = () => ({
+import { getAllUsers } from '../../reducers/selectors';
+
+const mapStateToProps = (state) => ({
+  users: getAllUsers(state)
 });
 
 const mapDispatchToProps = dispatch => ({
-
+  requestUsers: () => dispatch(requestUsers())
 });
 
 export default connect(

@@ -8,7 +8,7 @@ class Home extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log("componentDidUpdate");
+    this.props.requestUsers();
   }
 
 
@@ -16,13 +16,13 @@ class Home extends React.Component {
     return(
       <div className="home">
         <ul className="artist-list">
-          <p>artists:</p>
-          <li className="artist-box">
-            <p>artist1</p>
-          </li>
-          <li className="artist-box">
-            <p>artist2</p>
-          </li>
+          {this.props.users ?
+            this.props.users.map(user =>(
+              <HomeIndexItem key={user.id} user={user}/>
+            ))
+          :
+            <p>all users</p>
+          }
         </ul>
       </div>
     );

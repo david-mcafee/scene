@@ -53,7 +53,7 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
       deleteTrack(action.id, removeTrackSuccess);
     case UPDATE_TRACK:
       console.log("update middleware entered");
-      debugger;
+      // debugger;
       updateTrack(action.track, updateTrackSuccess);
       return next(action);
     default:

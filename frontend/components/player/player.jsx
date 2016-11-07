@@ -31,6 +31,10 @@ class Player extends React.Component {
     this.displayMessages = this.displayMessages.bind(this);
   }
 
+  componentWillUpdate(){
+    // debugger;
+  }
+
   playPause() {
     // debugger;
     this.setState({ ["playing"]: !this.state.playing });
@@ -79,6 +83,7 @@ class Player extends React.Component {
   }
 
   render() {
+    // debugger;
     return(
 
       <div className="player-div">
