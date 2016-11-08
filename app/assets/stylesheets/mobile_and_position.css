@@ -1,0 +1,57 @@
+.1111header > img {
+  width: 100px;
+  float: left;
+}
+
+.1111select
+{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 250px;
+}
+
+.1111nav {
+  float: right;
+  background-color: yellow;
+}
+
+
+.1111nav ul li {
+  display: inline-block;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.hamburger-dropdown {
+  display: none
+}
+
+.hamburger-dropdown ul {
+  position: absolute;
+  height: 80px;
+  display: none;
+}
+
+.hamburger-dropdown:hover ul {
+  display: block;
+}
+
+.hamburger-dropdown > li {
+  position: relative;
+  background-image: url("assets/hamburger.png");
+  height: 50px;
+  width: 50px;
+  background-size: 50px;
+}
+
+@media (max-width: 900px){
+  .hamburger-dropdown {
+    display: block;
+  }
+  
+}

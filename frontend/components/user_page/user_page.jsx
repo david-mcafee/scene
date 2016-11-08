@@ -1,5 +1,6 @@
 import React from 'react';
 import TrackIndexContainer from '../track_index/track_index_container';
+import { hashHistory } from 'react-router';
 
 class UserPage extends React.Component {
   constructor(props) {
@@ -14,20 +15,34 @@ class UserPage extends React.Component {
     return(
       <div className="user-page">
 
-        <header className="user-page-banner">
+        <header className="clearfix">
           <p>artist</p>
           <p>location</p>
         </header>
 
-        <section className="user-page-tracks">
-          <p>tracks</p>
-          // <TrackIndexContainer />
+        <section className="col col-2-3">
+          <ul>
+            <li>track</li>
+            <li>track</li>
+            <li>track</li>
+            <li>track</li>
+            <li>track</li>
+          </ul>
         </section>
 
-        <section className="user-page-track-comments">
-          <p>comments go here</p>
+        <section className="col col-1-3">
+          <ul>
+            <li>comment</li>
+            <li>comment</li>
+            <li>comment</li>
+            <li>comment</li>
+            <li>comment</li>
+            <li>comment</li>
+          </ul>
         </section>
       </div>
     );
   }
 }
+
+export default UserPage;
