@@ -272,44 +272,44 @@
 .track-index-item {
   display: flex;
   justify-content: space-between;
-  border: 1px solid blue;
+  border: 1px solid #1c1c1e;
   border-radius: 2px;
   padding: 3px;
 }
 
 .index-item-info {
-  display:flex;
-  justify-content: space-around;
-  border: 1px solid red;
+  border: 1px solid #1c1c1e;
   border-radius: 2px;
   padding: 3px;
 }
 
 .index-item-title {
-  border: 1px solid grey;
+  border: 1px solid #1c1c1e;
   border-radius: 2px;
   padding: 3px;
 }
 .index-item-user-id {
-  border: 1px solid grey;
+  border: 1px solid #1c1c1e;
   border-radius: 2px;
   padding: 3px;
 }
 .index-item-audio-url {
-  border: 1px solid grey;
+  border: 1px solid #1c1c1e;
   border-radius: 2px;
   padding: 3px;
 }
 .index-item-image-url {
-  border: 1px solid grey;
+  border: 1px solid #1c1c1e;
   border-radius: 2px;
   padding: 3px;
 }
 
 .index-item-age {
-  border: 1px solid grey;
+  border: 1px solid #1c1c1e;
   border-radius: 2px;
   padding: 3px;
+  color: grey;
+  font-size: 12px;
 }
 
 .album-art {
