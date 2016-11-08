@@ -42,7 +42,7 @@ export const updateTrack = track => ({
   track
 });
 
-export const playTrack = url => ({
+export const playTrack = track => ({
   type: PLAY_TRACK,
-  url
+  track
 });

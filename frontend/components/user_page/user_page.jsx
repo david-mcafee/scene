@@ -22,7 +22,7 @@ class UserPage extends React.Component {
 
         <section className="col col-2-3">
           <ul>
-            <TrackIndexContainer props={this.props}/>
+            <TrackIndexContainer />
             <li>track</li>
             <li>track</li>
             <li>track</li>

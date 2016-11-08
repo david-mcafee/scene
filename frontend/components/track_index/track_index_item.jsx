@@ -27,7 +27,7 @@ class IndexItem extends React.Component {
       <div className="track-index-item">
         <img className="album-art"src={image_url}></img>
         <ul className="index-item-info">
-          <button className="input-button" onClick={ () => this.props.playTrack(audio_url) }>PLAY</button>
+          <button className="input-button" onClick={ () => this.props.playTrack(this.props.track) }>PLAY</button>
           <li className="index-item-title">{title}</li>
           <li className="index-item-user-id">Artist: {user_id}</li>
         </ul>

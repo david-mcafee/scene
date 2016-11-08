@@ -9,8 +9,9 @@ class Player extends React.Component {
   constructor(props) {
     super(props);
 
+
     this.state = {
-      url: this.props.current_song_url,
+      url: this.props.currentTrackUrl,
       playing: this.props.playing,
       volume: 0.8,
       played: 0,
@@ -33,9 +34,9 @@ class Player extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     // You don't have to do this check first, but it can help prevent an unneeded render
-    console.log(nextProps.current_song_url);
+    console.log(nextProps.currentTrackUrl);
     this.setState({
-      ["url"]: nextProps.current_song_url,
+      ["url"]: nextProps.currentTrackUrl,
       ["playing"]: true,
       ["played"]: 0,
       ["loaded"]: 0 });
@@ -139,7 +140,6 @@ class Player extends React.Component {
               <progress max={1} value={this.state.played} />
             </li>
             <li>
-              <p>Loaded</p>
               <progress max={1} value={this.state.loaded} />
             </li>
           </ul>
