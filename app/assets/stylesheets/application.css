@@ -253,7 +253,6 @@
 }
 
 .player{
-
   display: flex;
   justify-content: space-between;
 }
@@ -322,13 +321,13 @@
 
 /* holds everything: */
 .player-div {
+  display: flex;
   width: 100%;
   position: fixed;
   bottom:0;
   background-color: #1c1c1f;
   font-size: 10px;
   bottom: 0;
-  background-color: #1c1c1e;
   color: white;
   width: 100%;
 }
@@ -367,8 +366,22 @@
 }
 
 .player-track-info-box {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
+
+.player-track-info-box > * {
+  display: flex;
+  /*font-size: 15px;*/
+}
+
+.player-track-info-box > img {
+  display: flex;
+  height: 50px;
+  width: auto;
+}
+
 
 .player-messages {
     position: fixed;

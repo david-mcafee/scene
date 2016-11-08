@@ -9,7 +9,6 @@ class Player extends React.Component {
   constructor(props) {
     super(props);
 
-
     this.state = {
       url: this.props.currentTrackUrl,
       playing: this.props.playing,
@@ -40,7 +39,6 @@ class Player extends React.Component {
       ["playing"]: true,
       ["played"]: 0,
       ["loaded"]: 0 });
-
   }
 
   playPause() {
@@ -119,7 +117,6 @@ class Player extends React.Component {
         <section className="player-controls">
           <ul>
             <li>
-                <button className="input-button" onClick={this.stop}>Stop</button>
                 <button className="input-button" onClick={this.playPause}>{this.state.playing ? 'Pause' : 'Play'}</button>
             </li>
             <li>
@@ -150,9 +147,9 @@ class Player extends React.Component {
         </section>
 
         <section className="player-track-info-box">
-          <p>album art</p>
-          <p>artist name</p>
-          <p>song name</p>
+          <img src={this.props.current_track ? this.props.current_track.image_url : ""}></img>
+          <p>{this.props.current_track ? this.props.current_track.title : ""}</p>
+          <p>{this.props.current_track ? this.props.current_track.user_id : ""}</p>
         </section>
 
       </div>
