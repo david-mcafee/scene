@@ -142,18 +142,10 @@ class Player extends React.Component {
         </section>
 
         <section className="player-track-info-box">
+          <p>album art</p>
           <p>artist name</p>
           <p>song name</p>
-          <button onClick={ () => {
-              return(this.setState(
-                {
-                  ["url"]: "http://res.cloudinary.com/localscene/video/upload/v1478286295/jsforvaw9qxnt2zu5lkm.mp3"
-                }
-            ) );
-          }
-          }>TEST SONG</button>
         </section>
-
 
       </div>
     );
