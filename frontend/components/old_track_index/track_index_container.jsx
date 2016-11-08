@@ -18,8 +18,7 @@ const mapStateToProps = (state, OwnProps) => {
   // debugger;
   return({
     tracks: getAllTracks(state),
-    selectedTrackId: 2
-    // selectedTrackId: OwnProps.params.track_id
+    selectedTrackId: OwnProps.params.track_id
     // errors: this.state.errors
   });
 };
@@ -29,8 +28,7 @@ const mapStateToProps = (state, OwnProps) => {
 // call a dispatch with the requestTracks() action creator (see actions/track_actions)
 
 const mapDispatchToProps = (dispatch, { location }) => {
-  const formType = "upload";
-  // const formType = location.pathname.slice(1);
+  const formType = location.pathname.slice(1);
   console.log(formType);
   const processForm = (formType === 'upload') ? postTrack : updateTrack;
 
