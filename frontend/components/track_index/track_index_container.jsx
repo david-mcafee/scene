@@ -16,6 +16,7 @@ import { getAllTracks } from '../../reducers/selectors';
 
 const mapStateToProps = (state, OwnProps) => {
   // debugger;
+  console.log(OwnProps.params);
   return({
     tracks: getAllTracks(state),
     selectedTrackId: 2

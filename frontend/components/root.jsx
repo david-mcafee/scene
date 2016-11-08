@@ -31,7 +31,7 @@ const Root = ({ store }) => {
   // <IndexRoute component={HomeContainer}/>
 
   const requestUserOnEnter = nextState => {
-		// store.dispatch(requestUser(nextState.params.userId));
+		store.dispatch(requestUser(nextState.params.user_id));
 	};
 
   return(

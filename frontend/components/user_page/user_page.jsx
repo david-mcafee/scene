@@ -8,7 +8,7 @@ class UserPage extends React.Component {
   }
 
   componentDidMount() {
-    console.log("user-componentDidMount");
+    // console.log("user-componentDidMount");
   }
 
   render() {
@@ -16,8 +16,17 @@ class UserPage extends React.Component {
       <div className="user-page">
 
         <header className="clearfix">
-          <p>artist</p>
-          <p>location</p>
+          <div className="banner">
+
+          </div>
+          <img className="profile-picture" src={this.props.selectedUser.banner_url}>
+
+          </img>
+          <div className="artist-info">
+            <h1>{this.props.selectedUser.username}</h1>
+            <h4>{this.props.selectedUser.username}</h4>
+            <h6>member since {this.props.selectedUser.created_at}</h6>
+          </div>
         </header>
 
         <section className="col col-2-3">
