@@ -33,7 +33,7 @@ class Player extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     // You don't have to do this check first, but it can help prevent an unneeded render
-    debugger;
+    console.log(nextProps.current_song_url);
     this.setState({ ["url"]: nextProps.current_song_url, ["playing"]: true });
 
   }

@@ -6,25 +6,23 @@ class TrackForm extends React.Component {
 
     // use post in store if updating; start with blank post if new
     // this.props.track ||
-    debugger;
+
     this.state = {
-      id: this.props.key,
+      id: this.props.selectedTrackId,
       title: "",
       image_url: "",
       audio_url: ""
     };
-
     this.handleSubmit = this.handleSubmit.bind(this);
     this.upload = this.upload.bind(this);
     this.upload1 = this.upload1.bind(this);
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   // You don't have to do this check first, but it can help prevent an unneeded render
-  //
-  //     this.setState({ selectedTrackId: nextProps.selectedTrackId });
-  //
-  // }
+  componentWillReceiveProps(nextProps) {
+    // You don't have to do this check first, but it can help prevent an unneeded render
+    console.log("receive entered");
+    this.setState({ ["id"]: nextProps.selectedTrackId });
+  }
 
   handleSubmit(e) {
     // debugger;
@@ -120,6 +118,7 @@ class TrackForm extends React.Component {
           :
             <div className="login-form">
               <p>{this.props.formType}</p>
+              <p>{this.state.id}</p>
               <label>
                 <input
                   type="text"

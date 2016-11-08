@@ -21,7 +21,7 @@ class TrackIndex extends React.Component {
         <TrackForm
           formType={this.props.formType}
           processForm={this.props.processForm}
-          selectedTrack={this.props.selectedTrackId}/>
+          selectedTrackId={this.props.selectedTrackId}/>
 
         <h1>tracks: </h1>
         {this.props.tracks ? this.props.tracks.map(track => (
