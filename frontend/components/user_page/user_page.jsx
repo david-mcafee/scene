@@ -6,7 +6,7 @@ class UserPage extends React.Component {
   }
 
   componentDidMount() {
-    console.log("user page loaded");
+    console.log("user-componentDidMount");
   }
 
   render() {
