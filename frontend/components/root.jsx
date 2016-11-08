@@ -7,6 +7,7 @@ import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
 import TrackIndexContainer from './track_index/track_index_container';
 import HomeContainer from './home/home_container';
+import UserPageContainer from './user_page/user_page_container';
 
 const Root = ({ store }) => {
 
@@ -41,6 +42,8 @@ const Root = ({ store }) => {
           <Route path="/upload" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
           <Route path="/tracks" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
           <Route path="/tracks/:track_id/edit" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
+          <Route path="/users" component={UserPageContainer} onEnter={_ensureLoggedIn}/>
+          <Route path="/users/:user_id" component={UserPageContainer} onEnter={_ensureLoggedIn}/>
         </Route>
       </Router>
     </Provider>

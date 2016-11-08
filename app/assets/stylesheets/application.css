@@ -253,10 +253,7 @@
 }
 
 .player{
-  width: 100%;
-  position:fixed;
-  bottom:0;
-  background-color: #1c1c1f;
+
   display: flex;
   justify-content: space-between;
 }
@@ -321,9 +318,10 @@
 
 /* holds everything: */
 .player-div {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
+  width: 100%;
+  position: fixed;
+  bottom:0;
+  background-color: #1c1c1f;
   font-size: 10px;
   bottom: 0;
   background-color: #1c1c1e;

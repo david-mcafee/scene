@@ -1,4 +1,5 @@
 import React from 'react';
+import TrackIndexContainer from '../track_index/track_index_container';
 
 class UserPage extends React.Component {
   constructor(props) {
@@ -19,7 +20,8 @@ class UserPage extends React.Component {
         </header>
 
         <section className="user-page-tracks">
-          <p>tracks go here</p>
+          <p>tracks</p>
+          // <TrackIndexContainer />
         </section>
 
         <section className="user-page-track-comments">
