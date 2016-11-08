@@ -68,10 +68,10 @@ class Player extends React.Component {
     this.player.seekTo(parseFloat(e.target.value));
   }
 
-  onProgress(state) {
+  onProgress(nextState) {
     // We only want to update time slider if we are not currently seeking
     if (!this.state.seeking) {
-      this.setState(state);
+      this.setState(nextState);
     }
   }
 
