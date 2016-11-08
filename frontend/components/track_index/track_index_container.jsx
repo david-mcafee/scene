@@ -14,11 +14,14 @@ import TrackIndex from './track_index';
 import { getAllTracks } from '../../reducers/selectors';
 
 
-const mapStateToProps = (state, OwnProps) => ({
-  tracks: getAllTracks(state),
-  selectedTrackId: OwnProps.params.track_id
-  // errors: this.state.errors
-});
+const mapStateToProps = (state, OwnProps) => {
+  // debugger;
+  return({
+    tracks: getAllTracks(state),
+    selectedTrackId: OwnProps.params.track_id
+    // errors: this.state.errors
+  });
+};
 
 // NOTE: The TrackIndex also needs a way to trigger a request for tracks once
 // it has mounted. give it a requestTracks prop that it can use to

@@ -4,6 +4,7 @@ import { hashHistory } from 'react-router';
 class IndexItem extends React.Component {
   constructor(props) {
     super(props);
+    this.editTrack = this.editTrack.bind(this);
   }
 
   // handleClick() {

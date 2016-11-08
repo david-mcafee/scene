@@ -6,9 +6,9 @@ class TrackForm extends React.Component {
 
     // use post in store if updating; start with blank post if new
     // this.props.track ||
-
+    debugger;
     this.state = {
-      id: this.props.selectedTrackId,
+      id: this.props.key,
       title: "",
       image_url: "",
       audio_url: ""
@@ -19,9 +19,12 @@ class TrackForm extends React.Component {
     this.upload1 = this.upload1.bind(this);
   }
 
-  componentDidUpdate(){
-    // debugger;
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   // You don't have to do this check first, but it can help prevent an unneeded render
+  //
+  //     this.setState({ selectedTrackId: nextProps.selectedTrackId });
+  //
+  // }
 
   handleSubmit(e) {
     // debugger;
