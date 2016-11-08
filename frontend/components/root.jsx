@@ -29,8 +29,10 @@ const Root = ({ store }) => {
   };
 
   // <IndexRoute component={HomeContainer}/>
-  // <Route path="/users/:user_id" component={UserPageContainer} onEnter={_ensureLoggedIn}/>
 
+  const requestUserOnEnter = nextState => {
+		store.dispatch(requestUser(nextState.params.userId));
+	};
 
   return(
     <Provider store={store}>
@@ -42,8 +44,7 @@ const Root = ({ store }) => {
           <Route path="/upload" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
           <Route path="/tracks" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
           <Route path="/tracks/:track_id/edit" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
-          <Route path="/users" component={UserPageContainer} onEnter={_ensureLoggedIn}/>
-          <Route path="/users/:user_id" component={UserPageContainer} onEnter={_ensureLoggedIn}/>
+          <Route path="/users/:user_id" component={UserPageContainer} onEnter={requestUserOnEnter}/>
         </Route>
       </Router>
     </Provider>
