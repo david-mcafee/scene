@@ -48,7 +48,7 @@ class Player extends React.Component {
   }
 
   setVolume(e) {
-    this.setState({ ["volume:"]: parseFloat(e.target.value) });
+    this.setState({ ["volume"]: parseFloat(e.target.value) });
   }
 
   onSeekMouseDown(e) {
@@ -56,7 +56,7 @@ class Player extends React.Component {
   }
 
   onSeekChange(e) {
-    this.setState({ ["played:"]: parseFloat(e.target.value) });
+    this.setState({ ["played"]: parseFloat(e.target.value) });
   }
 
   onSeekMouseUp(e) {
