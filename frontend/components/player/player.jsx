@@ -34,7 +34,11 @@ class Player extends React.Component {
   componentWillReceiveProps(nextProps) {
     // You don't have to do this check first, but it can help prevent an unneeded render
     console.log(nextProps.current_song_url);
-    this.setState({ ["url"]: nextProps.current_song_url, ["playing"]: true });
+    this.setState({
+      ["url"]: nextProps.current_song_url,
+      ["playing"]: true,
+      ["played"]: 0,
+      ["loaded"]: 0 });
 
   }
 
@@ -67,7 +71,7 @@ class Player extends React.Component {
   onProgress(state) {
     // We only want to update time slider if we are not currently seeking
     if (!this.state.seeking) {
-      this.setState(this.state);
+      this.setState(state);
     }
   }
 
