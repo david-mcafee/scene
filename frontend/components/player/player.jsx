@@ -95,6 +95,7 @@ class Player extends React.Component {
     return(
 
       <div className="player-div">
+        <progress className="loaded-progress" max={1} value={this.state.loaded} />
         <section className="player-section">
           <ReactPlayer
             ref={player => ( this.player = player )}
@@ -139,9 +140,7 @@ class Player extends React.Component {
               <p>Played</p>
               <progress max={1} value={this.state.played} />
             </li>
-            <li>
-              <progress max={1} value={this.state.loaded} />
-            </li>
+
           </ul>
         </section>
 
