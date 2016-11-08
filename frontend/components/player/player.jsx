@@ -113,8 +113,8 @@ class Player extends React.Component {
         <section className="player-controls">
           <ul>
             <li>
-                <button onClick={this.stop}>Stop</button>
-                <button onClick={this.playPause}>{this.state.playing ? 'Pause' : 'Play'}</button>
+                <button className="input-button" onClick={this.stop}>Stop</button>
+                <button className="input-button" onClick={this.playPause}>{this.state.playing ? 'Pause' : 'Play'}</button>
             </li>
             <li>
               <p>Seek</p>
@@ -147,9 +147,7 @@ class Player extends React.Component {
           <button onClick={ () => {
               return(this.setState(
                 {
-                  ["url"]: "http://res.cloudinary.com/localscene/video/upload/v1478286295/jsforvaw9qxnt2zu5lkm.mp3",
-                  ["playing"]: true
-
+                  ["url"]: "http://res.cloudinary.com/localscene/video/upload/v1478286295/jsforvaw9qxnt2zu5lkm.mp3"
                 }
             ) );
           }

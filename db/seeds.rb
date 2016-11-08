@@ -9,19 +9,41 @@
 User.destroy_all
 ActiveRecord::Base.connection.reset_pk_sequence!("users")
 
-User.create!(username:"Guest", email: "guest@david-mcafee.com",
-  artist: true, password_digest: "#{BCrypt::Password.create("password")}")
+User.create!(username:"Guest", email: "guest@david-mcafee.com", artist: true, password_digest: "#{BCrypt::Password.create("password")}")
+
+User.create!(username:"Nolan Kurtz", email: "nolan@david-mcafee.com", artist: true, password_digest: "#{BCrypt::Password.create("password")}")
+
+User.create!(username:"Ivory Weeds", email: "ivoryweeds@david-mcafee.com", artist: true, password_digest: "#{BCrypt::Password.create("password")}")
 
 10.times do |number|
-  User.create!(username: "user#{number}", email: "test#{number}@david-mcafee.com",
-    artist: false, password_digest: "#{BCrypt::Password.create("password#{number}")}")
+  if number > 3
+    User.create!(username: "user#{number}", email: "test#{number}@david-mcafee.com", artist: false, password_digest: "#{BCrypt::Password.create("password#{number}")}")
+  end
 end
+
 
 Track.destroy_all
 ActiveRecord::Base.connection.reset_pk_sequence!("tracks")
 
+Track.create!(title: "Mantra (feat. CAARGO)", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
+Track.create!(title: "Moonlight", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
+Track.create!(title: "Zero", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
+Track.create!(title: "Root (Prod. Wellhead)", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
+Track.create!(title: "Nightlurk (feat. fiction)", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
+Track.create!(title: "Windfall (feat. Jen Bjerke)", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
+Track.create!(title: "Sp...d Luv (Prod. stanleymarket)", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
+Track.create!(title: "Into The Stars", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
+Track.create!(title: "Vision", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
+Track.create!(title: "FYM", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
+Track.create!(title: "Dark Water", image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png", audio_url: "", user_id: 2)
 
-15.times do |track_number|
-  Track.create!(title: "track#{track_number}", image_url: "http://www.david-mcafee.com",
-    audio_url: "http://www.david-mcafee.com", user_id: 1)
-end
+Track.create!(title: "", image_url: "", audio_url: "", user_id: 3)
+Track.create!(title: "", image_url: "", audio_url: "", user_id: 3)
+Track.create!(title: "", image_url: "", audio_url: "", user_id: 3)
+Track.create!(title: "", image_url: "", audio_url: "", user_id: 3)
+Track.create!(title: "", image_url: "", audio_url: "", user_id: 3)
+Track.create!(title: "", image_url: "", audio_url: "", user_id: 3)
+Track.create!(title: "", image_url: "", audio_url: "", user_id: 3)
+Track.create!(title: "", image_url: "", audio_url: "", user_id: 3)
+Track.create!(title: "", image_url: "", audio_url: "", user_id: 3)
+Track.create!(title: "", image_url: "", audio_url: "", user_id: 3)

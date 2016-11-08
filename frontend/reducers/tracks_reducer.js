@@ -26,7 +26,7 @@ const TracksReducer = (state = {}, action) => {
     // case UPDATE_TRACK:
     //   retu
     case PLAY_TRACK:
-      return merge({}, state, {["current_song_url"]: action.url});
+      return merge({}, state, {["current_song_url"]: action.url, ["playing"]: true});
     default:
       return state;
   }
