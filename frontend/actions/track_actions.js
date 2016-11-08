@@ -8,10 +8,6 @@ export const UPDATE_TRACK = "UPDATE_TRACK";
 export const PLAY_TRACK = "PLAY_TRACK";
 export const REQUEST_USER_TRACKS = "REQUEST_USER_TRACKS";
 
-export const requestUserTracks = (user) => ({
-
-});
-
 export const requestTracks = () => ({
   type: REQUEST_TRACKS
 });

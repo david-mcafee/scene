@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router';
+import { Link, withRouter, hashHistory } from 'react-router';
 
 
 // NOTE: state will be governed by user interface
@@ -51,6 +51,7 @@ class SessionForm extends React.Component {
   guestLogin(e){
     e.preventDefault();
     const user = {username: "Guest", password: "password"};
+    hashHistory.push("login");
     this.props.processForm({user});
   }
 
@@ -133,7 +134,7 @@ class SessionForm extends React.Component {
               <br />
 
               <input type="submit" value="submit" className="input-button"/>
-
+              <Link onClick={this.guestLogin.bind(this)} className="input-button-solid">DEMO ACCOUNT</Link>
             </div>
 
           :
@@ -163,8 +164,7 @@ class SessionForm extends React.Component {
               <br />
               <br />
               <input type="submit" value="submit" className="input-button"/>
-              {this.props.formType === "login" ?
-                <button onClick={this.guestLogin.bind(this)} className="input-button-solid">DEMO ACCOUNT</button> : <p></p>}
+              <button onClick={this.guestLogin.bind(this)} className="input-button-solid">DEMO ACCOUNT</button>
 
             </div>
 

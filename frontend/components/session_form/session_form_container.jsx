@@ -5,6 +5,7 @@ import { login, logout, signup } from '../../actions/session_actions';
 import SessionForm from './session_form';
 
 
+
 // NOTE: pass a loggedIn (boolean) prop representing whether a currentUser exists
 // and an array of errors from the state
 const mapStateToProps = ({ session }) => ({
