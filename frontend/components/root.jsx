@@ -10,6 +10,7 @@ import HomeContainer from './home/home_container';
 import UserPageContainer from './user_page/user_page_container';
 import { requestUser } from '../actions/user_actions';
 import TrackFormContainer from './track_form/track_form_container';
+import LandingPageContainer from './landing_page/landing_page';
 
 const Root = ({ store }) => {
 
@@ -40,6 +41,7 @@ const Root = ({ store }) => {
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App}>
+          <IndexRoute component={LandingPageContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="/home" component={HomeContainer} onEnter={_ensureLoggedIn}/>
           <Route path="/login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn}/>
