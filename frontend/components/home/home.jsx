@@ -14,7 +14,7 @@ class Home extends React.Component {
 
 
   render() {
-    debugger;
+    // debugger;
     return(
       <div className="home">
         <ul className="artist-list">

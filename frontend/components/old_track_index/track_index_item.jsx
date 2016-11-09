@@ -32,7 +32,7 @@ class IndexItem extends React.Component {
           <li className="index-item-user-id">Artist: {user_id}</li>
         </ul>
         <ul>
-          <li className="index-item-age">uploaded {age} ago</li>
+          <li className="index-item-age">updated {age} ago</li>
           <li>
             <div className="edit-buttons">
               <button className="nav-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
