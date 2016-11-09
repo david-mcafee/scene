@@ -70,43 +70,39 @@ Track.create!(title: "Dark Water",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478570142/Nolan_Kurtz_-_Dark_Water_-_11_Dark_Water_g92oao.mp3",
   user_id: 2)
 
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
+Track.create!(title: "One",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723198/Ivory_Weeds_-_Music_to_Sleep_to_-_01_One_vw3ttk.mp3",
+  user_id: 3)
+Track.create!(title: "Two",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723008/Ivory_Weeds_-_Music_to_Sleep_to_-_02_Two_d3ogqo.mp3",
+  user_id: 3)
+Track.create!(title: "Three",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723310/Ivory_Weeds_-_Music_to_Sleep_to_-_03_Three_mu6nuj.mp3",
+  user_id: 3)
+Track.create!(title: "You Don't Need to Speak my Language",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723164/Ivory_Weeds_-_Music_to_Sleep_to_-_04_You_Don_t_Need_to_Speak_my_Language_ahn54t.mp3",
+  user_id: 3)
+Track.create!(title: "Marseille, on the Beach",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723294/Ivory_Weeds_-_Music_to_Sleep_to_-_05_Marseille_on_the_Beach_rukjbf.mp3",
+  user_id: 3)
+Track.create!(title: "Sleepy",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723408/Ivory_Weeds_-_Music_to_Sleep_to_-_06_Sleepy_nulqwt.mp3",
+  user_id: 3)
+Track.create!(title: "Forward",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723352/Ivory_Weeds_-_Music_to_Sleep_to_-_08_Illusions_yzb38y.mp3",
+  user_id: 3)
+Track.create!(title: "Illusions",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723352/Ivory_Weeds_-_Music_to_Sleep_to_-_08_Illusions_yzb38y.mp3",
+  user_id: 3)
+Track.create!(title: "Summer Growth",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723449/Ivory_Weeds_-_Music_to_Sleep_to_-_09_Summer_Growth_txazyw.mp3",
+  user_id: 3)

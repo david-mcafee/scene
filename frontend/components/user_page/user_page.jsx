@@ -11,49 +11,57 @@ class UserPage extends React.Component {
     // console.log("user-componentDidMount");
   }
 
-  // <div className="user-page">
-  //
-  //   <header className="clearfix">
-  //     <div className="banner">
-  //
-  //     </div>
-  //     <img className="profile-picture" src={this.props.selectedUser.banner_url}>
-  //
-  //     </img>
-  //     <div className="artist-info">
-  //       <h1>{this.props.selectedUser.username}</h1>
-  //       <h4>{this.props.selectedUser.username}</h4>
-  //       <h6>member since {this.props.selectedUser.created_at}</h6>
-  //     </div>
-  //   </header>
-  //
-  //   <section className="col col-2-3">
-  //     <ul>
-  //       <TrackIndexContainer />
-  //       <li>track</li>
-  //       <li>track</li>
-  //       <li>track</li>
-  //       <li>track</li>
-  //       <li>track</li>
-  //     </ul>
-  //   </section>
-  //
-  //   <section className="col col-1-3">
-  //     <ul>
-  //       <li>comment</li>
-  //       <li>comment</li>
-  //       <li>comment</li>
-  //       <li>comment</li>
-  //       <li>comment</li>
-  //       <li>comment</li>
-  //     </ul>
-  //   </section>
-  // </div>
 
   render() {
     return(
-      <div>
-        <p>user page</p>
+      <div className="user-page">
+        {this.props.selectedUserPageUser ?
+          <div>
+
+            <header className="user-page-header clearfix">
+              <div className="user-page-header">
+                  <img
+                    className="banner-picture"
+                    src="http://res.cloudinary.com/localscene/image/upload/v1478727789/banner_bqnwe6.jpg">
+                  </img>
+                  <img
+                    className="profile-picture"
+                    src="https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg">
+                  </img>
+
+                  <div className="artist-info">
+                    <h1 className="artist-info-name">{this.props.selectedUserPageUser.username}</h1>
+                    <h6 className="artist-info-age">member for {this.props.selectedUserPageUser.age}</h6>
+                  </div>
+              </div>
+            </header>
+
+            <section className="col col-2-3">
+              <ul>
+
+                <li>track</li>
+                <li>track</li>
+                <li>track</li>
+                <li>track</li>
+                <li>track</li>
+              </ul>
+            </section>
+
+            <section className="col col-1-3">
+              <ul>
+                <li>comment</li>
+                <li>comment</li>
+                <li>comment</li>
+                <li>comment</li>
+                <li>comment</li>
+                <li>comment</li>
+              </ul>
+            </section>
+          </div>
+        :
+            <p></p>
+        }
+
       </div>
     );
   }
