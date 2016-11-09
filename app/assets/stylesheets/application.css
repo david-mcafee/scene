@@ -397,27 +397,31 @@
 }
 
 .home {
-  display: flex;
+  /*display: flex;*/
   padding: 20px;
-  border: 1px solid #1c1c1e;
+  border: 1px solid grey;;
 }
 
 .artist-list {
-  display: flex;
+  /*display: flex;*/
+  border: 1px solid grey;
 }
 
-.home-index-item {
-  display: flex;
-  border: 1px solid white;
+.artist-list-item {
+  /*display: flex;*/
+  border: 1px solid grey;
   margin: 5px;
 }
 
 .home-index-item-info {
-
+  border: 1px solid grey;
 }
 
 .home-index-item-name {
-
+  border: 1px solid grey;
+}
+.home-index-item-image {
+  border: 1px solid grey;
 }
 
 .user-page {

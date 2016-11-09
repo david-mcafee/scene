@@ -28,7 +28,7 @@ class IndexItem extends React.Component {
         <img className="album-art"src={image_url}></img>
         <ul className="index-item-info">
           <button className="input-button" onClick={ () => {
-              debugger;
+              // debugger;
               return(
                 this.props.playTrack(this.props.track)
               );

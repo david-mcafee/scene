@@ -11,7 +11,7 @@ ActiveRecord::Base.connection.reset_pk_sequence!("users")
 
 User.create!(username:"Guest", email: "guest@david-mcafee.com", artist: true, password_digest: "#{BCrypt::Password.create("password")}")
 
-# User.create!(username:"Nolan Kurtz", email: "nolan@david-mcafee.com", artist: true, banner_url: "http://res.cloudinary.com/localscene/image/upload/v1478635322/NolanKurtzProfilePicture_jjxck0.jpg" password_digest: "#{BCrypt::Password.create("password")}")
+User.create!(username:"Nolan Kurtz", email: "nolan@david-mcafee.com", artist: true, password_digest: "#{BCrypt::Password.create("password")}")
 
 User.create!(username:"Ivory Weeds", email: "ivoryweeds@david-mcafee.com", artist: true, password_digest: "#{BCrypt::Password.create("password")}")
 

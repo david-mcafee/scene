@@ -6,7 +6,7 @@ import merge from 'lodash/merge';
 
 const PlayerReducer = (state = {}, action) => {
   Object.freeze(state);
-  debugger;
+  // debugger;
 
   switch (action.type) {
     case PLAY_TRACK:

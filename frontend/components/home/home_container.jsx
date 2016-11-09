@@ -7,7 +7,7 @@ import {
 import { getAllUsers } from '../../reducers/selectors';
 
 const mapStateToProps = (state) => {
-  debugger;
+  // debugger;
   return(
     {
       users: getAllUsers(state)

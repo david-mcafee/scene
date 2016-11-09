@@ -5,23 +5,25 @@ import HomeIndexItem from './home_index_item';
 class Home extends React.Component {
   constructor(props) {
     super(props);
-
   }
 
   componentDidMount() {
     this.props.requestUsers();
+    // debugger;
   }
 
 
-
   render() {
+    debugger;
     return(
       <div className="home">
         <ul className="artist-list">
           {this.props.users ?
-            this.props.users.map(user => (
-              <HomeIndexItem key={user.id} user={user}/>
-            ))
+            this.props.users.map(user => {
+              return(
+                <HomeIndexItem key={user.id} user={user}/>
+              );
+            })
           :
             <p>all users</p>
           }
