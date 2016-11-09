@@ -88,6 +88,16 @@ class Player extends React.Component {
     );
   }
 
+  // <p>duration</p>
+  // <Duration seconds={this.state.duration} />
+  // <br />
+  // <p>elapsed</p>
+  // <Duration seconds={this.state.duration * this.state.played} />
+  // <br />
+  // <p>remaining</p>
+  // <Duration seconds={this.state.duration * (1 - this.state.played)} />
+  // <br />
+
   render() {
     // debugger;
     return(
@@ -134,15 +144,7 @@ class Player extends React.Component {
               <input type='range' min={0} max={1} step='any' value={this.state.volume} onChange={this.setVolume} />
             </li>
 
-              <p>duration</p>
-              <Duration seconds={this.state.duration} />
-              <br />
-              <p>elapsed</p>
-              <Duration seconds={this.state.duration * this.state.played} />
-              <br />
-              <p>remaining</p>
-              <Duration seconds={this.state.duration * (1 - this.state.played)} />
-              <br />
+
           </ul>
         </section>
 
