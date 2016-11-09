@@ -36,12 +36,13 @@ const mapStateToProps = (state, OwnProps) => {
     };
   }
 
-  console.log(selectedTrack);
+  // console.log(selectedTrack);
 
   return({
     tracks: getAllTracks(state),
     selectedTrackId: OwnProps.params.track_id,
-    selectedTrack: selectedTrack
+    selectedTrack: selectedTrack,
+    playTrack: playTrack
     // errors: this.state.errors
   });
 };

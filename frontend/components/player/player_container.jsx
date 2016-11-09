@@ -1,19 +1,19 @@
 import { connect } from 'react-redux';
 import Player from './player';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({player}) => {
     // debugger;
   let currentTrackUrl;
 
-  if (state.current_track) {
-    currentTrackUrl = state.current_track.audio_url;
+  if (player.current_track) {
+    currentTrackUrl = player.current_track.audio_url;
   }
 
   return(
     {
-    current_track: state.current_track,
+    current_track: player.current_track,
     currentTrackUrl: currentTrackUrl,
-    playing: state.playing
+    playing: player.playing
     }
   );
 };

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import UserPage from './user_page';
 
-const mapStateToProps = (state, OwnProps) => {
+const mapStateToProps = ({users}, OwnProps) => {
   // console.log(OwnProps.params.user_id);
   return(
     {
