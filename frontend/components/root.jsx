@@ -28,7 +28,7 @@ const Root = ({ store }) => {
     }
   };
 
-
+  // <IndexRoute component={HomeContainer}/>
 
   const requestUserOnEnter = nextState => {
 		store.dispatch(requestUser(nextState.params.user_id));
@@ -38,7 +38,7 @@ const Root = ({ store }) => {
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App}>
-          <IndexRoute component={HomeContainer}/>
+
           <Route path="/login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="/upload" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
