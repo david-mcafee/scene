@@ -100,7 +100,7 @@ class TrackForm extends React.Component {
   render() {
     return (
       <div className="login-form-container">
-        <form onSubmit={ this.handleSubmit } className="login-form-box">
+        <form onSubmit={ this.handleSubmit } className="track-form-box">
 
           {this.props.formType === "postTrack" ?
             <div className="login-form">

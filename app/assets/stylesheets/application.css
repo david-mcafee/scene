@@ -181,6 +181,17 @@
   width: 300px;
 }
 
+.track-form-box {
+  background-color: #1c1c1e;
+  padding: 15px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px; /* Negative half of height. */
+  margin-left: -150px; /* Negative half of width. */
+}
+
 .login-form {
   /*position: absolute;*/
 }
