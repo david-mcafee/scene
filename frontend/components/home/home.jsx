@@ -12,23 +12,24 @@ class Home extends React.Component {
     this.props.requestUsers();
   }
 
+  // <div className="home">
+  //   <ul className="artist-list">
+  //     {this.props.users ?
+  //       this.props.users.map(user => (
+  //         <HomeIndexItem key={user.id} user={user}/>
+  //       ))
+  //     :
+  //       <p>all users</p>
+  //     }
+  //   </ul>
+  // </div>
 
   render() {
     return(
-      <div className="home">
-        <ul className="artist-list">
-          {this.props.users ?
-            this.props.users.map(user => (
-              <HomeIndexItem key={user.id} user={user}/>
-            ))
-          :
-            <p>all users</p>
-          }
-        </ul>
-      </div>
+      <div><p>test homepage</p></div>
     );
   }
 
 }
 
-export default withRouter(Home);
+export default Home;
