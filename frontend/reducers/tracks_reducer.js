@@ -2,8 +2,7 @@ import {
   RECEIVE_TRACKS,
   RECEIVE_TRACK,
   REMOVE_TRACK,
-  UPDATE_TRACK,
-  PLAY_TRACK } from '../actions/track_actions';
+  UPDATE_TRACK } from '../actions/track_actions';
 
 import merge from 'lodash/merge';
 
@@ -25,8 +24,6 @@ const TracksReducer = (state = {}, action) => {
       return newState;
     // case UPDATE_TRACK:
     //   retu
-    case PLAY_TRACK:
-      return merge({}, state, {["current_track"]: action.track, ["playing"]: true});
     default:
       return state;
   }

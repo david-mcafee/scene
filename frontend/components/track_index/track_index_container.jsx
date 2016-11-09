@@ -4,9 +4,13 @@ import {
   requestTracks,
   receiveTracks,
   updateTrack,
-  deleteTrack,
-  playTrack
+  deleteTrack
   } from '../../actions/track_actions';
+
+import {
+  playTrack
+} from '../../actions/player_actions';
+
 import TrackIndex from './track_index';
 
 
@@ -52,7 +56,7 @@ const mapDispatchToProps = (dispatch, { location }) => {
   const processForm = (formType === 'upload') ? postTrack : updateTrack;
 
   return {
-    playTrack: (url) => dispatch(playTrack(url)),
+    playTrack: (track) => dispatch(playTrack(track)),
     requestTracks: () => dispatch(requestTracks()),
     postTrack: (url) => dispatch(postTrack(url)),
     deleteTrack: (id) => dispatch(deleteTrack(id)),
