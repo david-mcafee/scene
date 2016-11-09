@@ -133,9 +133,17 @@ class Player extends React.Component {
                   </span>
                 </button>
             </li>
+
             <li>
-              <p>Seek</p>
+              <p className="player-control-title">Volume</p>
               <input
+                className="volume-bar"
+                type='range' min={0} max={1} step='any' value={this.state.volume} onChange={this.setVolume} />
+            </li>
+            <li>
+              <p className="player-control-title">Seek</p>
+              <input
+                className="seek-bar"
                 type='range' min={0} max={1} step='any'
                 value={this.state.played}
                 onMouseDown={this.onSeekMouseDown}
@@ -143,17 +151,18 @@ class Player extends React.Component {
                 onMouseUp={this.onSeekMouseUp}
               />
             </li>
-            <li>
-              <p>Volume</p>
-              <input type='range' min={0} max={1} step='any' value={this.state.volume} onChange={this.setVolume} />
-            </li>
-
 
           </ul>
         </section>
 
         <section className="player-track-info-box">
-          <img src={this.props.current_track ? this.props.current_track.image_url : ""}></img>
+          {this.props.current_track ?
+            <img className="player-track-info-box-image"
+              src={this.props.current_track.image_url}>
+            </img>
+          :
+            <div className="player-track-info-box-image"></div>
+          }
           <div>
             <p className="player-track-name">{this.props.current_track ? this.props.current_track.title : ""}</p>
             <p className="player-artist-name">{this.props.current_track ? this.props.current_track.user.username : ""}</p>

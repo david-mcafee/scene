@@ -379,7 +379,7 @@
   margin-left: 10px;
 }
 
-.player-track-info-box > img {
+.player-track-info-box-image {
   display: inline-block;
   height: 70px;
   width: auto;
@@ -387,7 +387,7 @@
   margin-bottom: 7px;
   margin-right: 7px;
   margin-left: 20px;
-  border: none;
+  /*border: none;*/
 }
 
 .player-track-name {
@@ -395,6 +395,19 @@
   margin-left: 15px;
   margin-top: 15px;
 
+}
+
+.player-control-title {
+  font-size: 12px;
+  /*margin-left: 20px;*/
+}
+
+.seek-bar {
+  width: 500px;
+}
+
+.volume-bar {
+  width: 60px;
 }
 
 .player-artist-name {
