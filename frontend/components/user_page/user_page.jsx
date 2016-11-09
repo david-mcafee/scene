@@ -37,14 +37,7 @@ class UserPage extends React.Component {
             </header>
 
             <section className="col col-2-3">
-              <ul>
-
-                <li>track</li>
-                <li>track</li>
-                <li>track</li>
-                <li>track</li>
-                <li>track</li>
-              </ul>
+              <TrackIndexContainer />
             </section>
 
             <section className="col col-1-3">

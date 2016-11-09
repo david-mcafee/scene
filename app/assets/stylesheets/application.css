@@ -285,26 +285,35 @@
   justify-content: space-between;
   flex-flow: flex-start;
 
-  border: 1px solid #1c1c1e;
-  border-radius: 2px;
+  border-top: 1px solid #1c1c1e;
+  /*border-bottom: 1px solid #1c1c1e;*/
+  /*border-radius: 4px;*/
   padding: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .index-item-info {
-  border: 1px solid #1c1c1e;
-  border-radius: 2px;
+  border-left: 1px solid #1c1c1e;
+  /*border-radius: 2px;*/
   padding: 3px;
 }
 
 .index-item-title {
-  border: 1px solid #1c1c1e;
-  border-radius: 2px;
+  /*border-bottom;: 1px solid #1c1c1e;*/
+  /*border-radius: 2px;*/
+  font-size: 25px;
+  /*background-color: black;*/
   padding: 3px;
 }
 .index-item-user-id {
-  border: 1px solid #1c1c1e;
-  border-radius: 2px;
-  padding: 3px;
+  /*border-top: 1px solid #1c1c1e;*/
+  /*border-radius: 2px;*/
+  font-size: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  /*padding-top: 3px;*/
+  padding-bottom: 3px;
 }
 .index-item-audio-url {
   border: 1px solid #1c1c1e;
@@ -318,10 +327,11 @@
 }
 
 .index-item-age {
-  border: 1px solid #1c1c1e;
+  /*border-left: 1px solid #1c1c1e;
+  border-bottom: 1px solid #1c1c1e;*/
   border-radius: 2px;
   padding: 3px;
-  color: grey;
+  color: white;
   font-size: 12px;
 }
 
@@ -335,10 +345,10 @@
 
 
 .track-section-left {
-  width: 25%;
+  width: 15%;
 }
 .track-section-center {
-  width: 45%;
+  width: 55%;
 }
 .track-section-right {
   width: 30%;

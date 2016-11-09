@@ -48,8 +48,8 @@ class IndexItem extends React.Component {
             <li className="index-item-age">uploaded {age} ago</li>
             <li>
               <div className="edit-buttons">
-                <button className="nav-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
-                <button className="nav-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
+                <button className="input-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
+                <button className="input-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
               </div>
             </li>
           </ul>
