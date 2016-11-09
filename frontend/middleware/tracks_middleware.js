@@ -35,7 +35,7 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
   let removeTrackSuccess = track => dispatch(removeTrack(track));
   let updateTrackSuccess = track => {
     dispatch(receiveTrack(track));
-    hashHistory.push("/");
+    // hashHistory.push("/");
   };
 
   switch (action.type) {

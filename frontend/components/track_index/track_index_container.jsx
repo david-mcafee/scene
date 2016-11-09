@@ -16,11 +16,28 @@ import { getAllTracks } from '../../reducers/selectors';
 
 const mapStateToProps = (state, OwnProps) => {
   // debugger;
-  console.log(OwnProps.params);
+  // console.log(OwnProps.params);
+
+  let selectedTrack;
+
+  if (OwnProps.params.track_id) {
+    selectedTrack = state.tracks[OwnProps.params.track_id];
+  }
+  else {
+    selectedTrack = {
+      id: null,
+      title: "",
+      image_url: "",
+      audio_url: ""
+    };
+  }
+
+  console.log(selectedTrack);
+
   return({
     tracks: getAllTracks(state),
-    selectedTrackId: 2
-    // selectedTrackId: OwnProps.params.track_id
+    selectedTrackId: OwnProps.params.track_id,
+    selectedTrack: selectedTrack
     // errors: this.state.errors
   });
 };
@@ -30,8 +47,7 @@ const mapStateToProps = (state, OwnProps) => {
 // call a dispatch with the requestTracks() action creator (see actions/track_actions)
 
 const mapDispatchToProps = (dispatch, { location }) => {
-  const formType = "upload";
-  // const formType = location.pathname.slice(1);
+  const formType = location.pathname.slice(1);
   console.log(formType);
   const processForm = (formType === 'upload') ? postTrack : updateTrack;
 

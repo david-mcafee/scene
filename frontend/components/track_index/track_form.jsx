@@ -8,11 +8,12 @@ class TrackForm extends React.Component {
     // this.props.track ||
 
     this.state = {
-      id: this.props.selectedTrackId,
-      title: "",
-      image_url: "",
-      audio_url: ""
+      id: this.props.selectedTrack.id,
+      title: this.props.selectedTrack.title,
+      image_url: this.props.selectedTrack.image_url,
+      audio_url: this.props.selectedTrack.audio_url
     };
+
     this.handleSubmit = this.handleSubmit.bind(this);
     this.upload = this.upload.bind(this);
     this.upload1 = this.upload1.bind(this);
@@ -20,8 +21,14 @@ class TrackForm extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     // You don't have to do this check first, but it can help prevent an unneeded render
-    console.log("receive entered");
-    this.setState({ ["id"]: nextProps.selectedTrackId });
+    this.setState(
+      {
+        ["id"]: nextProps.selectedTrack.id,
+        ["title"]: nextProps.selectedTrack.title,
+        ["image_url"]: nextProps.selectedTrack.image_url,
+        ["audio_url"]: nextProps.selectedTrack.audio_url
+      }
+    );
   }
 
   handleSubmit(e) {
@@ -118,7 +125,6 @@ class TrackForm extends React.Component {
           :
             <div className="login-form">
               <p>{this.props.formType}</p>
-              <p>{this.state.id}</p>
               <label>
                 <input
                   type="text"

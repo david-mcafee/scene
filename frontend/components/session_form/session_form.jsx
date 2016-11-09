@@ -51,8 +51,8 @@ class SessionForm extends React.Component {
   guestLogin(e){
     e.preventDefault();
     const user = {username: "Guest", password: "password"};
-    hashHistory.push("login");
-    this.props.processForm({user});
+    // hashHistory.push("login");
+    this.props.processLoginForm({user});
   }
 
   navLink() {

@@ -17,15 +17,24 @@ class TrackIndex extends React.Component {
   render() {
     // console.log(this.props.selectedTrack);
 
-    // <TrackForm
-    //   formType={this.props.formType}
-    //   processForm={this.props.processForm}
-    //   selectedTrackId={this.props.selectedTrackId}/>
     return(
       <div>
+        <TrackForm
+          formType={this.props.formType}
+          processForm={this.props.processForm}
+          selectedTrackId={this.props.selectedTrackId}
+          selectedTrack={this.props.selectedTrack}/>
+
         <h1>tracks: </h1>
         {this.props.tracks ? this.props.tracks.map(track => (
-          <TrackIndexItem playTrack={ this.props.playTrack } track={track} key={track.id} deleteTrack={this.props.deleteTrack}/>
+          track.id ?
+            <TrackIndexItem
+              playTrack={ this.props.playTrack }
+              track={track}
+              key={track.id}
+              deleteTrack={this.props.deleteTrack}/>
+            :
+            <p></p>
         )) : <p>all tracks</p>}
       </div>
     );
