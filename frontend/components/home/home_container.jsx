@@ -6,12 +6,17 @@ import {
 
 import { getAllUsers } from '../../reducers/selectors';
 
-const mapStateToProps = (state) => ({
-  // users: getAllUsers(state)
-});
+const mapStateToProps = (state) => {
+  debugger;
+  return(
+    {
+      users: getAllUsers(state)
+    }
+  );
+};
 
 const mapDispatchToProps = dispatch => ({
-  // requestUsers: () => dispatch(requestUsers())
+  requestUsers: () => dispatch(requestUsers())
 });
 
 export default connect(

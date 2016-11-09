@@ -34,12 +34,11 @@ const Root = ({ store }) => {
 		// store.dispatch(requestUser(nextState.params.user_id));
 	};
 
-  // <Route path="/home" component={HomeContainer} onEnter={_ensureLoggedIn}/>
   return(
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App} >
-
+          <Route path="/home" component={HomeContainer} onEnter={_ensureLoggedIn}/>
           <Route path="/login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="/upload" component={TrackIndexContainer} onEnter={_ensureLoggedIn}/>
