@@ -345,10 +345,12 @@
 
 .player-controls {
   display: flex;
+  width: 66.66%;
   border-left: 1px solid black;
   border-right: 1px solid black;
   color: #cccccc;
 }
+
 
 .player-controls ul {
   display: flex;
@@ -367,20 +369,38 @@
 }
 
 .player-track-info-box {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  width: 33.33%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .player-track-info-box > * {
-  display: flex;
-  /*font-size: 15px;*/
+  float: left;
+  margin-left: 10px;
 }
 
 .player-track-info-box > img {
-  display: flex;
-  height: 50px;
+  display: inline-block;
+  height: 70px;
   width: auto;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 7px;
+  margin-left: 20px;
+  border: none;
+}
+
+.player-track-name {
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: 15px;
+
+}
+
+.player-artist-name {
+  font-size: 12px;
+  margin-left: 15px;
+  /*margin-left: 10px;*/
 }
 
 
@@ -477,3 +497,30 @@ progress[value]::-webkit-progress-value {
     border-radius: 2px;
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }*/
+
+
+.play-button-wrapper {
+    margin: auto;
+      display: flex;
+      height: 50px;
+      width: 50px;
+      /*border: 1px solid red;*/
+      margin-left: 15px;
+}
+
+.play-button-wrapper button  {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  /*border: 1px solid blue;*/
+  border-radius: 25px;
+
+  background-color: #ffa500;
+  border: 1px solid #ffa500;
+  color: white;
+  outline: none;
+}

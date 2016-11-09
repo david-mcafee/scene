@@ -126,8 +126,12 @@ class Player extends React.Component {
         </section>
         <section className="player-controls">
           <ul>
-            <li>
-                <button className="input-button" onClick={this.playPause}>{this.state.playing ? 'Pause' : 'Play'}</button>
+            <li className="play-button-wrapper">
+                <button onClick={this.playPause}>
+                  <span>
+                    {this.state.playing ? '❚❚' : '►'}
+                  </span>
+                </button>
             </li>
             <li>
               <p>Seek</p>
@@ -150,8 +154,10 @@ class Player extends React.Component {
 
         <section className="player-track-info-box">
           <img src={this.props.current_track ? this.props.current_track.image_url : ""}></img>
-          <p>{this.props.current_track ? this.props.current_track.title : ""}</p>
-          <p>{this.props.current_track ? this.props.current_track.user_id : ""}</p>
+          <div>
+            <p className="player-track-name">{this.props.current_track ? this.props.current_track.title : ""}</p>
+            <p className="player-artist-name">{this.props.current_track ? this.props.current_track.user.username : ""}</p>
+          </div>
         </section>
 
       </div>
