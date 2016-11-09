@@ -283,6 +283,8 @@
 .track-index-item {
   display: flex;
   justify-content: space-between;
+  flex-flow: flex-start;
+
   border: 1px solid #1c1c1e;
   border-radius: 2px;
   padding: 3px;
@@ -329,6 +331,26 @@
   opacity: 1;
   box-shadow: rgba(0,0,0,.1)0 0 0 1px inset;
 }
+
+
+
+.track-section-left {
+  width: 25%;
+}
+.track-section-center {
+  width: 45%;
+}
+.track-section-right {
+  width: 30%;
+}
+
+
+
+
+
+
+
+
  /*font family? "Helvetica Neue", Helvetica, sans-serif*/
 
 /* holds everything: */

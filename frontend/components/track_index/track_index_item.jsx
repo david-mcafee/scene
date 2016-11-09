@@ -21,30 +21,40 @@ class IndexItem extends React.Component {
   }
 
   render () {
-    const { id, title, age, image_url, audio_url, user_id} = this.props.track;
+    const { id, title, age, image_url, audio_url, user_id, user} = this.props.track;
     // onClick={this.handleClick}
     return (
       <div className="track-index-item">
-        <img className="album-art"src={image_url}></img>
-        <ul className="index-item-info">
-          <button className="input-button" onClick={ () => {
-              // debugger;
-              return(
-                this.props.playTrack(this.props.track)
-              );
-            } }>PLAY</button>
-          <li className="index-item-title">{title}</li>
-          <li className="index-item-user-id">Artist: {user_id}</li>
-        </ul>
-        <ul>
-          <li className="index-item-age">uploaded {age} ago</li>
-          <li>
-            <div className="edit-buttons">
-              <button className="nav-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
-              <button className="nav-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
-            </div>
-          </li>
-        </ul>
+
+        <div className="track-section-left">
+          <img className="album-art"src={image_url}></img>
+        </div>
+
+        <div className="track-section-center">
+          <ul className="index-item-info">
+            <button className="input-button" onClick={ () => {
+                // debugger;
+                return(
+                  this.props.playTrack(this.props.track)
+                );
+              } }>PLAY</button>
+            <li className="index-item-title">{title}</li>
+            <li className="index-item-user-id">{user.username}</li>
+          </ul>
+        </div>
+
+        <div className="track-section-right">
+          <ul>
+            <li className="index-item-age">uploaded {age} ago</li>
+            <li>
+              <div className="edit-buttons">
+                <button className="nav-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
+                <button className="nav-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </div>
     );
   }
