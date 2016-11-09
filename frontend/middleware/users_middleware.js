@@ -19,10 +19,10 @@ const UsersMiddleware = ({ getState, dispatch }) => next => action => {
 
   switch (action.type) {
     case REQUEST_USERS:
-      fetchUsers(receiveUserSuccess);
+      fetchUsers(receiveAllUsersSuccess);
       return next(action);
     case REQUEST_USER:
-      fetchUser(receiveUserSuccess);
+      fetchUser(action.id, receiveUserSuccess);
       return next(action);
     default:
       return next(action);

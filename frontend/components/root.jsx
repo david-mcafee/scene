@@ -8,6 +8,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import TrackIndexContainer from './track_index/track_index_container';
 import HomeContainer from './home/home_container';
 import UserPageContainer from './user_page/user_page_container';
+import { requestUser } from '../actions/user_actions';
 
 const Root = ({ store }) => {
 
@@ -31,13 +32,13 @@ const Root = ({ store }) => {
   //
 
   const requestUserOnEnter = nextState => {
-		// store.dispatch(requestUser(nextState.params.user_id));
+		store.dispatch(requestUser(nextState.params.user_id));
 	};
 
   return(
     <Provider store={store}>
       <Router history={hashHistory}>
-        <Route path="/" component={App} >
+        <Route path="/" component={App}>
           <Route path="/home" component={HomeContainer} onEnter={_ensureLoggedIn}/>
           <Route path="/login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SessionFormContainer} onEnter={_redirectIfLoggedIn}/>

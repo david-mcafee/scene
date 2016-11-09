@@ -7,22 +7,19 @@ class HomeIndexItem extends React.Component {
     // console.log(this.props.user);
   }
 
-  // <li className="home-index-item-image">
-  //   <Link to={`/users/${this.props.user.id}`}>
-  //     {this.props.user.banner_url}
-  //   </Link>
-  // </li>
+
 
   render() {
     return(
-      <ul className="home-index-item-info">
-        <li className="home-index-item-name">
-          <Link to={`/users/${this.props.user.id}`}>
-            {this.props.user.username}
-          </Link>
-        </li>
-
-      </ul>
+      <div>
+        <ul className="home-index-item-info">
+          <li className="home-index-item-name">
+            <Link to={`/users/${this.props.user.id}`}>
+              {this.props.user.username}
+            </Link>
+          </li>
+        </ul>
+      </div>
     );
   }
 

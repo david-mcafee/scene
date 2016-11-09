@@ -12,8 +12,9 @@ export const receiveUsers = users => ({
   users
 });
 
-export const requestUser = () => ({
-  type: REQUEST_USER
+export const requestUser = (id) => ({
+  type: REQUEST_USER,
+  id
 });
 
 export const receiveUser = user => ({

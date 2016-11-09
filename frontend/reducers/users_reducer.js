@@ -12,7 +12,8 @@ const UsersReducer = (state = {}, action) => {
     case RECEIVE_USERS:
       return merge({}, state, action.users);
     case RECEIVE_USER:
-      return merge({}, state, action.user);
+      debugger;
+      return merge({}, state, {["selectedUserPageUser"]: action.user});
     default:
       return state;
   }

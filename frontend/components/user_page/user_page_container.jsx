@@ -2,7 +2,8 @@ import { connect } from 'react-redux';
 import UserPage from './user_page';
 
 const mapStateToProps = ({users}, OwnProps) => {
-  // console.log(OwnProps.params.user_id);
+  console.log(users);
+  console.log(OwnProps.params.user_id);
   return(
     {
       selectedUser: OwnProps.params.user_id
