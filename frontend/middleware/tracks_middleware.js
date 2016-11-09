@@ -51,10 +51,12 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
       return next(action);
     case DELETE_TRACK:
       deleteTrack(action.id, removeTrackSuccess);
+      hashHistory.push(`/tracks`);
     case UPDATE_TRACK:
       console.log("update middleware entered");
       // debugger;
       updateTrack(action.track, updateTrackSuccess);
+      hashHistory.push(`/tracks`);
       return next(action);
     default:
       return next(action);

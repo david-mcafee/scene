@@ -1,6 +1,5 @@
 import React from 'react';
 import TrackIndexItem from './track_index_item';
-import TrackForm from './track_form';
 
 class TrackIndex extends React.Component {
   constructor(props) {
@@ -19,11 +18,6 @@ class TrackIndex extends React.Component {
 
     return(
       <div>
-        <TrackForm
-          formType={this.props.formType}
-          processForm={this.props.processForm}
-          selectedTrackId={this.props.selectedTrackId}
-          selectedTrack={this.props.selectedTrack}/>
 
         <h1>tracks: </h1>
         {this.props.tracks ? this.props.tracks.map(track => (
