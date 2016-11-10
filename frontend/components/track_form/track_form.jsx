@@ -47,7 +47,7 @@ class TrackForm extends React.Component {
 
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
       if (!error) {
-        console.log(results);
+        // console.log(results);
         this.setState({
           ["audio_url"]: results[0].url
         });
@@ -77,7 +77,7 @@ class TrackForm extends React.Component {
 
   renderErrors() {
     if (this.props.errors.length > 0) {
-      console.log(this.props.errors);
+      // console.log(this.props.errors);
       return(
         <ul className="errors">
           Whoops!

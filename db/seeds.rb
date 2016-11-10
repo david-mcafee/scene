@@ -89,74 +89,74 @@ User.create!(username:"Dean Cercone",
 User.create!(username: "Arlie McDermott IV",
   email: "user9@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #10
 User.create!(username: "Deron Tillman IV",
   email: "user10@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Bobby Gorczany",
   email: "user11@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Mrs. Talon Wiegand",
   email: "user12@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Ms. Dwight Koch",
   email: "user13@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 #
 User.create!(username: "Noe Goodwin",
   email: "user14@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 
 User.create!(username: "Madisen Dare",
   email: "user15@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 #
 User.create!(username: "Dr. Rosemarie Schmeler",
   email: "user16@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 #
 User.create!(username: "Ashleigh Wilkinson",
   email: "user17@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Mrs. Orland Zieme",
   email: "user18@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Kaley Powlowski",
   email: "user19@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 
@@ -164,21 +164,21 @@ User.create!(username: "Kaley Powlowski",
 User.create!(username: "Lyla Rutherford",
   email: "user20@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Cathy Larkin",
   email: "user21@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Albertha Price V",
   email: "user22@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 
@@ -186,14 +186,14 @@ User.create!(username: "Albertha Price V",
 User.create!(username: "Titus Grady",
   email: "user23@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Karl Cummerata I",
   email: "user24@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 
@@ -201,35 +201,35 @@ User.create!(username: "Karl Cummerata I",
 User.create!(username: "Brian Bins",
   email: "user25@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Brandyn Runte",
   email: "user26@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Erna Conroy",
   email: "user27@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #
 User.create!(username: "Monte Towne",
   email: "user28@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 # 29
 User.create!(username: "mangos",
   email: "user29@david-mcafee.com",
   artist: false,
-  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 Track.create!(title: "Guest song (please edit!)",

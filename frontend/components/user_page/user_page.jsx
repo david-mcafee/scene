@@ -27,7 +27,7 @@ class UserPage extends React.Component {
                   </img>
                   <img
                     className="profile-picture"
-                    src="https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg">
+                    src={this.props.selectedUserPageUser.banner_url}>
                   </img>
 
                   <div className="artist-info">

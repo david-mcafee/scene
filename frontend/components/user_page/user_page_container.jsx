@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import UserPage from './user_page';
 
 const mapStateToProps = ({users, comments}, OwnProps) => {
-  console.log(users);
+  // console.log(users);
   return(
     {
       selectedUserPageUser: users.selectedUserPageUser

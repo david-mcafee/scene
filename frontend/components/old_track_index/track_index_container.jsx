@@ -29,7 +29,7 @@ const mapStateToProps = (state, OwnProps) => {
 
 const mapDispatchToProps = (dispatch, { location }) => {
   const formType = location.pathname.slice(1);
-  console.log(formType);
+  // console.log(formType);
   const processForm = (formType === 'upload') ? postTrack : updateTrack;
 
   return {

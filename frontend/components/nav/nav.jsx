@@ -8,15 +8,23 @@ const sessionLinks = () => (
   </ul>
 );
 
-const personalGreeting = (currentUser, logout) => (
-  <ul className="personal-greeting">
-    <li className="user-box">
-      <p className="user-name">{currentUser.username}</p>
-      <img src="https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg" className="user-avatar"></img>
-    </li>
-    <li><button onClick={logout} className="nav-button-solid"><h5>Log Out</h5></button></li>
-  </ul>
-);
+const personalGreeting = (currentUser, logout) => {
+  let redirectUrl = `/users/${currentUser.id}`;
+
+  return(
+
+      <ul className="personal-greeting">
+        <Link to={redirectUrl}>
+          <li className="user-box">
+            <p className="user-name">{currentUser.username}</p>
+            <img src={currentUser.banner_url} className="user-avatar"></img>
+          </li>
+        </Link>
+        <li><button onClick={logout} className="nav-button-solid"><h5>Log Out</h5></button></li>
+      </ul>
+
+  );
+};
 
 export const Nav = ({ currentUser, logout }) => (
     <div className="navigation">

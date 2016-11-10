@@ -14,7 +14,7 @@ import { getAllComments } from '../../reducers/selectors';
 
 
 const mapStateToProps = ({comments}, OwnProps) => {
-  console.log(OwnProps);
+  // console.log(OwnProps);
   return({
     comments: getAllComments(comments)
   });

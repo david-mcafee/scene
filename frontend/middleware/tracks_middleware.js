@@ -58,7 +58,7 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
       // hashHistory.goBack();
       // hashHistory.push(`/tracks`);
     case UPDATE_TRACK:
-      console.log("update middleware entered");
+      // console.log("update middleware entered");
       // debugger;
       updateTrack(action.track, updateTrackSuccess);
       hashHistory.goBack();

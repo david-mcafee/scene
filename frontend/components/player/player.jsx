@@ -33,7 +33,7 @@ class Player extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     // You don't have to do this check first, but it can help prevent an unneeded render
-    console.log(nextProps.currentTrackUrl);
+    // console.log(nextProps.currentTrackUrl);
     this.setState({
       ["url"]: nextProps.currentTrackUrl,
       ["playing"]: true,
@@ -75,7 +75,7 @@ class Player extends React.Component {
   }
 
   displayMessages(messages) {
-    console.log("player messages");
+    // console.log("player messages");
     return(
         <ul className="errors">
           Whoops!
@@ -103,8 +103,8 @@ class Player extends React.Component {
 
   render() {
     // debugger;
-    console.log("current_track");
-    console.log(this.props.current_track);
+    // // console.log("current_track");
+    // console.log(this.props.current_track);
     return(
 
       <div className="player-div">

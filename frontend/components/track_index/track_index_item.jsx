@@ -52,7 +52,7 @@ class IndexItem extends React.Component {
               <div className="edit-buttons">
                 <button className="input-button-solid" onClick={
                     () => {
-                            console.log("comments callback entered");
+                            // console.log("comments callback entered");
                             debugger;
                             return(
                               this.props.requestComments(id)

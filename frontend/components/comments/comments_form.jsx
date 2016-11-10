@@ -47,7 +47,7 @@ class CommentsForm extends React.Component {
 
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
       if (!error) {
-        console.log(results);
+        // console.log(results);
         this.setState({
           ["audio_url"]: results[0].url
         });

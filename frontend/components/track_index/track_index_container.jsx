@@ -22,8 +22,8 @@ import { getAllTracks } from '../../reducers/selectors';
 
 
 const mapStateToProps = (state, OwnProps) => {
-  console.log("users tracks");
-  console.log(state.users.selectedUserPageUser.tracks);
+  // // console.log("users tracks");
+  // console.log(state.users.selectedUserPageUser.tracks);
 
   return({
     // tracks: getAllTracks(state),
