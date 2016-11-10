@@ -9,8 +9,9 @@ export const UPDATE_TRACK = "UPDATE_TRACK";
 export const REQUEST_TRACK = "REQUEST_TRACK";
 export const RECEIVE_TRACK = "RECEIVE_TRACK";
 
-export const requestTracks = () => ({
-  type: REQUEST_TRACKS
+export const requestTracks = (id) => ({
+  type: REQUEST_TRACKS,
+  id
 });
 
 // export const requestUserTracks = (user_id) => ({

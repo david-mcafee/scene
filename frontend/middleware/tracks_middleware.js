@@ -46,11 +46,11 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
       // if successfully retrieved, a new action creator will be dispatched,
       // (see track_actions), whose type will be RECEIVE_TRACKS, which will
       // then his the reducer
-      fetchTracks(receiveAllTracksSuccess);
+      fetchTracks(action.id, receiveAllTracksSuccess);
       return next(action);
     case POST_TRACK:
       // debugger;
-      postTrack(receiveTrackSuccess, action.url);
+      postTrack(action.track, receiveTrackSuccess);
       hashHistory.push(`/users/${action.userId}`);
       return next(action);
     case DELETE_TRACK:

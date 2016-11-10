@@ -24,16 +24,16 @@ import { getAllTracks } from '../../reducers/selectors';
 const mapStateToProps = (state, OwnProps) => {
   // // console.log("users tracks");
   // console.log(state.users.selectedUserPageUser.tracks);
-
+  debugger;
   return({
-    // tracks: getAllTracks(state),
-    // selectedTrackId: OwnProps.params.track_id,
-    // selectedTrack: selectedTrack,
-    playTrack: playTrack,
     tracks: state.users.selectedUserPageUser.tracks,
+
+    playTrack: playTrack,
     selectedUserPageUser: state.users.selectedUserPageUser,
     currentUser: state.session.currentUser
-    // errors: this.state.errors
+    // selectedTrackId: OwnProps.params.track_id,
+    // selectedTrack: selectedTrack,
+    // tracks: state.users.selectedUserPageUser.tracks,
   });
 };
 
@@ -48,7 +48,7 @@ const mapDispatchToProps = (dispatch, { location }, OwnProps) => {
 
   return {
     playTrack: (track) => dispatch(playTrack(track)),
-    requestTracks: () => dispatch(requestTracks()),
+    // requestTracks: () => dispatch(requestTracks()),
     // requestUserTracks: (user_id) => dispatch(requestUserTracks(user_id)),
     postTrack: (url) => dispatch(postTrack(url)),
     deleteTrack: (id) => dispatch(deleteTrack(id)),

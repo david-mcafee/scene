@@ -232,8 +232,14 @@ User.create!(username: "mangos",
   banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
+
+
+
+
+
+
 Track.create!(title: "Guest song (please edit!)",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
   user_id: 1)
 
@@ -259,9 +265,25 @@ Track.create!(title: "Guest song (please edit!)",
     Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
     Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
 
+Track.create!(title: "Guest song2 (please edit!)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
+  user_id: 1)
+Track.create!(title: "Guest song3 (please edit!)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
+  user_id: 1)
+Track.create!(title: "Guest song4 (please edit!)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
+  user_id: 1)
+Track.create!(title: "Guest song5 (please edit!)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
+  user_id: 1)
 
 Track.create!(title: "animalsoundssample",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
   user_id: 2)
 

@@ -16,11 +16,12 @@ export const fetchTracks = (success) => {
 //   });
 // };
 
-export const postTrack = (success, track) => {
+export const postTrack = (track, success) => {
+  debugger;
   $.ajax({
     url: "/api/tracks",
     method: "POST",
-    data: { track },
+    data: {track: track} ,
     success
   });
 };
