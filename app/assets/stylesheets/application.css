@@ -580,6 +580,8 @@
   position: relative;
   border: 2px solid white;
   margin: 5px;
+  margin-top: 40px;
+  /*margin-bottom: 20px;*/
   width: 250px;
   height: 250px;
 }
@@ -588,14 +590,17 @@
 .home-index-item-name {
   position: absolute;
   /*border: 1px solid grey;*/
-  top: 25px;;
-  left: 20px;
+  bottom: 25px;;
+  left: -15px;
   font-size: 20px;
-  background-color: black;
+  background-color: grey;
   /*padding-top: 5px;
   padding-bottom: 5px;*/
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
   /*border-radius: 10px;*/
 }
 

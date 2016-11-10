@@ -8,19 +8,20 @@ class HomeIndexItem extends React.Component {
   }
 
 
+  // <img src={this.props.user.banner_url}>
+  //
+  // </img>
 
   render() {
     return(
-      <div className="artist-list-item">
-        <Link to={`/users/${this.props.user.id}`}>
-          <img src={this.props.user.banner_url}>
-
-          </img>
-        </Link>
-        <div className="home-index-item-name">
-          {this.props.user.username}
+      <Link to={`/users/${this.props.user.id}`}>
+        <div className="artist-list-item">
+          <img src={this.props.user.banner_url}></img>
+          <div className="home-index-item-name">
+            {this.props.user.username}
+          </div>
         </div>
-      </div>
+      </Link>
     );
   }
 
