@@ -741,3 +741,21 @@ progress[value]::-webkit-progress-value {
 .z-1 {
   z-index: 1;
 }*/
+
+.logo {
+  position: fixed;
+  /*background-color: white;*/
+  top: 8px;
+  font-size: 35px;
+  color: orange;
+
+  /*padding: 5px;*/
+}
+
+.logo-image {
+  position: fixed;
+  top:10px;
+  left: 10px;
+  height: 40px;
+  width: auto;
+}

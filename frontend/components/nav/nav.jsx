@@ -29,7 +29,7 @@ const personalGreeting = (currentUser, logout) => {
 export const Nav = ({ currentUser, logout }) => (
     <div className="navigation">
       <ul>
-        <li><Link to="/" className="nav-button-left"><h5>logo</h5></Link></li>
+        <li><Link to="/" className="nav-button-left"><img className="logo-image" src="http://res.cloudinary.com/localscene/image/upload/v1478807494/logo_unawft.png"></img><div className="logo">SCENE</div></Link></li>
         <li><Link to="/home" className="nav-button-left"><h5>artists</h5></Link></li>
         <li><Link to="/upload" className="nav-button-left"><h5>upload</h5></Link></li>
         <li>{currentUser ? personalGreeting(currentUser, logout) : sessionLinks()}</li>
