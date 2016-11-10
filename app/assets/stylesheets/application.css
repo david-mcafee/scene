@@ -20,12 +20,14 @@
 
 .all-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  /*align-content: space-between;*/
 }
 
 .navigation {
   display: flex;
-  position: fixed;
+  /*position: fixed;*/
+  /*flex-wrap: wrap;*/
   width: 100%;
   background-color: #1c1c1e;
   color: white;
@@ -35,6 +37,7 @@
   display: flex;
   height: 400px;
   width: 100%
+  /*position: fixed;*/
   /*align-items: center;*/
   /*margin-bottom: 50px;*/
 }
@@ -43,12 +46,11 @@
   display: flex;
   width: 100%;
   position: fixed;
-  bottom:0;
+  /*bottom:0;*/
   background-color: #1c1c1f;
   font-size: 10px;
   bottom: 0;
   color: white;
-  width: 100%;
 }
 
 .player{
