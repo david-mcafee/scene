@@ -71,6 +71,7 @@
    font-size: 20px;
  }
 
+
  body {
   background-color: #121314;
   color: white;
@@ -526,33 +527,29 @@
 }
 
 .home {
-  /*display: flex;*/
-  padding: 20px;
+  display: flex;
   border: 1px solid grey;;
 }
 
 .artist-list {
-  /*display: flex;*/
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   border: 1px solid grey;
 }
 
 .artist-list-item {
-  /*display: flex;*/
+  position: relative;
   border: 1px solid grey;
   margin: 5px;
+  width: 250px;
+  height: 250px;
 }
 
 .home-index-item-info {
+  position: absolute;
   border: 1px solid grey;
 }
-
-.home-index-item-name {
-  border: 1px solid grey;
-}
-.home-index-item-image {
-  border: 1px solid grey;
-}
-
 
 
 

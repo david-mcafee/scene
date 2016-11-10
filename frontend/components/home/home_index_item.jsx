@@ -11,14 +11,15 @@ class HomeIndexItem extends React.Component {
 
   render() {
     return(
-      <div>
-        <ul className="home-index-item-info">
-          <li className="home-index-item-name">
-            <Link to={`/users/${this.props.user.id}`}>
+      <div className="artist-list-item">
+        <Link to={`/users/${this.props.user.id}`}>
+          <ul className="home-index-item-info">
+            <li className="home-index-item-name">
               {this.props.user.username}
-            </Link>
-          </li>
-        </ul>
+            </li>
+          </ul>
+
+        </Link>
       </div>
     );
   }

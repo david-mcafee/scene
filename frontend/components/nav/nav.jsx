@@ -22,7 +22,7 @@ export const Nav = ({ currentUser, logout }) => (
     <div className="navigation">
       <ul>
         <li><Link to="/" className="nav-button-left"><h5>logo</h5></Link></li>
-        <li><Link to="/" className="nav-button-left"><h5>home</h5></Link></li>
+        <li><Link to="/home" className="nav-button-left"><h5>artists</h5></Link></li>
         <li><Link to="/upload" className="nav-button-left"><h5>upload</h5></Link></li>
         <li>{currentUser ? personalGreeting(currentUser, logout) : sessionLinks()}</li>
       </ul>
