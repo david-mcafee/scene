@@ -41,7 +41,7 @@ class IndexItem extends React.Component {
                 );
               } }>PLAY</button>
             <li className="index-item-title">{title}</li>
-            <li className="index-item-user-id">{this.props.username}</li>
+            <li className="index-item-user-id">{this.props.selectedUserPageUser.username}</li>
           </ul>
         </div>
 

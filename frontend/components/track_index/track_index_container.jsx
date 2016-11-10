@@ -29,7 +29,7 @@ const mapStateToProps = (state, OwnProps) => {
     // selectedTrack: selectedTrack,
     playTrack: playTrack,
     tracks: state.users.selectedUserPageUser.tracks,
-    username: state.users.selectedUserPageUser.username
+    selectedUserPageUser: state.users.selectedUserPageUser
     // errors: this.state.errors
   });
 };

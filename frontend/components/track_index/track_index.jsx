@@ -27,7 +27,7 @@ class TrackIndex extends React.Component {
               track={track}
               key={track.id}
               deleteTrack={this.props.deleteTrack}
-              username={this.props.username}/>
+              selectedUserPageUser={this.props.selectedUserPageUser}/>
             :
             <p></p>
         )) : <p>all tracks</p>}

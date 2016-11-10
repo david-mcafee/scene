@@ -98,8 +98,13 @@ class Player extends React.Component {
   // <Duration seconds={this.state.duration * (1 - this.state.played)} />
   // <br />
 
+
+  // <p className="player-artist-name">{this.props.current_track ? this.props.current_track.user.username : ""}</p>
+
   render() {
     // debugger;
+    console.log("current_track");
+    console.log(this.props.current_track);
     return(
 
       <div className="player-div">
@@ -165,7 +170,7 @@ class Player extends React.Component {
           }
           <div>
             <p className="player-track-name">{this.props.current_track ? this.props.current_track.title : ""}</p>
-            <p className="player-artist-name">{this.props.current_track ? this.props.current_track.user.username : ""}</p>
+
           </div>
         </section>
 
