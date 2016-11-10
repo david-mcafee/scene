@@ -1,5 +1,5 @@
 import React from 'react';
-import CommentIndexItem from './comment_index_item';
+import CommentsIndexItem from './comments_index_item';
 
 class CommentIndex extends React.Component {
   constructor(props) {
@@ -7,32 +7,30 @@ class CommentIndex extends React.Component {
   }
 
   componentDidMount() {
-    // NOTE: follow this from container if you forget
-    // this call will be asyncronous, meaning page will load before this
-    // is complete
-    // this.props.requestUserTracks(this.props.selectedUser.id);
+    this.props.requestComments(1);
+    // debugger;
   }
 
-  // {this.props.comments ? this.props.comments.map(comment => (
-  //   comment.id ?
-  //     <CommentIndexItem
-  //       playcomment={ this.props.playcomment }
-  //       comment={comment}
-  //       key={comment.id}
-  //       deletecomment={this.props.deletecomment}
-  //       selectedUserPageUser={this.props.selectedUserPageUser}/>
-  //     :
-  //     <p></p>
-  // )) : <p>all comments</p>}
+
 
   render() {
-    // console.log(this.props.selectedTrack);
+    // console.log('comments');
+    // console.log(this.props.comments);
 
     return(
       <div>
-
-        <h1>comments: </h1>
-
+        <h4>COMMENTS</h4>
+          {this.props.comments ? this.props.comments.map(comment => (
+            comment.id ?
+              <CommentIndexItem
+                playcomment={ this.props.playcomment }
+                comment={comment}
+                key={comment.id}
+                deletecomment={this.props.deletecomment}
+                selectedUserPageUser={this.props.selectedUserPageUser}/>
+              :
+              <p></p>
+          )) : <p>all comments</p>}
       </div>
     );
   }

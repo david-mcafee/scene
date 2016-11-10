@@ -1,6 +1,7 @@
 import React from 'react';
 import TrackIndexContainer from '../track_index/track_index_container';
 import { hashHistory } from 'react-router';
+import CommentsContainer from '../comments/comments_container';
 
 class UserPage extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ class UserPage extends React.Component {
             </section>
 
             <section className="col col-1-3">
-              
+              <CommentsContainer/>  
               <ul>
                 <li>comment</li>
                 <li>comment</li>

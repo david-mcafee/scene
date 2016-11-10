@@ -6,16 +6,17 @@ import {
   receiveComments,
   // updateComment,
   deleteComment
-} from '../../actions/comment_actions';
+} from '../../actions/comments_actions';
 
-import CommentIndex from './comment_index';
+import CommentIndex from './comments_index';
 
 import { getAllComments } from '../../reducers/selectors';
 
 
-const mapStateToProps = (state, OwnProps) => {
+const mapStateToProps = ({comments}, OwnProps) => {
+  console.log(OwnProps);
   return({
-    selectedTrackPageTrack: state.tracks.selectedTrackPageTrack
+    comments: getAllComments(comments)
   });
 };
 
@@ -24,16 +25,15 @@ const mapStateToProps = (state, OwnProps) => {
 // call a dispatch with the requestTracks() action creator (see actions/track_actions)
 
 const mapDispatchToProps = (dispatch, { location }, OwnProps) => {
-  const formType = location.pathname.slice(1);
-  console.log(formType);
-  const processForm = (formType === 'upload') ? postComment : updateComment;
+  // const forType = location.pathname.slice(1);
+  // console.log(formType);
+  // const processForm = (formType === 'upload') ? postComment : updateComment;
 
   return {
-    requestComments: () => dispatch(requestComments()),
+    requestComments: (id) => dispatch(requestComments(id)),
     postComment: (url) => dispatch(postComment(url)),
     deleteComment: (id) => dispatch(deleteComment(id)),
-    processForm: Comment => dispatch(processForm(Comment)),
-    formType
+    processForm: comment => dispatch(postComment(comment))
   };
 };
 
