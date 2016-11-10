@@ -3,22 +3,22 @@
 // it and do nothing.
 // ALSO, not delete and remove - similar to post and receive
 import {
-  REQUEST_TRACKS,
-  RECEIVE_TRACKS,
-  POST_TRACK,
-  DELETE_TRACK,
-  UPDATE_TRACK,
-  removeTrack,
-  receiveTracks,
-  receiveTrack
-} from '../actions/track_actions';
+  REQUEST_COMMENTS,
+  RECEIVE_COMMENTS,
+  POST_COMMENT,
+  DELETE_COMMENT,
+  UPDATE_COMMENT,
+  removeComment,
+  receiveComments,
+  receiveComment
+} from '../actions/comments_actions';
 
 import {
-  fetchTracks,
-  postTrack,
-  deleteTrack,
-  updateTrack,
-} from '../util/track_api_util';
+  fetchComments,
+  postComment,
+  deleteComment,
+  updateComment,
+} from '../util/comments_api_util';
 
 import { hashHistory } from 'react-router';
 
@@ -26,43 +26,44 @@ import { hashHistory } from 'react-router';
 // link several Middleware to each other and ultimately to the store.
 // You'll need to define 3 functions that wrap one-another
 
-const TracksMiddleware = ({ getState, dispatch }) => next => action => {
+const CommentsMiddleware = ({ getState, dispatch }) => next => action => {
 
   let success;
   let error = e => console.log(e.responseJSON);
-  let receiveAllTracksSuccess = data => dispatch(receiveTracks(data));
-  let receiveTrackSuccess = track => dispatch(receiveTrack(track));
-  let removeTrackSuccess = track => dispatch(removeTrack(track));
-  let updateTrackSuccess = track => {
-    dispatch(receiveTrack(track));
+  let receiveAllCommentsSuccess = data => dispatch(receiveComments(data));
+  let receiveCommentSuccess = comment => dispatch(receiveComment(comment));
+  let removeCommentSuccess = comment => dispatch(removeComment(comment));
+  let updateCommentSuccess = comment => {
+    dispatch(receiveComment(comment));
     // hashHistory.push("/");
   };
 
   switch (action.type) {
-    case REQUEST_TRACKS:
+    case REQUEST_COMMENTS:
       // remember, this success callback is sent to the api_util, meaning that
       // if successfully retrieved, a new action creator will be dispatched,
       // (see track_actions), whose type will be RECEIVE_TRACKS, which will
       // then his the reducer
-      fetchTracks(receiveAllTracksSuccess);
+      // debugger;
+      fetchComments(action.id, receiveAllCommentsSuccess);
       return next(action);
-    case POST_TRACK:
-      postTrack(receiveTrackSuccess, action.url);
+    case POST_COMMENT:
+      postComment(receiveCommentSuccess, action.url);
       return next(action);
-    case DELETE_TRACK:
-      deleteTrack(action.id, removeTrackSuccess);
+    case DELETE_COMMENT:
+      deleteComment(action.id, removeCommentSuccess);
       // hashHistory.goBack();
       // hashHistory.push(`/tracks`);
-    case UPDATE_TRACK:
-      console.log("update middleware entered");
-      // debugger;
-      updateTrack(action.track, updateTrackSuccess);
-      hashHistory.goBack();
-      // hashHistory.push(`/tracks`);
-      return next(action);
+    // case UPDATE_COMMENT:
+    //   console.log("update middleware entered");
+    //   // debugger;
+    //   updateTrack(action.comment, updateTrackSuccess);
+    //   hashHistory.goBack();
+    //   // hashHistory.push(`/tracks`);
+    //   return next(action);
     default:
       return next(action);
   }
 };
 
-export default TracksMiddleware;
+export default CommentsMiddleware;

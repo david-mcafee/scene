@@ -1,8 +1,8 @@
 import {
-  RECEIVE_TRACKS,
-  RECEIVE_TRACK,
-  REMOVE_TRACK,
-  UPDATE_TRACK } from '../actions/track_actions';
+  RECEIVE_COMMENTS,
+  RECEIVE_COMMENT,
+  REMOVE_COMMENT,
+  UPDATE_COMMENT } from '../actions/comments_actions';
 
 import merge from 'lodash/merge';
 
@@ -10,17 +10,18 @@ import merge from 'lodash/merge';
 // of this state... i.e. this ONLY refers to "tracks". state could be
 // set equal to an empty array, etc, whatever....
 
-const TracksReducer = (state = {}, action) => {
+const CommentsReducer = (state = {}, action) => {
   Object.freeze(state);
 
   switch (action.type) {
-    case RECEIVE_TRACKS:
-      return merge({}, action.tracks);
-    case RECEIVE_TRACK:
-      return merge({}, state, {[action.track.id]: action.track});
-    case REMOVE_TRACK:
+    case RECEIVE_COMMENTS:
+      // debugger;
+      return merge({}, action.track.comments);
+    case RECEIVE_COMMENT:
+      return merge({}, state, {[action.comment.id]: action.comment});
+    case REMOVE_COMMENT:
       let newState = merge({}, state);
-      delete newState[action.track.id]; // NOTE: REVIEW DELETE
+      delete newState[action.comment.id]; // NOTE: REVIEW DELETE
       return newState;
     // case UPDATE_TRACK:
     //   retu
@@ -29,4 +30,4 @@ const TracksReducer = (state = {}, action) => {
   }
 };
 
-export default TracksReducer;
+export default CommentsReducer;

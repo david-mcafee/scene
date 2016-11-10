@@ -1,9 +1,9 @@
-export const fetchTracks = (success) => {
+export const fetchComments = (id, success) => {
   $.ajax({
     method: "GET",
-    url: "api/tracks/",
+    url: `api/tracks/${id}`,
     success,
-    error: () => console.log('error from fetchTracks')
+    error: () => console.log('error from fetchcomments')
   });
 };
 
@@ -16,36 +16,36 @@ export const fetchTracks = (success) => {
 //   });
 // };
 
-export const postTrack = (success, track) => {
+export const postComment = (success, comment) => {
   $.ajax({
-    url: "/api/tracks",
+    url: "/api/comments",
     method: "POST",
-    data: { track },
+    data: { comment },
     success
   });
 };
 
-export const fetchTrack = (id, success) => {
+export const fetchComment = (id, success) => {
   $.ajax({
     method: "GET",
-    url: `api/tracks/${id}`,
+    url: `api/comments/${id}`,
     success
   });
 };
 
-export const deleteTrack = (id, success) => {
+export const deleteComment = (id, success) => {
   $.ajax({
-    url: `api/tracks/${id}`,
+    url: `api/comments/${id}`,
     type: "DELETE",
     success
   });
 };
 
-export const updateTrack = (track, success) => {
-  $.ajax({
-    url: `/api/tracks/${track.id}`,
-    method: "PATCH",
-    data: { track },
-    success
-  });
-};
+// export const updateComment = (track, success) => {
+//   $.ajax({
+//     url: `/api/tracks/${track.id}`,
+//     method: "PATCH",
+//     data: { track },
+//     success
+//   });
+// };

@@ -16,9 +16,9 @@ export const requestComments = (id) => ({
 //   type: REQUEST_TRACKS
 // });
 
-export const receiveComments = comments => ({
+export const receiveComments = track => ({
   type: RECEIVE_COMMENTS,
-  comments
+  track
 });
 
 export const receiveComment = comment => ({

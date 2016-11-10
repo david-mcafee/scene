@@ -1,10 +1,10 @@
 import React from 'react';
 import { hashHistory } from 'react-router';
 
-class CommentIndexItem extends React.Component {
+class CommentsIndexItem extends React.Component {
   constructor(props) {
     super(props);
-    this.editcomment = this.editcomment.bind(this);
+    // this.editcomment = this.editcomment.bind(this);
   }
 
 
@@ -18,20 +18,21 @@ class CommentIndexItem extends React.Component {
 
             // <li className="index-item-user-id">{this.props.username}</li>
 
+
+            // <button className="input-button-solid" onClick={ this.editcomment(id) }>EDIT</button>
+            // <button className="input-button-solid" onClick={ () => this.props.deleteComment(id) }>DELETE</button>
+
   render () {
 
     // onClick={this.handleClick}
     return (
       <div className="comment-index-item">
-
         <ul>
-          <li>test index item</li>
+          <li>{this.props.comment.body}</li>
+          <li>{this.props.comment.user_id}</li>
+          <li>{this.props.comment.age}</li>
         </ul>
-
-
         <div className="edit-buttons">
-          <button className="input-button-solid" onClick={ this.editcomment(id) }>EDIT</button>
-          <button className="input-button-solid" onClick={ () => this.props.deleteComment(id) }>DELETE</button>
         </div>
 
       </div>
@@ -39,4 +40,4 @@ class CommentIndexItem extends React.Component {
   }
 }
 
-export default CommentIndexItem;
+export default CommentsIndexItem;

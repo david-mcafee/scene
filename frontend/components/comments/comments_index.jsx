@@ -1,12 +1,13 @@
 import React from 'react';
 import CommentsIndexItem from './comments_index_item';
 
-class CommentIndex extends React.Component {
+class CommentsIndex extends React.Component {
   constructor(props) {
     super(props);
   }
 
   componentDidMount() {
+    // debugger;
     this.props.requestComments(1);
     // debugger;
   }
@@ -22,8 +23,7 @@ class CommentIndex extends React.Component {
         <h4>COMMENTS</h4>
           {this.props.comments ? this.props.comments.map(comment => (
             comment.id ?
-              <CommentIndexItem
-                playcomment={ this.props.playcomment }
+              <CommentsIndexItem
                 comment={comment}
                 key={comment.id}
                 deletecomment={this.props.deletecomment}
@@ -36,4 +36,4 @@ class CommentIndex extends React.Component {
   }
 }
 
-export default CommentIndex;
+export default CommentsIndex;

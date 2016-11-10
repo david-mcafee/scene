@@ -53,6 +53,7 @@ class IndexItem extends React.Component {
                 <button className="input-button-solid" onClick={
                     () => {
                             console.log("comments callback entered");
+                            debugger;
                             return(
                               this.props.requestComments(id)
                             );

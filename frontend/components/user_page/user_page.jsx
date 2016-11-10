@@ -42,15 +42,7 @@ class UserPage extends React.Component {
             </section>
 
             <section className="col col-1-3">
-              <CommentsContainer/>  
-              <ul>
-                <li>comment</li>
-                <li>comment</li>
-                <li>comment</li>
-                <li>comment</li>
-                <li>comment</li>
-                <li>comment</li>
-              </ul>
+              <CommentsContainer/>
             </section>
           </div>
         :

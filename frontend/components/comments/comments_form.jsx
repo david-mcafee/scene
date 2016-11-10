@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TrackForm extends React.Component {
+class CommentsForm extends React.Component {
   constructor(props) {
     super(props);
 
@@ -150,4 +150,4 @@ class TrackForm extends React.Component {
   }
 }
 
-export default TrackForm;
+export default CommentsForm;

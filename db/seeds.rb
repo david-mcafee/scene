@@ -50,7 +50,7 @@ User.create!(username:"Joe Kye",
 User.create!(username:"The Undercover Dream Lovers",
   email: "theundercoverdreamlovers@david-mcafee.com",
   artist: true,
-  banner_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_960,w_960/v1478765153/UndercoverDreamLoversProfile_bmc70g.jpg",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_960,w_960/v1478765153/UndercoverDreamLoversProfile_bmc70g.jpg",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 #6
@@ -75,40 +75,162 @@ User.create!(username:"Dean Cercone",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 
+# 50.times do |number|
+#   if number > 3
+#     User.create!(username: "user#{number}",
+#       email: "test#{number}@david-mcafee.com",
+#       artist: false,
+#       banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+#       password_digest: "#{BCrypt::Password.create("password#{number}")}")
+#   end
+# end
+
+#9
+User.create!(username: "Arlie McDermott IV",
+  email: "user9@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#10
+User.create!(username: "Deron Tillman IV",
+  email: "user10@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#
+User.create!(username: "Bobby Gorczany",
+  email: "user11@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#
+User.create!(username: "Mrs. Talon Wiegand",
+  email: "user12@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#
+User.create!(username: "Ms. Dwight Koch",
+  email: "user13@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+#
+User.create!(username: "Noe Goodwin",
+  email: "user14@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
 
 
+User.create!(username: "Madisen Dare",
+  email: "user15@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+#
+User.create!(username: "Dr. Rosemarie Schmeler",
+  email: "user16@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+#
+User.create!(username: "Ashleigh Wilkinson",
+  email: "user17@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#
+User.create!(username: "Mrs. Orland Zieme",
+  email: "user18@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#
+User.create!(username: "Kaley Powlowski",
+  email: "user19@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
 
 
-50.times do |number|
-  if number > 3
-    User.create!(username: "user#{number}",
-      email: "test#{number}@david-mcafee.com",
-      artist: false,
-      banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
-      password_digest: "#{BCrypt::Password.create("password#{number}")}")
-  end
-end
+# 20
+User.create!(username: "Lyla Rutherford",
+  email: "user20@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
 
-# "Arlie McDermott IV"
-# "Deron Tillman IV"
-# "Bobby Gorczany"
-# "Mrs. Talon Wiegand"
-# "Ms. Dwight Koch"
-# "Noe Goodwin"
-# "Madisen Dare"
-# "Dr. Rosemarie Schmeler"
-# "Ashleigh Wilkinson"
-# "Mrs. Orland Zieme"
-# "Kaley Powlowski"
-# "Lyla Rutherford"
-# "Cathy Larkin"
-# "Albertha Price V"
-# "Titus Grady"
-# "Karl Cummerata I"
-# "Brian Bins"
-# "Brandyn Runte"
-# "Erna Conroy"
-# "Monte Towne"
+#
+User.create!(username: "Cathy Larkin",
+  email: "user21@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#
+User.create!(username: "Albertha Price V",
+  email: "user22@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+
+#
+User.create!(username: "Titus Grady",
+  email: "user23@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#
+User.create!(username: "Karl Cummerata I",
+  email: "user24@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+
+#
+User.create!(username: "Brian Bins",
+  email: "user25@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#
+User.create!(username: "Brandyn Runte",
+  email: "user26@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#
+User.create!(username: "Erna Conroy",
+  email: "user27@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+#
+User.create!(username: "Monte Towne",
+  email: "user28@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+
+# 29
+User.create!(username: "mangos",
+  email: "user29@david-mcafee.com",
+  artist: false,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
 
 
 Track.create!(title: "Guest song (please edit!)",
@@ -116,27 +238,27 @@ Track.create!(title: "Guest song (please edit!)",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
   user_id: 1)
 
-    Comment.create!(body: "I love this", user_id: 20, track_id: 1)
-    Comment.create!(body: "Wow", user_id: 21, track_id: 1)
-    Comment.create!(body: "Sooo good!", user_id: 22, track_id: 1)
-    Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 23, track_id: 1)
-    Comment.create!(body: "So catchy I can't stand it", user_id: 24, track_id: 1)
-    Comment.create!(body: "THAT CHORUS", user_id: 25, track_id: 1)
-    Comment.create!(body: "keep it up!", user_id: 26, track_id: 1)
-    Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 27, track_id: 1)
-    Comment.create!(body: "My favorite local band, hands down", user_id: 28, track_id: 1)
-    Comment.create!(body: "Current favorite song", user_id: 29, track_id: 1)
-    Comment.create!(body: "Best song on the album!", user_id: 30, track_id: 1)
-    Comment.create!(body: "WOW", user_id: 31, track_id: 1)
-    Comment.create!(body: "OK", user_id: 32, track_id: 1)
-    Comment.create!(body: "beautiful", user_id: 33, track_id: 1)
-    Comment.create!(body: "NIIIIIIICE", user_id: 34, track_id: 1)
-    Comment.create!(body: "yes! i love this", user_id: 35, track_id: 1)
-    Comment.create!(body: "obsessed with this", user_id: 36, track_id: 1)
-    Comment.create!(body: "i like it!!", user_id: 37, track_id: 1)
-    Comment.create!(body: "Smooth Track", user_id: 38, track_id: 1)
-    Comment.create!(body: "amazing track", user_id: 39, track_id: 1)
-    Comment.create!(body: "nice Bro", user_id: 40, track_id: 1)
+    Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+    Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+    Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+    Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+    Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+    Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+    Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+    Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+    Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+    Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+    Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+    Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+    Comment.create!(body: "OK", user_id: 21, track_id: 1)
+    Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+    Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+    Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+    Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+    Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+    Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+    Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+    Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
 
 
 Track.create!(title: "animalsoundssample",
@@ -144,123 +266,493 @@ Track.create!(title: "animalsoundssample",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
   user_id: 2)
 
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
 
 
 Track.create!(title: "Mantra (feat. CAARGO)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478569817/Nolan_Kurtz_-_Dark_Water_-_01_Mantra_feat._CAARGO_tvueze.mp3",
   user_id: 3)
+
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Moonlight",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478569867/Nolan_Kurtz_-_Dark_Water_-_02_Moonlight_wdzx9a.mp3",
   user_id: 3)
+
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+
 Track.create!(title: "Zero",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478569846/Nolan_Kurtz_-_Dark_Water_-_03_Zero_w9fd1l.mp3",
   user_id: 3)
+
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+
 Track.create!(title: "Root (Prod. Wellhead)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478569682/Nolan_Kurtz_-_Dark_Water_-_04_Root_Prod._Wellhead_omr0gi.mp3",
   user_id: 3)
+
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Nightlurk (feat. fiction)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478569800/Nolan_Kurtz_-_Dark_Water_-_05_Nightlurk_feat._fiction_m99zrl.mp3",
   user_id: 3)
+
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+
 Track.create!(title: "Windfall (feat. Jen Bjerke)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478569807/Nolan_Kurtz_-_Dark_Water_-_06_Windfall_feat._Jen_Bjerke_tbuk0h.mp3",
   user_id: 3)
+
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Spread Luv (Prod. stanleymarket)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478570016/Nolan_Kurtz_-_Dark_Water_-_07_Spread_Luv_Prod._stanleymarket_dpcwjh.mp3",
   user_id: 3)
+
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Into The Stars",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478570099/Nolan_Kurtz_-_Dark_Water_-_08_Into_The_Stars_im5s5j.mp3",
   user_id: 3)
+
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+
 Track.create!(title: "Vision",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478570123/Nolan_Kurtz_-_Dark_Water_-_09_Vision_ykxick.mp3",
   user_id: 3)
+
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "FYM",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478570123/Nolan_Kurtz_-_Dark_Water_-_10_FYM_p6wcwr.mp3",
   user_id: 3)
+
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+
 Track.create!(title: "Dark Water",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478570142/Nolan_Kurtz_-_Dark_Water_-_11_Dark_Water_g92oao.mp3",
   user_id: 3)
 
-
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
 
 
 Track.create!(title: "One",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723198/Ivory_Weeds_-_Music_to_Sleep_to_-_01_One_vw3ttk.mp3",
   user_id: 6)
+
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Two",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723008/Ivory_Weeds_-_Music_to_Sleep_to_-_02_Two_d3ogqo.mp3",
   user_id: 6)
+
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+
 Track.create!(title: "Three",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723310/Ivory_Weeds_-_Music_to_Sleep_to_-_03_Three_mu6nuj.mp3",
   user_id: 6)
+
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "You Don't Need to Speak my Language",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723164/Ivory_Weeds_-_Music_to_Sleep_to_-_04_You_Don_t_Need_to_Speak_my_Language_ahn54t.mp3",
   user_id: 6)
+
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+
 Track.create!(title: "Marseille, on the Beach",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723294/Ivory_Weeds_-_Music_to_Sleep_to_-_05_Marseille_on_the_Beach_rukjbf.mp3",
   user_id: 6)
+
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Sleepy",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723408/Ivory_Weeds_-_Music_to_Sleep_to_-_06_Sleepy_nulqwt.mp3",
   user_id: 6)
+
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+
 Track.create!(title: "Forward",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723352/Ivory_Weeds_-_Music_to_Sleep_to_-_08_Illusions_yzb38y.mp3",
   user_id: 6)
+
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Illusions",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723352/Ivory_Weeds_-_Music_to_Sleep_to_-_08_Illusions_yzb38y.mp3",
   user_id: 6)
+
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+
 Track.create!(title: "Summer Growth",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723449/Ivory_Weeds_-_Music_to_Sleep_to_-_09_Summer_Growth_txazyw.mp3",
   user_id: 6)
 
-
-
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
 
 Track.create!(title: "Plastic Heart",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743737/Joe_Kye_-_Plastic_Heart_EP_-_01_Plastic_Heart_smi70f.mp3",
   user_id: 4)
+
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Sakura",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743744/Joe_Kye_-_Plastic_Heart_EP_-_02_Sakura_rrvwvc.mp3",
   user_id: 4)
+
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Farewell to I",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743729/Joe_Kye_-_Plastic_Heart_EP_-_03_Farewell_to_I_ofi3r1.mp3",
   user_id: 4)
+
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Ghost",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743675/Joe_Kye_-_Plastic_Heart_EP_-_04_Ghost_rrlmik.mp3",
   user_id: 4)
+
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Waiting for Others",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743730/Joe_Kye_-_Plastic_Heart_EP_-_05_Waiting_for_Others_opbvqd.mp3",
   user_id: 4)
+
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+
 Track.create!(title: "Keeper of the Lighthouse",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743739/Joe_Kye_-_Plastic_Heart_EP_-_06_Keeper_of_the_Lighthouse_dvbkgu.mp3",
   user_id: 4)
 
 
-
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
 
 
 Track.create!(title: "When You Know It's Alright",
@@ -268,27 +760,88 @@ Track.create!(title: "When You Know It's Alright",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
   user_id: 5)
 
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "The Master",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765152/cover_qty27o.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765307/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_02_The_Master_o9h2uz.mp3",
   user_id: 5)
+
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
 
 Track.create!(title: "Just To Die",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765152/cover_qty27o.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765317/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_03_Just_To_Die_qaaokk.mp3",
   user_id: 5)
 
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Wind Up With Anyone",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765152/cover_qty27o.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765302/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_04_Wind_Up_With_Anyone_aien8f.mp3",
   user_id: 5)
+
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
 
 Track.create!(title: "Luvlatude",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765152/cover_qty27o.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765325/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_05_Luvlatude_rh2azn.mp3",
   user_id: 5)
 
-
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
 
 
 Track.create!(title: "Bag Full of Stars (Live)",
@@ -296,44 +849,122 @@ Track.create!(title: "Bag Full of Stars (Live)",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765373/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_02_Bag_Full_of_Stars_shjuxi.mp3",
   user_id: 7)
 
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "I Get Dreaming (Live)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_600,w_600/v1478765171/cover_xcwfc7.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765366/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_01_I_Get_Dreaming_qoo0zr.mp3",
   user_id: 7)
+
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
 
 Track.create!(title: "(Hello) Darling (Live)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_600,w_600/v1478765171/cover_xcwfc7.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765375/The_Whiskey_Holler_-_Live_at_Howlers_-_03_Hello_Darling_jpqg6h.mp3",
   user_id: 7)
 
-
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
 
 Track.create!(title: "I Get Dreaming",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765190/cover_qwfx0s.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765366/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_01_I_Get_Dreaming_qoo0zr.mp3",
   user_id: 7)
 
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Bag Full of Stars",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765190/cover_qwfx0s.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765373/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_02_Bag_Full_of_Stars_shjuxi.mp3",
   user_id: 7)
+
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
 
 Track.create!(title: "When My Time Is Through",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765190/cover_qwfx0s.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765384/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_03_When_My_Time_Is_Through_qbr7z7.mp3",
   user_id: 7)
 
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+
 Track.create!(title: "Style to Sleep",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765190/cover_qwfx0s.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765395/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_04_Style_to_Sleep_dlbhx0.mp3",
   user_id: 7)
+
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
 
 Track.create!(title: "Blue Skies (up ahead)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765190/cover_qwfx0s.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765400/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_05_Blue_Skies_up_ahead_q2ccbq.mp3",
   user_id: 7)
 
-
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
 
 
 Track.create!(title: "just before",
@@ -341,22 +972,74 @@ Track.create!(title: "just before",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765264/DEAN_CERCONE_-_cirrus_-_01_just_before_irlseo.mp3",
   user_id: 8)
 
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+
 Track.create!(title: "being young",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765120/cover_x6ag2f.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765260/DEAN_CERCONE_-_cirrus_-_02_being_young_uzskzz.mp3",
   user_id: 8)
+
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
 
 Track.create!(title: "just because",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765120/cover_x6ag2f.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765250/DEAN_CERCONE_-_cirrus_-_03_just_because_ichvsb.mp3",
   user_id: 8)
 
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
+  Comment.create!(body: "OK", user_id: 21, track_id: 1)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
+  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+
 Track.create!(title: "hissing snake",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478765120/cover_x6ag2f.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765272/DEAN_CERCONE_-_cirrus_-_04_hissing_snake_onstca.mp3",
   user_id: 8)
 
-
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
 
 #
 # Track.create!(title: "",
