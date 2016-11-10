@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter, hashHistory } from 'react-router';
+import LandingPageContainer from '../landing_page/landing_page_container';
 
 
 // NOTE: state will be governed by user interface
@@ -81,100 +82,104 @@ class SessionForm extends React.Component {
 
   render() {
     return(
-      <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          {this.navLink()}
+      <div>
+          <LandingPageContainer className="z-1"/>
+          <div className="login-form-container">
+            <form onSubmit={this.handleSubmit} className="login-form-box">
+              {this.navLink()}
 
-          {this.props.formType === "signup" ?
+              {this.props.formType === "signup" ?
 
-            <div className="login-form">
-              <br/>
+                <div className="login-form">
+                  <br/>
 
-              {this.renderErrors()}
+                  {this.renderErrors()}
 
-              <label>
-                <input
-                  type="text"
-                  placeholder="username"
-                  value={this.state.username}
-                  onChange={this.update("username")}
-                  className="login-input" />
-              </label>
-              <br/>
-              <label>
-                <input
-                  type="password"
-                  placeholder="password"
-                  value={this.state.password}
-                  onChange={this.update("password")}
-                  className="login-input" />
-              </label>
-              <br />
-              <label>
-                <input
-                  type="text"
-                  placeholder="email"
-                  value={this.state.email}
-                  onChange={this.update("email")}
-                  className="login-input"/>
-              </label>
-              <br />
-              <label>
-                <input
-                  type="text"
-                  placeholder="banner url  (optional)"
-                  value={this.state.banner_url}
-                  onChange={this.update("banner_url")}
-                  className="login-input"/>
-              </label>
-              <br />
-              <br />
-                <input type="radio" name={this.state.artist} value="false" onChange={this.update("artist")} checked={this.state.artist==="false"}/>fan     <input type="radio" name={this.state.artist} value="true" onChange={this.update("artist")} checked={this.state.artist==="true"}/>artist    <em className="required">(required)</em>
-              <br />
-              <br />
+                  <label>
+                    <input
+                      type="text"
+                      placeholder="username"
+                      value={this.state.username}
+                      onChange={this.update("username")}
+                      className="login-input" />
+                  </label>
+                  <br/>
+                  <label>
+                    <input
+                      type="password"
+                      placeholder="password"
+                      value={this.state.password}
+                      onChange={this.update("password")}
+                      className="login-input" />
+                  </label>
+                  <br />
+                  <label>
+                    <input
+                      type="text"
+                      placeholder="email"
+                      value={this.state.email}
+                      onChange={this.update("email")}
+                      className="login-input"/>
+                  </label>
+                  <br />
+                  <label>
+                    <input
+                      type="text"
+                      placeholder="banner url  (optional)"
+                      value={this.state.banner_url}
+                      onChange={this.update("banner_url")}
+                      className="login-input"/>
+                  </label>
+                  <br />
+                  <br />
+                    <input type="radio" name={this.state.artist} value="false" onChange={this.update("artist")} checked={this.state.artist==="false"}/>fan     <input type="radio" name={this.state.artist} value="true" onChange={this.update("artist")} checked={this.state.artist==="true"}/>artist    <em className="required">(required)</em>
+                  <br />
+                  <br />
 
-              <input type="submit" value="submit" className="input-button"/>
-              <Link onClick={this.guestLogin.bind(this)} className="input-button-solid">DEMO ACCOUNT</Link>
-            </div>
+                  <input type="submit" value="submit" className="input-button"/>
+                  <Link onClick={this.guestLogin.bind(this)} className="input-button-solid">DEMO ACCOUNT</Link>
+                </div>
 
-          :
+              :
 
-            <div className="login-form">
-              <br/>
+                <div className="login-form">
+                  <br/>
 
-              {this.renderErrors()}
+                  {this.renderErrors()}
 
-              <label>
-                <input
-                  type="text"
-                  placeholder="username"
-                  value={this.state.username}
-                  onChange={this.update("username")}
-                  className="login-input" />
-              </label>
-              <br/>
-              <label>
-                <input
-                  type="password"
-                  placeholder="password"
-                  value={this.state.password}
-                  onChange={this.update("password")}
-                  className="login-input" />
-              </label>
-              <br />
-              <br />
-              <input type="submit" value="submit" className="input-button"/>
-              <button onClick={this.guestLogin.bind(this)} className="input-button-solid">DEMO ACCOUNT</button>
+                  <label>
+                    <input
+                      type="text"
+                      placeholder="username"
+                      value={this.state.username}
+                      onChange={this.update("username")}
+                      className="login-input" />
+                  </label>
+                  <br/>
+                  <label>
+                    <input
+                      type="password"
+                      placeholder="password"
+                      value={this.state.password}
+                      onChange={this.update("password")}
+                      className="login-input" />
+                  </label>
+                  <br />
+                  <br />
+                  <input type="submit" value="submit" className="input-button"/>
+                  <button onClick={this.guestLogin.bind(this)} className="input-button-solid">DEMO ACCOUNT</button>
 
-            </div>
+                </div>
 
-          }
+              }
 
-        </form>
+            </form>
 
 
 
+          </div>
       </div>
+
     );
   }
 

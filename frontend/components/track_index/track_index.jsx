@@ -10,7 +10,7 @@ class TrackIndex extends React.Component {
     // NOTE: follow this from container if you forget
     // this call will be asyncronous, meaning page will load before this
     // is complete
-    this.props.requestTracks();
+    // this.props.requestUserTracks(this.props.selectedUser.id);
   }
 
   render() {
@@ -26,7 +26,8 @@ class TrackIndex extends React.Component {
               playTrack={ this.props.playTrack }
               track={track}
               key={track.id}
-              deleteTrack={this.props.deleteTrack}/>
+              deleteTrack={this.props.deleteTrack}
+              username={this.props.username}/>
             :
             <p></p>
         )) : <p>all tracks</p>}

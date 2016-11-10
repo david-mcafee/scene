@@ -20,6 +20,8 @@ class IndexItem extends React.Component {
     };
   }
 
+            // <li className="index-item-user-id">{this.props.username}</li>
+
   render () {
     const { id, title, age, image_url, audio_url, user_id, user} = this.props.track;
     // onClick={this.handleClick}
@@ -39,7 +41,7 @@ class IndexItem extends React.Component {
                 );
               } }>PLAY</button>
             <li className="index-item-title">{title}</li>
-            <li className="index-item-user-id">{user.username}</li>
+            <li className="index-item-user-id">{this.props.username}</li>
           </ul>
         </div>
 

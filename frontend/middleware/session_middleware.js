@@ -30,6 +30,7 @@ export default ({ getState, dispatch }) => next => action => {
       return next(action);
     case LOGOUT:
       logout(logoutCallback);
+      hashHistory.push("/");
       break;
     case SIGNUP:
       signup(action.user, successCallback, errorCallback);

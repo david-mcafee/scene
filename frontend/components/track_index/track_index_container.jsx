@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import {
   postTrack,
   requestTracks,
+  // requestUserTracks,
   receiveTracks,
   updateTrack,
   deleteTrack
@@ -19,29 +20,16 @@ import { getAllTracks } from '../../reducers/selectors';
 
 
 const mapStateToProps = (state, OwnProps) => {
-  // console.log(OwnProps.params);
-
-  // let selectedTrack;
-  //
-  // if (OwnProps.params.track_id) {
-  //   selectedTrack = state.tracks[OwnProps.params.track_id];
-  // }
-  // else {
-  //   selectedTrack = {
-  //     id: null,
-  //     title: "",
-  //     image_url: "",
-  //     audio_url: ""
-  //   };
-  // }
-
-  // console.log(selectedTrack);
+  console.log("users tracks");
+  console.log(state.users.selectedUserPageUser.tracks);
 
   return({
-    tracks: getAllTracks(state),
+    // tracks: getAllTracks(state),
     // selectedTrackId: OwnProps.params.track_id,
     // selectedTrack: selectedTrack,
-    playTrack: playTrack
+    playTrack: playTrack,
+    tracks: state.users.selectedUserPageUser.tracks,
+    username: state.users.selectedUserPageUser.username
     // errors: this.state.errors
   });
 };
@@ -50,7 +38,7 @@ const mapStateToProps = (state, OwnProps) => {
 // it has mounted. give it a requestTracks prop that it can use to
 // call a dispatch with the requestTracks() action creator (see actions/track_actions)
 
-const mapDispatchToProps = (dispatch, { location }) => {
+const mapDispatchToProps = (dispatch, { location }, OwnProps) => {
   // const formType = location.pathname.slice(1);
   // console.log(formType);
   // const processForm = (formType === 'upload') ? postTrack : updateTrack;
@@ -58,6 +46,7 @@ const mapDispatchToProps = (dispatch, { location }) => {
   return {
     playTrack: (track) => dispatch(playTrack(track)),
     requestTracks: () => dispatch(requestTracks()),
+    // requestUserTracks: (user_id) => dispatch(requestUserTracks(user_id)),
     postTrack: (url) => dispatch(postTrack(url)),
     deleteTrack: (id) => dispatch(deleteTrack(id))
     // processForm: track => dispatch(processForm(track)),
