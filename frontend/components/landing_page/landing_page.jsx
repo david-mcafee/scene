@@ -27,8 +27,10 @@ class LandingPage extends React.Component {
 
   render() {
     // debugger;
+    // let imageClass = `image${Math.floor(Math.random() * 10)}`;
+
     return(
-      <div className="landing">
+      <div className="landing image0">
           <h1 className="landing-title">scene</h1>
           <h2 className="landing-sub-1">love music? discover your local scene</h2>
           <p className="landing-sub-2">listen to music by artists in YOUR community</p>

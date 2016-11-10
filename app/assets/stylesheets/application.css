@@ -18,10 +18,68 @@
      font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
  }
 
+.all-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: #1c1c1e;
+  color: white;
+}
+
+.main-content{
+  display: flex;
+  height: 400px;
+  width: 100%
+  /*align-items: center;*/
+  /*margin-bottom: 50px;*/
+}
+
+.player-div {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom:0;
+  background-color: #1c1c1f;
+  font-size: 10px;
+  bottom: 0;
+  color: white;
+  width: 100%;
+}
+
+.player{
+  display: flex;
+  justify-content: space-between;
+}
 
  .landing {
-   /*margin: 0 auto;*/
+   position: flex;
+   width: 100%;
+   height: 100%;
  }
+
+ .image0 {
+   background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+ }
+ /*.image0 {
+   background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
+ }
+ .image0 {
+   background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
+ }
+ .image0 {
+   background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
+ }
+ .image0 {
+   background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
+ }*/
 
  .landing-title {
    /*display: flex;
@@ -101,10 +159,7 @@
    font-size: 11px;
  }
 
- .navigation {
-   background-color: #1c1c1e;
-   color: white;
- }
+
 
  .navigation ul {
    display: flex;
@@ -300,11 +355,7 @@
   outline: none;
 }
 
-.main-content{
-  display: flex;
-  align-items: center;
-  margin-bottom: 100px;
-}
+
 
 .errors {
   position: fixed;
@@ -318,10 +369,7 @@
   color: white;
 }
 
-.player{
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .player h4 {
   display: flex;
@@ -418,17 +466,7 @@
  /*font family? "Helvetica Neue", Helvetica, sans-serif*/
 
 /* holds everything: */
-.player-div {
-  display: flex;
-  width: 100%;
-  position: fixed;
-  bottom:0;
-  background-color: #1c1c1f;
-  font-size: 10px;
-  bottom: 0;
-  color: white;
-  width: 100%;
-}
+
 
 /* not visible */
 .react-player {
@@ -528,19 +566,19 @@
 
 .home {
   display: flex;
-  border: 1px solid grey;;
+  /*border: 1px solid grey;;*/
 }
 
 .artist-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
 }
 
 .artist-list-item {
   position: relative;
-  border: 1px solid grey;
+  border: 2px solid white;
   margin: 5px;
   width: 250px;
   height: 250px;
@@ -568,7 +606,7 @@
 }
 
 .user-page-banner {
-  background-color: red;
+  /*background-color: red;*/
   width: 100%;
   height: 150px;
 }

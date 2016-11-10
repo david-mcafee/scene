@@ -9,15 +9,37 @@
 User.destroy_all
 ActiveRecord::Base.connection.reset_pk_sequence!("users")
 
-User.create!(username:"Guest", email: "guest@david-mcafee.com", artist: true, password_digest: "#{BCrypt::Password.create("password")}")
+User.create!(username:"Guest",
+  email: "guest@david-mcafee.com",
+  artist: true,
+  banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
 
-User.create!(username:"Nolan Kurtz", email: "nolan@david-mcafee.com", artist: true, password_digest: "#{BCrypt::Password.create("password")}")
+User.create!(username:"Nolan Kurtz",
+  email: "nolan@david-mcafee.com",
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_901,w_901/v1478635322/NolanKurtzProfilePicture_jjxck0.jpg",
+  artist: true,
+  password_digest: "#{BCrypt::Password.create("password")}")
 
-User.create!(username:"Ivory Weeds", email: "ivoryweeds@david-mcafee.com", artist: true, password_digest: "#{BCrypt::Password.create("password")}")
+User.create!(username:"Ivory Weeds",
+  email: "ivoryweeds@david-mcafee.com",
+  artist: true,
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_679,w_679/v1478749151/IvoryWeedsProfilePicture_bg2aby.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
+  
+User.create!(username:"Ivory Weeds",
+  email: "ivoryweeds@david-mcafee.com",
+  artist: true,
+  banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_679,w_679/v1478749151/IvoryWeedsProfilePicture_bg2aby.jpg",
+  password_digest: "#{BCrypt::Password.create("password")}")
 
 25.times do |number|
   if number > 3
-    User.create!(username: "user#{number}", email: "test#{number}@david-mcafee.com", artist: false, password_digest: "#{BCrypt::Password.create("password#{number}")}")
+    User.create!(username: "user#{number}",
+      email: "test#{number}@david-mcafee.com",
+      artist: false,
+      banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
+      password_digest: "#{BCrypt::Password.create("password#{number}")}")
   end
 end
 
@@ -105,4 +127,29 @@ Track.create!(title: "Illusions",
 Track.create!(title: "Summer Growth",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_2848,q_auto,w_2848/v1478725642/IvoryWeedsMusicToSleepBy_kd4meg.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478723449/Ivory_Weeds_-_Music_to_Sleep_to_-_09_Summer_Growth_txazyw.mp3",
+  user_id: 3)
+
+Track.create!(title: "Plastic Heart",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743737/Joe_Kye_-_Plastic_Heart_EP_-_01_Plastic_Heart_smi70f.mp3",
+  user_id: 3)
+Track.create!(title: "Sakura",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743744/Joe_Kye_-_Plastic_Heart_EP_-_02_Sakura_rrvwvc.mp3",
+  user_id: 3)
+Track.create!(title: "Farewell to I",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743729/Joe_Kye_-_Plastic_Heart_EP_-_03_Farewell_to_I_ofi3r1.mp3",
+  user_id: 3)
+Track.create!(title: "Ghost",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743675/Joe_Kye_-_Plastic_Heart_EP_-_04_Ghost_rrlmik.mp3",
+  user_id: 3)
+Track.create!(title: "Waiting for Others",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743730/Joe_Kye_-_Plastic_Heart_EP_-_05_Waiting_for_Others_opbvqd.mp3",
+  user_id: 3)
+Track.create!(title: "Keeper of the Lighthouse",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478748787/cover_zfkrlm.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478743739/Joe_Kye_-_Plastic_Heart_EP_-_06_Keeper_of_the_Lighthouse_dvbkgu.mp3",
   user_id: 3)

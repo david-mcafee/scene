@@ -8,7 +8,7 @@ import PlayerContainer from './player/player_container';
 // currently, login, signup, etc
 
 const App = ({ children }) => (
-  <div>
+  <div className="all-content">
     <NavContainer />
 
     <div className="main-content">
