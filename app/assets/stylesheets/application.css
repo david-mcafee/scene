@@ -26,6 +26,7 @@
 
 .navigation {
   display: flex;
+  justify-content: space-between;
   /*position: fixed;*/
   /*flex-wrap: wrap;*/
   width: 100%;
@@ -165,7 +166,7 @@
 
  .navigation ul {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;;
  }
 
  .navigation ul li {
