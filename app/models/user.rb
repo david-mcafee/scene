@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
 	attr_reader :password
 
 	has_many :tracks
+	has_many :comments
 
 	validates :username, :password_digest, :session_token, presence: true
 	validates :username, uniqueness: true

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :users
     resource :session, only: [:create, :destroy, :show]
     resources :tracks
+    resources :comments
   end
 
   # NOTE: configure where the root path will go to
