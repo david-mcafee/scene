@@ -232,7 +232,6 @@ User.create!(username: "mangos",
   banner_url: "https://s-media-cache-ak0.pinimg.com/236x/a7/7e/3d/a77e3d34eb1a05f7bc930d3f719c0846.jpg",
   password_digest: "#{BCrypt::Password.create("password")}")
 
-
 Track.create!(title: "Guest song (please edit!)",
   image_url: "",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
@@ -266,27 +265,27 @@ Track.create!(title: "animalsoundssample",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
   user_id: 2)
 
-  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 1)
-  Comment.create!(body: "keep it up!", user_id: 15, track_id: 1)
-  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 1)
-  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 1)
-  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 1)
-  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
-  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
-  Comment.create!(body: "OK", user_id: 21, track_id: 1)
-  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
-  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
-  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
-  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
-  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
-  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 1)
-  Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
-  Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
-  Comment.create!(body: "I love this", user_id: 9, track_id: 1)
-  Comment.create!(body: "Wow", user_id: 10, track_id: 1)
-  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 1)
-  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 1)
-  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 1)
+  Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 2)
+  Comment.create!(body: "keep it up!", user_id: 15, track_id: 2)
+  Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 16, track_id: 2)
+  Comment.create!(body: "My favorite local band, hands down", user_id: 17, track_id: 2)
+  Comment.create!(body: "Current favorite song", user_id: 18, track_id: 2)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 2)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 2)
+  Comment.create!(body: "OK", user_id: 21, track_id: 2)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 2)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 2)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 2)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 2)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 2)
+  Comment.create!(body: "Smooth Track", user_id: 27, track_id: 2)
+  Comment.create!(body: "amazing track", user_id: 28, track_id: 2)
+  Comment.create!(body: "nice Bro", user_id: 29, track_id: 2)
+  Comment.create!(body: "I love this", user_id: 9, track_id: 2)
+  Comment.create!(body: "Wow", user_id: 10, track_id: 2)
+  Comment.create!(body: "Sooo good!", user_id: 11, track_id: 2)
+  Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 12, track_id: 2)
+  Comment.create!(body: "So catchy I can't stand it", user_id: 13, track_id: 2)
 
 
 Track.create!(title: "Mantra (feat. CAARGO)",
@@ -294,14 +293,14 @@ Track.create!(title: "Mantra (feat. CAARGO)",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478569817/Nolan_Kurtz_-_Dark_Water_-_01_Mantra_feat._CAARGO_tvueze.mp3",
   user_id: 3)
 
-  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 1)
-  Comment.create!(body: "WOW", user_id: 20, track_id: 1)
-  Comment.create!(body: "OK", user_id: 21, track_id: 1)
-  Comment.create!(body: "beautiful", user_id: 22, track_id: 1)
-  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 1)
-  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 1)
-  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
-  Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
+  Comment.create!(body: "Best song on the album!", user_id: 19, track_id: 3)
+  Comment.create!(body: "WOW", user_id: 20, track_id: 3)
+  Comment.create!(body: "OK", user_id: 21, track_id: 3)
+  Comment.create!(body: "beautiful", user_id: 22, track_id: 3)
+  Comment.create!(body: "NIIIIIIICE", user_id: 23, track_id: 3)
+  Comment.create!(body: "yes! i love this", user_id: 24, track_id: 3)
+  Comment.create!(body: "obsessed with this", user_id: 25, track_id: 3)
+  Comment.create!(body: "i like it!!", user_id: 26, track_id: 3)
 
 Track.create!(title: "Moonlight",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478568632/Nolan_Kurtz_Dark_Water/Nolan_Kurtz_-_Dark_Water_-_cover_ff9jm4.png",
