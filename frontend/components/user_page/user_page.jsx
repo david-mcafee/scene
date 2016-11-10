@@ -41,6 +41,7 @@ class UserPage extends React.Component {
             </section>
 
             <section className="col col-1-3">
+              
               <ul>
                 <li>comment</li>
                 <li>comment</li>

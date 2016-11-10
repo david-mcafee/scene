@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
 import UserPage from './user_page';
 
-const mapStateToProps = ({users}, OwnProps) => {
+const mapStateToProps = ({users, comments}, OwnProps) => {
   console.log(users);
   return(
     {
       selectedUserPageUser: users.selectedUserPageUser
+      // comments: comments
     }
   );
 };

@@ -79,7 +79,7 @@ User.create!(username:"Dean Cercone",
 
 
 
-25.times do |number|
+50.times do |number|
   if number > 3
     User.create!(username: "user#{number}",
       email: "test#{number}@david-mcafee.com",
@@ -89,6 +89,26 @@ User.create!(username:"Dean Cercone",
   end
 end
 
+# "Arlie McDermott IV"
+# "Deron Tillman IV"
+# "Bobby Gorczany"
+# "Mrs. Talon Wiegand"
+# "Ms. Dwight Koch"
+# "Noe Goodwin"
+# "Madisen Dare"
+# "Dr. Rosemarie Schmeler"
+# "Ashleigh Wilkinson"
+# "Mrs. Orland Zieme"
+# "Kaley Powlowski"
+# "Lyla Rutherford"
+# "Cathy Larkin"
+# "Albertha Price V"
+# "Titus Grady"
+# "Karl Cummerata I"
+# "Brian Bins"
+# "Brandyn Runte"
+# "Erna Conroy"
+# "Monte Towne"
 
 
 Track.create!(title: "Guest song (please edit!)",
@@ -96,6 +116,27 @@ Track.create!(title: "Guest song (please edit!)",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
   user_id: 1)
 
+    Comment.create!(body: "I love this", user_id: 20, track_id: 1)
+    Comment.create!(body: "Wow", user_id: 21, track_id: 1)
+    Comment.create!(body: "Sooo good!", user_id: 22, track_id: 1)
+    Comment.create!(body: "This band never ceases to amaze me, and this song is proof", user_id: 23, track_id: 1)
+    Comment.create!(body: "So catchy I can't stand it", user_id: 24, track_id: 1)
+    Comment.create!(body: "THAT CHORUS", user_id: 25, track_id: 1)
+    Comment.create!(body: "keep it up!", user_id: 26, track_id: 1)
+    Comment.create!(body: "coming to Pittsburgh any time in the near future?!?", user_id: 27, track_id: 1)
+    Comment.create!(body: "My favorite local band, hands down", user_id: 28, track_id: 1)
+    Comment.create!(body: "Current favorite song", user_id: 29, track_id: 1)
+    Comment.create!(body: "Best song on the album!", user_id: 30, track_id: 1)
+    Comment.create!(body: "WOW", user_id: 31, track_id: 1)
+    Comment.create!(body: "OK", user_id: 32, track_id: 1)
+    Comment.create!(body: "beautiful", user_id: 33, track_id: 1)
+    Comment.create!(body: "NIIIIIIICE", user_id: 34, track_id: 1)
+    Comment.create!(body: "yes! i love this", user_id: 35, track_id: 1)
+    Comment.create!(body: "obsessed with this", user_id: 36, track_id: 1)
+    Comment.create!(body: "i like it!!", user_id: 37, track_id: 1)
+    Comment.create!(body: "Smooth Track", user_id: 38, track_id: 1)
+    Comment.create!(body: "amazing track", user_id: 39, track_id: 1)
+    Comment.create!(body: "nice Bro", user_id: 40, track_id: 1)
 
 
 Track.create!(title: "animalsoundssample",
