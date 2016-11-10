@@ -54,7 +54,6 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
       hashHistory.push(`/users/${action.userId}`);
       return next(action);
     case DELETE_TRACK:
-      debugger;
       deleteTrack(action.id, removeTrackSuccess);
       // hashHistory.goBack();
       // hashHistory.push(`/tracks`);
