@@ -60,7 +60,7 @@ const mapDispatchToProps = (dispatch, { location }) => {
   return {
     playTrack: (track) => dispatch(playTrack(track)),
     requestTracks: () => dispatch(requestTracks()),
-    postTrack: (url) => dispatch(postTrack(url)),
+    postTrack: (userId, track) => dispatch(postTrack(userId, track)),
     deleteTrack: (id) => dispatch(deleteTrack(id)),
     processForm: (userId, track) => dispatch(processForm(userId, track)),
     formType

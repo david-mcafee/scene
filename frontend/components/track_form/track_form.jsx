@@ -7,9 +7,6 @@ class TrackForm extends React.Component {
     // use post in store if updating; start with blank post if new
     // this.props.track ||
 
-    // let url;
-    // this.props.selectedTrack.image_url ? url = this.props.selectedTrack.image_url : url = "http://res.cloudinary.com/localscene/image/upload/e_pixelate:25/v1478803914/defaultimage_rc8bko.png";
-
     this.state = {
       id: this.props.selectedTrack.id,
       title: this.props.selectedTrack.title,
