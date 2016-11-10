@@ -3,9 +3,11 @@ export const RECEIVE_TRACKS = "RECEIVE_TRACKS";
 export const POST_TRACK = "POST_TRACK";
 export const DELETE_TRACK = "DELETE_TRACK";
 export const REMOVE_TRACK = "REMOVE_TRACK";
-export const RECEIVE_TRACK = "RECEIVE_TRACK";
+// export const RECEIVE_TRACK = "RECEIVE_TRACK";
 export const UPDATE_TRACK = "UPDATE_TRACK";
 // export const REQUEST_USER_TRACKS = "REQUEST_USER_TRACKS";
+export const REQUEST_TRACK = "REQUEST_TRACK";
+export const RECEIVE_TRACK = "RECEIVE_TRACK";
 
 export const requestTracks = () => ({
   type: REQUEST_TRACKS
@@ -44,4 +46,9 @@ export const removeTrack = track => ({
 export const updateTrack = track => ({
   type: UPDATE_TRACK,
   track
+});
+
+export const requestTrack = id => ({
+  type: REQUEST_TRACK,
+  id
 });

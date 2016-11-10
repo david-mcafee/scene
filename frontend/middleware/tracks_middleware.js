@@ -5,6 +5,7 @@
 import {
   REQUEST_TRACKS,
   RECEIVE_TRACKS,
+  REQUEST_TRACK,
   POST_TRACK,
   DELETE_TRACK,
   UPDATE_TRACK,
@@ -15,6 +16,7 @@ import {
 
 import {
   fetchTracks,
+  fetchTrack,
   postTrack,
   deleteTrack,
   updateTrack,
@@ -59,6 +61,9 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
       updateTrack(action.track, updateTrackSuccess);
       hashHistory.goBack();
       // hashHistory.push(`/tracks`);
+      return next(action);
+    case REQUEST_TRACK:
+      fetchTrack(action.id, receiveTrackSuccess);
       return next(action);
     default:
       return next(action);

@@ -8,6 +8,8 @@ import {
   deleteTrack
   } from '../../actions/track_actions';
 
+import { requestComments } from '../../actions/comments_actions';
+
 import {
   playTrack
 } from '../../actions/player_actions';
@@ -48,9 +50,10 @@ const mapDispatchToProps = (dispatch, { location }, OwnProps) => {
     requestTracks: () => dispatch(requestTracks()),
     // requestUserTracks: (user_id) => dispatch(requestUserTracks(user_id)),
     postTrack: (url) => dispatch(postTrack(url)),
-    deleteTrack: (id) => dispatch(deleteTrack(id))
+    deleteTrack: (id) => dispatch(deleteTrack(id)),
     // processForm: track => dispatch(processForm(track)),
     // formType
+    requestComments: (id) => dispatch(requestComments(id))
   };
 };
 

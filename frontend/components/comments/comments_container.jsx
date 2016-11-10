@@ -4,7 +4,7 @@ import {
   postComment,
   requestComments,
   receiveComments,
-  updateComment,
+  // updateComment,
   deleteComment
 } from '../../actions/comment_actions';
 
@@ -15,7 +15,7 @@ import { getAllComments } from '../../reducers/selectors';
 
 const mapStateToProps = (state, OwnProps) => {
   return({
-    selectedTrackPageTrack: state.users.selectedUserPageUser
+    selectedTrackPageTrack: state.tracks.selectedTrackPageTrack
   });
 };
 

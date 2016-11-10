@@ -1,47 +1,48 @@
-export const REQUEST_TRACKS = "REQUEST_TRACKS";
-export const RECEIVE_TRACKS = "RECEIVE_TRACKS";
-export const POST_TRACK = "POST_TRACK";
-export const DELETE_TRACK = "DELETE_TRACK";
-export const REMOVE_TRACK = "REMOVE_TRACK";
-export const RECEIVE_TRACK = "RECEIVE_TRACK";
-export const UPDATE_TRACK = "UPDATE_TRACK";
+export const REQUEST_COMMENTS = "REQUEST_COMMENTS";
+export const RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
+export const POST_COMMENT = "POST_COMMENT";
+export const RECEIVE_COMMENT = "RECEIVE_COMMENT";
+export const DELETE_COMMENT = "DELETE_COMMENT";
+export const REMOVE_COMMENT = "REMOVE_COMMENT";
+// export const UPDATE_TRACK = "UPDATE_TRACK";
 // export const REQUEST_USER_TRACKS = "REQUEST_USER_TRACKS";
 
-export const requestTracks = () => ({
-  type: REQUEST_TRACKS
+export const requestComments = (id) => ({
+  type: REQUEST_COMMENTS,
+  id
 });
 
 // export const requestUserTracks = (user_id) => ({
 //   type: REQUEST_TRACKS
 // });
 
-export const receiveTracks = tracks => ({
-  type: RECEIVE_TRACKS,
-  tracks
+export const receiveComments = comments => ({
+  type: RECEIVE_COMMENTS,
+  comments
 });
 
-export const receiveTrack = track => ({
-  type: RECEIVE_TRACK,
-  track
+export const receiveComment = comment => ({
+  type: RECEIVE_COMMENT,
+  comment
 });
 
-export const postTrack = url => ({
-  type: POST_TRACK,
+export const postComment = url => ({
+  type: POST_COMMENT,
   url
 });
 
 // NOTE: delete/remove like post/receive
-export const deleteTrack = id => ({
-  type: DELETE_TRACK,
+export const deleteComment = id => ({
+  type: DELETE_COMMENT,
   id
 });
 
-export const removeTrack = track => ({
-  type: REMOVE_TRACK,
-  track
+export const removeComment = comment => ({
+  type: REMOVE_COMMENT,
+  comment
 });
 
-export const updateTrack = track => ({
-  type: UPDATE_TRACK,
-  track
-});
+// export const updateTrack = track => ({
+//   type: UPDATE_TRACK,
+//   track
+// });
