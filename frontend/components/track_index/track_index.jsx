@@ -23,6 +23,7 @@ class TrackIndex extends React.Component {
         {this.props.tracks ? this.props.tracks.map(track => (
           track.id ?
             <TrackIndexItem
+              currentUser={ this.props.currentUser }
               playTrack={ this.props.playTrack }
               track={track}
               key={track.id}

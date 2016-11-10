@@ -31,7 +31,8 @@ const mapStateToProps = (state, OwnProps) => {
     // selectedTrack: selectedTrack,
     playTrack: playTrack,
     tracks: state.users.selectedUserPageUser.tracks,
-    selectedUserPageUser: state.users.selectedUserPageUser
+    selectedUserPageUser: state.users.selectedUserPageUser,
+    currentUser: state.session.currentUser
     // errors: this.state.errors
   });
 };

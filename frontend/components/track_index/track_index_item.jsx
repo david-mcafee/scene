@@ -60,9 +60,17 @@ class IndexItem extends React.Component {
             <li>
               <div className="edit-buttons">
 
-                <button className="input-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
-                <button className="input-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
-              </div>
+
+                { this.props.track.user_id === this.props.currentUser.id ?
+                    <div>
+                      <button className="input-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
+                      <button className="input-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
+                    </div>
+                  :
+                    <div></div>
+                }
+
+        </div>
             </li>
           </ul>
         </div>
