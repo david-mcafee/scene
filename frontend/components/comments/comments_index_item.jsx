@@ -25,7 +25,7 @@ class CommentIndexItem extends React.Component {
       <div className="comment-index-item">
 
         <ul>
-          <li>{}</li>
+          <li>test index item</li>
         </ul>
 
 
