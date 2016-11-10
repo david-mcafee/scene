@@ -25,33 +25,46 @@
 }
 
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  /*position: fixed;*/
-  /*flex-wrap: wrap;*/
-  width: 100%;
   background-color: #1c1c1e;
   color: white;
 }
 
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation ul li {
+  display: flex;
+}
+
+.nav-button-left {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  color: #cccccc;
+}
+
+
 .main-content{
   display: flex;
-  height: 400px;
+  /*height: 400px;*/
   width: 100%
-  /*position: fixed;*/
-  /*align-items: center;*/
-  /*margin-bottom: 50px;*/
+
 }
 
 .player-div {
   display: flex;
   width: 100%;
   position: fixed;
-  /*bottom:0;*/
   background-color: #1c1c1f;
   font-size: 10px;
   bottom: 0;
   color: white;
+  /*height: 100px;*/
 }
 
 .player{
@@ -66,6 +79,7 @@
  }
 
  .image0 {
+   position: fixed;
    background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
    background-size: cover;
    background-repeat: no-repeat;
@@ -164,24 +178,6 @@
 
 
 
- .navigation ul {
-   display: flex;
-   justify-content: space-around;;
- }
-
- .navigation ul li {
-   display: flex;
- }
-
- .nav-button-left {
-   padding-left: 45px;
-   padding-right: 45px;
-   padding-top: 17px;
-   padding-bottom: 17px;
-   border-left: 1px solid black;
-   border-right: 1px solid black;
-   color: #cccccc;
- }
 
  .nav-button {
    padding-left: 15px;
@@ -281,16 +277,17 @@
  }*/
 
  .login-form-container {
-
+   /*position: fixed;*/
  }
 
 .login-form-box {
   background-color: #1c1c1e;
-  position: absolute;
+  position: fixed;
   top: 70px;
   right:10px;
   padding: 15px;
   width: 300px;
+  z-index: 5;
 }
 
 .track-form-box {
