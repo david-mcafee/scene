@@ -18,6 +18,7 @@ class SessionForm extends React.Component {
     };
     // NOTE: review from React curriculum
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.uploadImage = this.uploadImage.bind(this);
   }
 
 
@@ -80,6 +81,34 @@ class SessionForm extends React.Component {
     }
   }
 
+  uploadImage(e){
+    e.preventDefault();
+    // console.log(e.currentTarget.value);
+
+    cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
+      if (!error) {
+        // upload successfull
+        // debugger;
+
+        this.setState({
+          ["banner_url"]: results[0].url
+        });
+      }
+      // console.log(this);
+    }.bind(this)
+    );
+  }
+
+  // <label>
+  //   <input
+  //     type="text"
+  //     placeholder="banner url  (optional)"
+  //     value={this.state.banner_url}
+  //     onChange={this.update("banner_url")}
+  //     className="login-input"/>
+  // </label>
+
+
   render() {
     return(
       <div>
@@ -122,14 +151,13 @@ class SessionForm extends React.Component {
                       className="login-input"/>
                   </label>
                   <br />
-                  <label>
-                    <input
-                      type="text"
-                      placeholder="banner url  (optional)"
-                      value={this.state.banner_url}
-                      onChange={this.update("banner_url")}
-                      className="login-input"/>
-                  </label>
+
+
+
+                    <button onClick={this.uploadImage} className="input-button" value="banner_url">profile picture (optional)</button>
+
+
+
                   <br />
                   <br />
                     <input type="radio" name={this.state.artist} value="false" onChange={this.update("artist")} checked={this.state.artist==="false"}/>fan     <input type="radio" name={this.state.artist} value="true" onChange={this.update("artist")} checked={this.state.artist==="true"}/>artist    <em className="required">(required)</em>

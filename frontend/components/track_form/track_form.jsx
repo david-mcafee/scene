@@ -74,6 +74,7 @@ class TrackForm extends React.Component {
     }.bind(this)
     );
   }
+  // <button onClick={this.upload} className="input-button" value="audio_url">add audio required</button>
 
   renderErrors() {
     if (this.props.errors.length > 0) {
