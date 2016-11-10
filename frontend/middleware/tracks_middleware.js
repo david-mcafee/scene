@@ -51,7 +51,7 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
     case POST_TRACK:
       // debugger;
       postTrack(receiveTrackSuccess, action.url);
-      // hashHistory.push(`/users/${}`)
+      hashHistory.push(`/users/${action.userId}`);
       return next(action);
     case DELETE_TRACK:
       deleteTrack(action.id, removeTrackSuccess);

@@ -27,9 +27,10 @@ export const receiveTrack = track => ({
   track
 });
 
-export const postTrack = url => ({
+export const postTrack = (userId, track) => ({
   type: POST_TRACK,
-  url
+  userId,
+  track
 });
 
 // NOTE: delete/remove like post/receive
@@ -43,8 +44,9 @@ export const removeTrack = track => ({
   track
 });
 
-export const updateTrack = track => ({
+export const updateTrack = (userId, track) => ({
   type: UPDATE_TRACK,
+  userId,
   track
 });
 

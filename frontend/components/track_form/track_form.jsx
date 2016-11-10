@@ -35,7 +35,7 @@ class TrackForm extends React.Component {
     // debugger;
     e.preventDefault();
     const track = this.state;
-      this.props.processForm(track);
+      this.props.processForm(this.props.currentUser.id ,track);
   }
 
   // componentWillReceiveProps(newProps) {

@@ -42,7 +42,8 @@ const mapStateToProps = (state, OwnProps) => {
     tracks: getAllTracks(state),
     selectedTrackId: OwnProps.params.track_id,
     selectedTrack: selectedTrack,
-    playTrack: playTrack
+    playTrack: playTrack,
+    currentUser: state.session.currentUser
     // errors: this.state.errors
   });
 };
@@ -61,7 +62,7 @@ const mapDispatchToProps = (dispatch, { location }) => {
     requestTracks: () => dispatch(requestTracks()),
     postTrack: (url) => dispatch(postTrack(url)),
     deleteTrack: (id) => dispatch(deleteTrack(id)),
-    processForm: track => dispatch(processForm(track)),
+    processForm: (userId, track) => dispatch(processForm(userId, track)),
     formType
   };
 };
