@@ -31,7 +31,7 @@ const mapStateToProps = (state, OwnProps) => {
     selectedTrack = {
       id: null,
       title: "",
-      image_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:25/v1478803914/defaultimage_rc8bko.png",
+      image_url: "",
       audio_url: ""
     };
   }
