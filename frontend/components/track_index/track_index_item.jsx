@@ -20,7 +20,16 @@ class IndexItem extends React.Component {
     };
   }
 
-            // <li className="index-item-user-id">{this.props.username}</li>
+// <li className="index-item-user-id">{this.props.username}</li>
+// <button className="input-button-solid" onClick={
+//     () => {
+//             // console.log("comments callback entered");
+//             debugger;
+//             return(
+//               this.props.requestComments(id)
+//             );
+//           }
+// }>COMMENTS</button>
 
   render () {
     const { id, title, age, image_url, audio_url, user_id, user} = this.props.track;
@@ -50,15 +59,7 @@ class IndexItem extends React.Component {
             <li className="index-item-age">uploaded {age} ago</li>
             <li>
               <div className="edit-buttons">
-                <button className="input-button-solid" onClick={
-                    () => {
-                            // console.log("comments callback entered");
-                            debugger;
-                            return(
-                              this.props.requestComments(id)
-                            );
-                          }
-                }>COMMENTS</button>
+
                 <button className="input-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
                 <button className="input-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
               </div>

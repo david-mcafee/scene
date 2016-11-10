@@ -12,6 +12,9 @@ class UserPage extends React.Component {
     // console.log("user-componentDidMount");
   }
 
+  // <section className="col col-1-3">
+  //   <CommentsContainer/>
+  // </section>
 
   render() {
     return(
@@ -37,13 +40,11 @@ class UserPage extends React.Component {
               </div>
             </header>
 
-            <section className="col col-2-3">
+            <section className="temp-track-container">
               <TrackIndexContainer />
             </section>
 
-            <section className="col col-1-3">
-              <CommentsContainer/>
-            </section>
+
           </div>
         :
             <p></p>

@@ -51,8 +51,8 @@
 
 .main-content{
   display: flex;
-  /*height: 400px;*/
-  width: 100%
+  width: 100%;
+    margin-bottom: 100px;
 
 }
 
@@ -393,6 +393,7 @@
   padding: 3px;
   margin-top: 3px;
   margin-bottom: 3px;
+    background-color: grey;
 }
 
 .index-item-info {
@@ -632,6 +633,7 @@
   /*float: left;*/
   width: 100%;
   height: 300px;
+  /*background-image: linear-gradient(-90deg, #B1D2C7, #FFA866);*/
 }
 
 .profile-picture {
@@ -743,7 +745,7 @@ progress[value]::-webkit-progress-value {
 }*/
 
 .logo {
-  position: fixed;
+  position: absolute;
   /*background-color: white;*/
   top: 8px;
   font-size: 35px;
@@ -753,9 +755,13 @@ progress[value]::-webkit-progress-value {
 }
 
 .logo-image {
-  position: fixed;
+  position: absolute;
   top:10px;
   left: 10px;
   height: 40px;
   width: auto;
+}
+
+.temp-track-container {
+  /*margin-bottom: 100px;*/
 }
