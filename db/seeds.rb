@@ -15,7 +15,7 @@ User.create!(username:"Nolan Kurtz", email: "nolan@david-mcafee.com", artist: tr
 
 User.create!(username:"Ivory Weeds", email: "ivoryweeds@david-mcafee.com", artist: true, password_digest: "#{BCrypt::Password.create("password")}")
 
-10.times do |number|
+25.times do |number|
   if number > 3
     User.create!(username: "user#{number}", email: "test#{number}@david-mcafee.com", artist: false, password_digest: "#{BCrypt::Password.create("password#{number}")}")
   end

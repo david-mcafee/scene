@@ -546,12 +546,20 @@
   height: 250px;
 }
 
-.home-index-item-info {
+
+.home-index-item-name {
   position: absolute;
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
+  top: 25px;;
+  left: 20px;
+  font-size: 20px;
+  background-color: black;
+  /*padding-top: 5px;
+  padding-bottom: 5px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  /*border-radius: 10px;*/
 }
-
-
 
 
 
