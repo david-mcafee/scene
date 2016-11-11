@@ -107,7 +107,7 @@ User.create!(username:"Dean Cercone",
   User.create!(username:"Yom Tork",
     email: "yomtork@david-mcafee.com",
     artist: true,
-    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+    banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
     password_digest: "#{BCrypt::Password.create("password")}")
 
 #14
@@ -1090,6 +1090,32 @@ Track.create!(title: "Run!",
   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850329/11_Run_ohdesb.mp3",
   user_id: 13)
+
+
+Track.create!(title: "Split Infinity",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478899297/cover_x6xtu7.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478899870/Medicine_Ship_-_Seven_Songs_-_01_Split_Infinity_g6lgfv.mp3",
+  user_id: 14)
+Track.create!(title: "Dead Man",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478899297/cover_x6xtu7.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478899810/Medicine_Ship_-_Seven_Songs_-_02_Dead_Man_edwnte.mp3",
+  user_id: 14)
+Track.create!(title: "Bad Wolf",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478899297/cover_x6xtu7.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478899838/Medicine_Ship_-_Seven_Songs_-_03_Bad_Wolf_tcm0ma.mp3",
+  user_id: 14)
+Track.create!(title: "Wow and Flutter",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478899297/cover_x6xtu7.jpg",
+  audio_url: "",
+  user_id: 14)
+Track.create!(title: "Pilgrim Cinema",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478899297/cover_x6xtu7.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478899835/Medicine_Ship_-_Seven_Songs_-_04_Wow_and_Flutter_cmxqvf.mp3",
+  user_id: 14)
+Track.create!(title: "Come Back Tomorrow",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478899297/cover_x6xtu7.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478899862/Medicine_Ship_-_Seven_Songs_-_06_Come_Back_Tomorrow_joqusu.mp3",
+  user_id: 14)
 
 
 # Track.create!(title: "",
