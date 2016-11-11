@@ -29,8 +29,11 @@ const UsersReducer = (state = {}, action) => {
     case REMOVE_TRACK:
       debugger;
       newState = merge({}, state);
-      newState.selectedUserPageUser.tracks.pop(action.track);
-      // delete newState[action.track.id]; // NOTE: REVIEW DELETE
+
+      let index = newState.selectedUserPageUser.tracks.indexOf(action.track);
+      if (index > -1) {
+        newState.selectedUserPageUser.tracks.splice(index, 1);
+      }
       return newState;
     case RECEIVE_USER:
       // debugger;

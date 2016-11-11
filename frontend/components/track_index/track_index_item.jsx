@@ -13,6 +13,7 @@ class IndexItem extends React.Component {
   // }
 
   editTrack (id) {
+    debugger;
     return (e) => {
       e.preventDefault();
       const url = `/tracks/${id}/edit`;
@@ -63,7 +64,7 @@ class IndexItem extends React.Component {
 
                 { this.props.track.user_id === this.props.currentUser.id ?
                     <div>
-                      <button className="input-button-solid" onClick={ this.editTrack(id) }>EDIT</button>
+                      <button className="input-button-solid" onClick={ this.editTrack(this.props.track.id) }>EDIT</button>
                       <button className="input-button-solid" onClick={ () => this.props.deleteTrack(id) }>DELETE</button>
                     </div>
                   :
