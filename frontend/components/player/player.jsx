@@ -177,7 +177,7 @@ class Player extends React.Component {
           }
           <div>
             <p className="player-track-name">{this.props.current_track ? this.props.current_track.title : ""}</p>
-
+            
           </div>
         </section>
 
