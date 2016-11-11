@@ -93,7 +93,7 @@ User.create!(username:"Dean Cercone",
   User.create!(username:"Aphonos",
     email: "aphonos@david-mcafee.com",
     artist: true,
-    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+    banner_url: "",
     password_digest: "#{BCrypt::Password.create("password")}")
 
 #12
@@ -1043,33 +1043,33 @@ Track.create!(title: "The Real Thing",
 
 
 Track.create!(title: "The Dance Song",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_128,w_128/v1478878711/aphonos_jitter2_c0bnrf.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850235/01_The_Dance_Song_tzsier.mp3",
   user_id: 11)
 Track.create!(title: "Dahk",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_128,w_128/v1478878711/aphonos_jitter2_c0bnrf.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850243/02_Dahk_e6gatm.mp3",
   user_id: 11)
 Track.create!(title: "The New One",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_128,w_128/v1478878711/aphonos_jitter2_c0bnrf.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850260/03_The_New_One_gko00z.mp3",
   user_id: 11)
 Track.create!(title: "Attica",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_128,w_128/v1478878711/aphonos_jitter2_c0bnrf.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850274/04_Attica_p4lmmz.mp3",
   user_id: 11)
 
 
 Track.create!(title: "Carefully Caught Regrets",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850250/05_Carefully_Caught_Regrets_obdzpt.mp3",
   user_id: 12)
 Track.create!(title: "Far From Home",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850195/06_Far_From_Home_cyp9hs.mp3",
   user_id: 12)
 Track.create!(title: "London",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850296/07_London_zdirnz.mp3",
   user_id: 12)
 Track.create!(title: "Mind the Gap",
@@ -1079,15 +1079,15 @@ Track.create!(title: "Mind the Gap",
 
 
 Track.create!(title: "Rain",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850322/09_Rain_xqqzoy.mp3",
   user_id: 13)
 Track.create!(title: "Oxford",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850304/10_Oxford_aevhdj.mp3",
   user_id: 13)
 Track.create!(title: "Run!",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850329/11_Run_ohdesb.mp3",
   user_id: 13)
 
