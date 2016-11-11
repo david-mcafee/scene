@@ -14,12 +14,13 @@ const personalGreeting = (currentUser, logout) => {
   return(
 
       <ul className="personal-greeting">
-        <Link to={redirectUrl}>
+
           <li className="user-box">
-            <p className="user-name">{currentUser.username}</p>
+            <Link to={redirectUrl}>
             <img src={currentUser.banner_url} className="user-avatar"></img>
+            </Link>
           </li>
-        </Link>
+
         <li><button onClick={logout} className="nav-button-solid"><h5>Log Out</h5></button></li>
       </ul>
 

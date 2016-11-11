@@ -18,7 +18,8 @@ const mapStateToProps = (state, OwnProps) => {
   // debugger;
   return({
     tracks: getAllTracks(state),
-    selectedTrackId: OwnProps.params.track_id
+    selectedTrackId: OwnProps.params.track_id,
+    trackArtist: state.users.selectedUserPageUser
     // errors: this.state.errors
   });
 };

@@ -19,7 +19,7 @@ const mapStateToProps = ({player}) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-
+  
 });
 
 export default connect(

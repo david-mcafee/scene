@@ -226,13 +226,102 @@ User.create!(username: "Monte Towne",
   password_digest: "#{BCrypt::Password.create("password")}")
 
 # 29
-User.create!(username: "mangos",
+User.create!(username: "juliabananamangos",
   email: "user29@david-mcafee.com",
   artist: false,
   banner_url: "http://res.cloudinary.com/localscene/image/upload/e_pixelate:103/v1478803914/defaultimage_rc8bko.png",
   password_digest: "#{BCrypt::Password.create("password")}")
 
+#30
+  User.create!(username:"jenna",
+    email: "giveMeTreats@david-mcafee.com",
+    artist: true,
+    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_835,w_835/v1478828117/c49g6jgahf6lvyvsvze3.jpg",
+    password_digest: "#{BCrypt::Password.create("password")}")
 
+#31
+  User.create!(username:"Aaron Matthew",
+    email: "aaronmatthew@david-mcafee.com",
+    artist: true,
+    banner_url: "http://res.cloudinary.com/localscene/image/upload/v1478848560/aaronmatthewcurrents_ep_lm4xiv.jpg",
+    password_digest: "#{BCrypt::Password.create("password")}")
+
+#32
+  User.create!(username:"Rob Carona",
+    email: "robcarona@david-mcafee.com",
+    artist: true,
+    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+    password_digest: "#{BCrypt::Password.create("password")}")
+
+#33
+  User.create!(username:"Aphonos",
+    email: "aphonos@david-mcafee.com",
+    artist: true,
+    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+    password_digest: "#{BCrypt::Password.create("password")}")
+
+#34
+  User.create!(username:"Barton Willis",
+    email: "bartonwillis@david-mcafee.com",
+    artist: true,
+    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+    password_digest: "#{BCrypt::Password.create("password")}")
+
+#35
+  User.create!(username:"Yom Tork",
+    email: "yomtork@david-mcafee.com",
+    artist: true,
+    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+    password_digest: "#{BCrypt::Password.create("password")}")
+
+# #36
+#   User.create!(username:"Medicine Ship",
+#     email: "medicineship@david-mcafee.com",
+#     artist: true,
+#     banner_url: "",
+#     password_digest: "#{BCrypt::Password.create("password")}")
+#
+# #35
+#   User.create!(username:"Yom Tork",
+#     email: "yomtork@david-mcafee.com",
+#     artist: true,
+#     banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+#     password_digest: "#{BCrypt::Password.create("password")}")
+#
+# #35
+#   User.create!(username:"Yom Tork",
+#     email: "yomtork@david-mcafee.com",
+#     artist: true,
+#     banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+#     password_digest: "#{BCrypt::Password.create("password")}")
+#
+# #35
+#   User.create!(username:"Yom Tork",
+#     email: "yomtork@david-mcafee.com",
+#     artist: true,
+#     banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+#     password_digest: "#{BCrypt::Password.create("password")}")
+#
+# #35
+#   User.create!(username:"Yom Tork",
+#     email: "yomtork@david-mcafee.com",
+#     artist: true,
+#     banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+#     password_digest: "#{BCrypt::Password.create("password")}")
+#
+# #35
+#   User.create!(username:"Yom Tork",
+#     email: "yomtork@david-mcafee.com",
+#     artist: true,
+#     banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+#     password_digest: "#{BCrypt::Password.create("password")}")
+#
+# #35
+#   User.create!(username:"Yom Tork",
+#     email: "yomtork@david-mcafee.com",
+#     artist: true,
+#     banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+#     password_digest: "#{BCrypt::Password.create("password")}")
 
 
 
@@ -1062,38 +1151,140 @@ Track.create!(title: "hissing snake",
   Comment.create!(body: "obsessed with this", user_id: 25, track_id: 1)
   Comment.create!(body: "i like it!!", user_id: 26, track_id: 1)
 
+
+Track.create!(title: "You Are For Me (Remix)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478848560/aaronmatthewcurrents_ep_lm4xiv.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478848320/you-are-for-me-remix_js2xv0.mp3",
+  user_id: 31)
+
+Track.create!(title: "Track One",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478848560/aaronmatthewcurrents_ep_lm4xiv.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478806309/eumwtqzme0z7wsbwdvqk.mp3",
+  user_id: 31)
+
+Track.create!(title: "Track Two",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478848560/aaronmatthewcurrents_ep_lm4xiv.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478806236/pzspcaa8iuuqbq6cvyqc.mp3",
+  user_id: 31)
+
+
+
+Track.create!(title: "Headed For A Heartbreak",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478848967/Headed_For_A_Heartbreak_RM_tyy2c2.mp3",
+  user_id: 32)
+
+# Track.create!(title: "Wild One",
+#   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+#   audio_url: "",
+#   user_id: 32)
+
+Track.create!(title: "The Real Thing",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478849577/The_Real_Thing_Mix-110314_ws49qu.mp3",
+  user_id: 32)
+
+# Track.create!(title: "",
+#   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+#   audio_url: "",
+#   user_id: 32)
 #
 # Track.create!(title: "",
-#   image_url: "",
+#   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
 #   audio_url: "",
-#   user_id: 3)
+#   user_id: 32)
 #
 # Track.create!(title: "",
-#   image_url: "",
+#   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
 #   audio_url: "",
-#   user_id: 3)
+#   user_id: 32)
 #
 # Track.create!(title: "",
-#   image_url: "",
+#   image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
 #   audio_url: "",
-#   user_id: 3)
-#
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-#
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-#
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
-#
-# Track.create!(title: "",
-#   image_url: "",
-#   audio_url: "",
-#   user_id: 3)
+#   user_id: 32)
+
+
+
+Track.create!(title: "The Dance Song",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850235/01_The_Dance_Song_tzsier.mp3",
+  user_id: 33)
+Track.create!(title: "Dahk",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850243/02_Dahk_e6gatm.mp3",
+  user_id: 33)
+Track.create!(title: "The New One",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850260/03_The_New_One_gko00z.mp3",
+  user_id: 33)
+Track.create!(title: "Attica",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850274/04_Attica_p4lmmz.mp3",
+  user_id: 33)
+
+
+Track.create!(title: "Carefully Caught Regrets",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850250/05_Carefully_Caught_Regrets_obdzpt.mp3",
+  user_id: 34)
+Track.create!(title: "Far From Home",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850195/06_Far_From_Home_cyp9hs.mp3",
+  user_id: 34)
+Track.create!(title: "London",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850296/07_London_zdirnz.mp3",
+  user_id: 34)
+Track.create!(title: "Mind the Gap",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850310/08_Mind_the_Gap_emf7ys.mp3",
+  user_id: 34)
+
+
+Track.create!(title: "Rain",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850322/09_Rain_xqqzoy.mp3",
+  user_id: 35)
+Track.create!(title: "Oxford",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850304/10_Oxford_aevhdj.mp3",
+  user_id: 35)
+Track.create!(title: "Run!",
+  image_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850329/11_Run_ohdesb.mp3",
+  user_id: 35)
+
+
+Track.create!(title: "",
+  image_url: "",
+  audio_url: "",
+  user_id: 36)
+Track.create!(title: "",
+  image_url: "",
+  audio_url: "",
+  user_id: 36)
+Track.create!(title: "",
+  image_url: "",
+  audio_url: "",
+  user_id: 36)
+Track.create!(title: "",
+  image_url: "",
+  audio_url: "",
+  user_id: 36)
+Track.create!(title: "",
+  image_url: "",
+  audio_url: "",
+  user_id: 36)
+Track.create!(title: "",
+  image_url: "",
+  audio_url: "",
+  user_id: 36)
+Track.create!(title: "",
+  image_url: "",
+  audio_url: "",
+  user_id: 36)
+Track.create!(title: "",
+  image_url: "",
+  audio_url: "",
+  user_id: 36)

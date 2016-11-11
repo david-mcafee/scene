@@ -14,7 +14,7 @@ function format (seconds) {
   const mm = date.getMinutes()
   const ss = pad(date.getSeconds())
   if (hh) {
-    return `${hh}:${pad(mm)}:${ss}`
+    return `${pad(mm)}:${ss}`
   }
   return `${mm}:${ss}`
 }

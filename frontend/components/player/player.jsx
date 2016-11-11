@@ -139,14 +139,13 @@ class Player extends React.Component {
                 </button>
             </li>
 
-            <li>
-              <p className="player-control-title">Volume</p>
+            <li className="volumeSeek">
               <input
                 className="volume-bar"
                 type='range' min={0} max={1} step='any' value={this.state.volume} onChange={this.setVolume} />
+              <p className="volume-title">VOLUME</p>
             </li>
             <li>
-              <p className="player-control-title">Seek</p>
               <input
                 className="seek-bar"
                 type='range' min={0} max={1} step='any'
@@ -155,6 +154,10 @@ class Player extends React.Component {
                 onChange={this.onSeekChange}
                 onMouseUp={this.onSeekMouseUp}
               />
+            <p className="seek-title">SEEK</p>
+            </li>
+            <li>
+              <td><Duration className="time" seconds={this.state.duration * (1 - this.state.played)} /></td>
             </li>
 
           </ul>

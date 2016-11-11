@@ -1,7 +1,8 @@
 class Api::UsersController < ApplicationController
 
   def index
-    @users = User.all
+    # NOTE: includes would be best here
+    @users = User.all.includes(:tracks)
     render :index
   end
 

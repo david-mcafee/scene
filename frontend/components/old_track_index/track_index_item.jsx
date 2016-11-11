@@ -22,6 +22,7 @@ class IndexItem extends React.Component {
 
   render () {
     const { id, title, age, image_url, audio_url, user_id} = this.props.track;
+    
     // onClick={this.handleClick}
     return (
       <div className="track-index-item">
