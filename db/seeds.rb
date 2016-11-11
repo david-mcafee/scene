@@ -1256,35 +1256,35 @@ Track.create!(title: "Run!",
   user_id: 35)
 
 
-Track.create!(title: "",
-  image_url: "",
-  audio_url: "",
-  user_id: 36)
-Track.create!(title: "",
-  image_url: "",
-  audio_url: "",
-  user_id: 36)
-Track.create!(title: "",
-  image_url: "",
-  audio_url: "",
-  user_id: 36)
-Track.create!(title: "",
-  image_url: "",
-  audio_url: "",
-  user_id: 36)
-Track.create!(title: "",
-  image_url: "",
-  audio_url: "",
-  user_id: 36)
-Track.create!(title: "",
-  image_url: "",
-  audio_url: "",
-  user_id: 36)
-Track.create!(title: "",
-  image_url: "",
-  audio_url: "",
-  user_id: 36)
-Track.create!(title: "",
-  image_url: "",
-  audio_url: "",
-  user_id: 36)
+# Track.create!(title: "",
+#   image_url: "",
+#   audio_url: "",
+#   user_id: 36)
+# Track.create!(title: "",
+#   image_url: "",
+#   audio_url: "",
+#   user_id: 36)
+# Track.create!(title: "",
+#   image_url: "",
+#   audio_url: "",
+#   user_id: 36)
+# Track.create!(title: "",
+#   image_url: "",
+#   audio_url: "",
+#   user_id: 36)
+# Track.create!(title: "",
+#   image_url: "",
+#   audio_url: "",
+#   user_id: 36)
+# Track.create!(title: "",
+#   image_url: "",
+#   audio_url: "",
+#   user_id: 36)
+# Track.create!(title: "",
+#   image_url: "",
+#   audio_url: "",
+#   user_id: 36)
+# Track.create!(title: "",
+#   image_url: "",
+#   audio_url: "",
+#   user_id: 36)
