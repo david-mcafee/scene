@@ -8,39 +8,28 @@ Scene is a full-stack web application inspired by SoundCloud and Spotify. Scene 
 
 ## Features & Implementation
 
-![Artist Page](/docs/AppImages/artistpage.png?raw=true "Artist Page")
 
-
+### Artist Pages with Track Rendering
 ![Alt text](/docs/AppImages/artistpage.png?raw=true "Optional Title")
+
+### Continuous playback of songs with progress bar and dynamic track controls
+![Alt text](/docs/AppImages/navigation.png?raw=true "Optional Title")
+
+### Artist Sign Up with Image Upload
+![Alt text](/docs/AppImages/signup.png?raw=true "Optional Title")
+
+### Track Upload, Edit, and Delete
+![Alt text](/docs/AppImages/upload.png?raw=true "Optional Title")
 
 
 ![Alt text](/docs/AppImages/home.png?raw=true "Optional Title")
 
-
+### Landing Page That Only Renders To Logged Out Users
 ![Alt text](/docs/AppImages/landing.png?raw=true "Optional Title")
 
 
 ![Alt text](/docs/AppImages/login.png?raw=true "Optional Title")
 
-
-![Alt text](/docs/AppImages/navigation.png?raw=true "Optional Title")
-
-
-![Alt text](/docs/AppImages/signup.png?raw=true "Optional Title")
-
-
-![Alt text](/docs/AppImages/upload.png?raw=true "Optional Title")
-
-
-
-
-### Continuous playback of songs with progress bar and dynamic track controls
-
-### Artist Pages with Track Rendering
-
-### Track Upload, Edit, and Delete
-
-### Artist Sign Up with Image Upload
 
 ## Future Direction for the Project
 
