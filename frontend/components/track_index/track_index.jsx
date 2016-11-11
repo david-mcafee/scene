@@ -20,7 +20,7 @@ class TrackIndex extends React.Component {
     return(
       <div>
 
-        <h1>tracks: </h1>
+        <h1 className="tracks-header">tracks: </h1>
         {this.props.tracks ? this.props.tracks.map(track => (
           track.id ?
             <TrackIndexItem

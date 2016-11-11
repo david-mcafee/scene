@@ -217,7 +217,7 @@
 
  .user-box div {
 
-   display: flex
+   display: flex;
    width: 100%;
    height: 100%;
  }
@@ -385,6 +385,8 @@
   margin-top: 3px;
   margin-bottom: 3px;
     background-color: grey;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .index-item-info {
@@ -434,6 +436,7 @@
   width: 55%;
 }
 .track-section-right {
+  border-left: 1px solid black;
   width: 30%;
 }
 
@@ -860,3 +863,7 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd;
 }*/
+
+.tracks-header {
+  margin-left: 50px;
+}
