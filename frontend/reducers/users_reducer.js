@@ -30,10 +30,14 @@ const UsersReducer = (state = {}, action) => {
       debugger;
       newState = merge({}, state);
 
-      let index = newState.selectedUserPageUser.tracks.indexOf(action.track);
-      if (index > -1) {
-        newState.selectedUserPageUser.tracks.splice(index, 1);
-      }
+      let returnArray = [];
+      newState.selectedUserPageUser.tracks.map( trackObject => {
+        if (trackObject.id !== action.track.id) {
+          returnArray.push(trackObject);
+        }
+      });
+
+      newState.selectedUserPageUser.tracks = returnArray;
       return newState;
     case RECEIVE_USER:
       // debugger;
