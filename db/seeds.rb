@@ -163,7 +163,7 @@ User.create!(username:"Dean Cercone",
 
 
 
-Track.create!(title: "Guest song (please edit!)",
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
   user_id: 1)
@@ -190,27 +190,76 @@ Track.create!(title: "Guest song (please edit!)",
     # Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
     # Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
 
-Track.create!(title: "Guest song2 (please edit!)",
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
-  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765307/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_02_The_Master_o9h2uz.mp3",
   user_id: 1)
-Track.create!(title: "Guest song3 (please edit!)",
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
-  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765317/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_03_Just_To_Die_qaaokk.mp3",
   user_id: 1)
-Track.create!(title: "Guest song4 (please edit!)",
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
-  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765302/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_04_Wind_Up_With_Anyone_aien8f.mp3",
   user_id: 1)
-Track.create!(title: "Guest song5 (please edit!)",
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
-  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765325/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_05_Luvlatude_rh2azn.mp3",
+  user_id: 1)
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765366/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_01_I_Get_Dreaming_qoo0zr.mp3",
+  user_id: 1)
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765373/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_02_Bag_Full_of_Stars_shjuxi.mp3",
+  user_id: 1)
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765384/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_03_When_My_Time_Is_Through_qbr7z7.mp3",
+  user_id: 1)
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765400/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_05_Blue_Skies_up_ahead_q2ccbq.mp3",
+  user_id: 1)
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765395/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_04_Style_to_Sleep_dlbhx0.mp3",
+  user_id: 1)
+Track.create!(title: "Guest Song (Please Edit or Delete!)",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765400/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_05_Blue_Skies_up_ahead_q2ccbq.mp3",
   user_id: 1)
 
-Track.create!(title: "animalsoundssample",
-  image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
-  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765314/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_01_When_You_Know_It_s_Alright_o0waqh.mp3",
-  user_id: 2)
+
+  Track.create!(title: "elephants",
+    image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+    audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765307/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_02_The_Master_o9h2uz.mp3",
+    user_id: 2)
+  Track.create!(title: "birds",
+    image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+    audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765317/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_03_Just_To_Die_qaaokk.mp3",
+    user_id: 2)
+  Track.create!(title: "fish",
+    image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+    audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765302/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_04_Wind_Up_With_Anyone_aien8f.mp3",
+    user_id: 2)
+  Track.create!(title: "cats",
+    image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+    audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765325/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_05_Luvlatude_rh2azn.mp3",
+    user_id: 2)
+  Track.create!(title: "lizards",
+    image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+    audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765366/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_01_I_Get_Dreaming_qoo0zr.mp3",
+    user_id: 2)
+  Track.create!(title: "cheetah",
+    image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+    audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765373/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_02_Bag_Full_of_Stars_shjuxi.mp3",
+    user_id: 2)
+  Track.create!(title: "giraffe",
+    image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
+    audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765384/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_03_When_My_Time_Is_Through_qbr7z7.mp3",
+    user_id: 2)
 
   # Comment.create!(body: "THAT CHORUS", user_id: 14, track_id: 2)
   # Comment.create!(body: "keep it up!", user_id: 15, track_id: 2)
@@ -1061,19 +1110,19 @@ Track.create!(title: "Attica",
 
 
 Track.create!(title: "Carefully Caught Regrets",
-  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_128,w_128/v1478878711/aphonos_jitter2_c0bnrf.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850250/05_Carefully_Caught_Regrets_obdzpt.mp3",
   user_id: 12)
 Track.create!(title: "Far From Home",
-  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_128,w_128/v1478878711/aphonos_jitter2_c0bnrf.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850195/06_Far_From_Home_cyp9hs.mp3",
   user_id: 12)
 Track.create!(title: "London",
-  image_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_128,w_128/v1478878711/aphonos_jitter2_c0bnrf.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850296/07_London_zdirnz.mp3",
   user_id: 12)
 Track.create!(title: "Mind the Gap",
-  image_url: "",
+  image_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_128,w_128/v1478878711/aphonos_jitter2_c0bnrf.jpg",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478850310/08_Mind_the_Gap_emf7ys.mp3",
   user_id: 12)
 
@@ -1106,11 +1155,11 @@ Track.create!(title: "Bad Wolf",
   user_id: 14)
 Track.create!(title: "Wow and Flutter",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478899297/cover_x6xtu7.jpg",
-  audio_url: "",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478899835/Medicine_Ship_-_Seven_Songs_-_04_Wow_and_Flutter_cmxqvf.mp3",
   user_id: 14)
 Track.create!(title: "Pilgrim Cinema",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478899297/cover_x6xtu7.jpg",
-  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478899835/Medicine_Ship_-_Seven_Songs_-_04_Wow_and_Flutter_cmxqvf.mp3",
+  audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478899833/Medicine_Ship_-_Seven_Songs_-_05_Pilgrim_Cinema_wc4m5g.mp3",
   user_id: 14)
 Track.create!(title: "Come Back Tomorrow",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478899297/cover_x6xtu7.jpg",

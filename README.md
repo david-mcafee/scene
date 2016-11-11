@@ -2,7 +2,7 @@
 
 [Scene Live][scene]
 
-[scene]: https://localscene.herokuapp.com
+[scene]: http://www.localscene.cc
 
 Scene is a full-stack web application inspired by SoundCloud and Spotify. Scene utilizes Ruby on Rails on the back-end, a PostgreSQL database, and React.js with a Redux architectural framework on the front-end.
 
@@ -16,14 +16,14 @@ Scene is a full-stack web application inspired by SoundCloud and Spotify. Scene 
 
 ### Artist Sign Up with Image Upload
 
-## Future Directions for the Project
+## Future Direction for the Project
 
 ### Track Comments
 
 ### Artists Organized by Location
 
 
-### To see how I implemented this project, see the complete Full-Stack Project Proposal README:
+###### To see how I implemented this project, see the complete Full-Stack Project Proposal README:
 
 * [docsREADME][docsREADME]
 
