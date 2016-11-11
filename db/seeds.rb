@@ -190,43 +190,43 @@ Track.create!(title: "Guest Song (Please Edit or Delete!)",
     # Comment.create!(body: "amazing track", user_id: 28, track_id: 1)
     # Comment.create!(body: "nice Bro", user_id: 29, track_id: 1)
 
-Track.create!(title: "Guest Song (Please Edit or Delete!)",
+Track.create!(title: "Guest Song #1 (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765307/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_02_The_Master_o9h2uz.mp3",
   user_id: 1)
-Track.create!(title: "Guest Song (Please Edit or Delete!)",
+Track.create!(title: "Guest Song #2 (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765317/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_03_Just_To_Die_qaaokk.mp3",
   user_id: 1)
-Track.create!(title: "Guest Song (Please Edit or Delete!)",
+Track.create!(title: "Guest Song #3 (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765302/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_04_Wind_Up_With_Anyone_aien8f.mp3",
   user_id: 1)
-Track.create!(title: "Guest Song (Please Edit or Delete!)",
+Track.create!(title: "Guest Song #4 (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765325/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_05_Luvlatude_rh2azn.mp3",
   user_id: 1)
-Track.create!(title: "Guest Song (Please Edit or Delete!)",
+Track.create!(title: "Guest Song #5 (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765366/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_01_I_Get_Dreaming_qoo0zr.mp3",
   user_id: 1)
-Track.create!(title: "Guest Song (Please Edit or Delete!)",
+Track.create!(title: "Guest Song #6 (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765373/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_02_Bag_Full_of_Stars_shjuxi.mp3",
   user_id: 1)
-Track.create!(title: "Guest Song (Please Edit or Delete!)",
+Track.create!(title: "Guest Song #7 (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765384/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_03_When_My_Time_Is_Through_qbr7z7.mp3",
   user_id: 1)
-Track.create!(title: "Guest Song (Please Edit or Delete!)",
+Track.create!(title: "Guest Song #8 (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765400/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_05_Blue_Skies_up_ahead_q2ccbq.mp3",
   user_id: 1)
-Track.create!(title: "Guest Song (Please Edit or Delete!)",
+Track.create!(title: "Guest Song #9 (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765395/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_04_Style_to_Sleep_dlbhx0.mp3",
   user_id: 1)
-Track.create!(title: "Guest Song (Please Edit or Delete!)",
+Track.create!(title: "Guest Song #10 (Please Edit or Delete!)",
   image_url: "http://res.cloudinary.com/localscene/image/upload/v1478806147/xamd8t29ogoptv4yo0vp.png",
   audio_url: "http://res.cloudinary.com/localscene/video/upload/v1478765400/The_Whiskey_Holler_-_She_Writes_Me_Letters_EP_-_05_Blue_Skies_up_ahead_q2ccbq.mp3",
   user_id: 1)
