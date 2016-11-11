@@ -764,7 +764,7 @@ progress[value]::-webkit-progress-value {
 
 .time {
   position: absolute;
-  bottom: 25px;
+  bottom: 8px;
   left: 700px;
 }
 
