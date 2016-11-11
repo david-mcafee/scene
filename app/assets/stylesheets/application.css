@@ -484,8 +484,8 @@
 .album-art {
   height: 100px;
   width: 100px;
-  opacity: 1;
-  box-shadow: rgba(0,0,0,.1)0 0 0 1px inset;
+  /*opacity: 1;
+  box-shadow: rgba(0,0,0,.1)0 0 0 1px inset;*/
 }
 
 
