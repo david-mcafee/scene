@@ -13,7 +13,7 @@ class IndexItem extends React.Component {
   // }
 
   editTrack (id) {
-    debugger;
+    // debugger;
     return (e) => {
       e.preventDefault();
       const url = `/tracks/${id}/edit`;

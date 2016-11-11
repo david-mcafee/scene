@@ -24,8 +24,9 @@ const mapStateToProps = (state, OwnProps) => {
 
   let selectedTrack;
 
+  // debugger;
   if (OwnProps.params.track_id) {
-    selectedTrack = state.tracks[OwnProps.params.track_id];
+    selectedTrack = state.users.selectedUserPageUser.tracks[OwnProps.params.track_id];
   }
   else {
     selectedTrack = {
@@ -39,10 +40,10 @@ const mapStateToProps = (state, OwnProps) => {
   // console.log(selectedTrack);
 
   return({
-    tracks: getAllTracks(state),
+    // tracks: getAllTracks(state),
     selectedTrackId: OwnProps.params.track_id,
     selectedTrack: selectedTrack,
-    playTrack: playTrack,
+    // playTrack: playTrack,
     currentUser: state.session.currentUser
     // errors: this.state.errors
   });

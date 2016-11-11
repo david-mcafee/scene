@@ -11,7 +11,7 @@ class TrackForm extends React.Component {
 
     // use post in store if updating; start with blank post if new
     // this.props.track ||
-
+    // debugger;
     this.state = {
       id: this.props.selectedTrack.id,
       title: this.props.selectedTrack.title,
