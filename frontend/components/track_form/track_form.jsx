@@ -125,7 +125,7 @@ class TrackForm extends React.Component {
               <button onClick={this.upload} className="input-button" value="audio_url">add audio required</button>
               <br />
 
-              <input type="submit" value={this.props.formType} className="input-button-solid"/>
+              <input type="submit" value="UPLOAD" className="input-button-solid"/>
 
             </div>
           :
@@ -145,7 +145,7 @@ class TrackForm extends React.Component {
               <button onClick={this.upload} className="input-button" value="audio_url">add audio required</button>
               <br />
 
-              <input type="submit" value={this.props.formType} className="input-button-solid"/>
+              <input type="submit" value="UPDATE" className="input-button-solid"/>
 
             </div>
           }
