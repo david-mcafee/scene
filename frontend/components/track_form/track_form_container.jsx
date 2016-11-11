@@ -55,6 +55,10 @@ const mapStateToProps = (state, OwnProps) => {
 
 const mapDispatchToProps = (dispatch, { location }) => {
   const formType = location.pathname.slice(1);
+
+  let formDescription;
+  formType === 'upload' ? formDescription = 'upload' : formDescription = 'update';
+
   console.log(formType);
   const processForm = (formType === 'upload') ? postTrack : updateTrack;
 
@@ -64,7 +68,8 @@ const mapDispatchToProps = (dispatch, { location }) => {
     postTrack: (userId, track) => dispatch(postTrack(userId, track)),
     deleteTrack: (id) => dispatch(deleteTrack(id)),
     processForm: (userId, track) => dispatch(processForm(userId, track)),
-    formType
+    formType,
+    formDescription
   };
 };
 

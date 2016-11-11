@@ -110,7 +110,7 @@ class TrackForm extends React.Component {
 
           {this.props.formType === "postTrack" ?
             <div className="login-form">
-              <p>{this.props.formType}</p>
+              <p>{this.props.formDescription}</p>
               <label>
                 <input
                   type="text"
@@ -125,12 +125,12 @@ class TrackForm extends React.Component {
               <button onClick={this.upload} className="input-button" value="audio_url">add audio required</button>
               <br />
 
-              <input type="submit" value="UPLOAD" className="input-button-solid"/>
+              <input type="submit" value={this.props.formDescription} className="input-button-solid"/>
 
             </div>
           :
             <div className="login-form">
-              <p>{this.props.formType}</p>
+              <p>{this.props.formDescription}</p>
               <label>
                 <input
                   type="text"
@@ -145,7 +145,7 @@ class TrackForm extends React.Component {
               <button onClick={this.upload} className="input-button" value="audio_url">add audio required</button>
               <br />
 
-              <input type="submit" value="UPDATE" className="input-button-solid"/>
+              <input type="submit" value={this.props.formDescription} className="input-button-solid"/>
 
             </div>
           }
