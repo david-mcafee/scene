@@ -818,8 +818,8 @@ progress[value]::-webkit-progress-value {
 
 .volume-title {
   position: absolute;
-  bottom: 2px;
-  left: 100px;
+  bottom: -5px;
+  left: 103px;
   font-size: 10px;
 }
 
@@ -831,8 +831,8 @@ progress[value]::-webkit-progress-value {
 
 .seek-title {
   position: absolute;
-  bottom: 2px;
-  left: 230px;
+  bottom: -5px;
+  left: 233px;
   font-size: 10px;
 }
 

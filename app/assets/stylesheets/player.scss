@@ -239,3 +239,18 @@ $contrast: 5%;
     background: lighten($track-color, $contrast);
   }
 }
+
+input.seek-bar {
+  background-color: black;
+  border-radius: 15px;
+  // height: 100%;
+}
+input.volume-bar {
+  background-color: black;
+  border-radius: 15px;
+}
+//
+// .input.seek-bar {
+//   background-color: black !important;
+//   border-radius: 5px;
+// }
