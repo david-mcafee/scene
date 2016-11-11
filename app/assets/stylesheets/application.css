@@ -21,7 +21,6 @@
 .all-content {
   display: flex;
   flex-direction: column;
-  /*align-content: space-between;*/
 }
 
 .navigation {
@@ -67,7 +66,6 @@
   font-size: 10px;
   bottom: 0;
   color: white;
-  /*height: 100px;*/
 }
 
 .player{
@@ -88,22 +86,8 @@
    background-repeat: no-repeat;
    background-position: 50% 50%;
  }
- /*.image0 {
-   background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
- }
- .image0 {
-   background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
- }
- .image0 {
-   background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
- }
- .image0 {
-   background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
- }*/
 
  .landing-title {
-   /*display: flex;
-   flex-grow: 3;*/
    font-size: 110px;
    margin-top: 0px;
    margin-bottom: -50px;
@@ -111,19 +95,12 @@
    margin-right: 0px;
  }
  .landing-sub-1 {
-   /*display: flex;
-   flex-grow: 1;*/
    font-size: 50px;
    position: absolute;
    top: 200px;
    left: 0;
-   /*margin-top: 0px;
-   margin-bottom: 0px;
-   margin-left: 0px;
-   margin-right: 0px;*/
  }
  .landing-sub-2 {
-   /*float: right;*/
    font-size: 30px;
    margin-top: 0px;
    margin-bottom: 0px;
@@ -222,20 +199,16 @@
    width: 250px;
    background-color: #1c1c1e;
    color: white;
-   /*10px solid blue;*/
  }
 
  .user-box {
    display: flex;
-   /*align-items: center;*/
 
    background-color: transparent;
    display: flex;
    justify-content: space-between;
    padding-left: 10px;
    padding-right: 10px;
-   /*padding-top: 3px;
-   padding-bottom: 3px*/
 
    border-left: 1px solid orange;
    border-right: 1px solid orange;
@@ -247,18 +220,11 @@
    display: flex
    width: 100%;
    height: 100%;
-   /*border: 1px solid red;*/
-   /*margin-top: 7px;
-   margin-top: 7px;*/
  }
 
  .user-box div > * {
-   display: flex
    width: 100%;
    height: 100%;
-   /*border: 1px solid red;*/
-   /*margin-top: 7px;
-   margin-top: 7px;*/
  }
 
  .user-box > *{
@@ -288,7 +254,6 @@
    margin: 0 auto;
    color: white;
    vertical-align: middle;
-   /*height: 100%;*/
  }
 
 
@@ -298,7 +263,6 @@
 }
 
  .hide-errors {
-
    display:none;
  }
 
@@ -315,12 +279,8 @@
    background-color: grey;
  }
 
- /*.header-button {
-   background-color: orange;
- }*/
 
  .login-form-container {
-   /*position: fixed;*/
  }
 
 .login-form-box {
@@ -336,7 +296,6 @@
 .track-form-box {
   background-color: #1c1c1e;
   padding: 15px;
-
   position: fixed;
   top: 50%;
   left: 50%;
@@ -344,9 +303,6 @@
   margin-left: -150px; /* Negative half of width. */
 }
 
-.login-form {
-  /*position: absolute;*/
-}
 
 .login-input{
   width: 80%;
@@ -375,7 +331,6 @@
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 5px;
-  /*margin-left: 10px;*/
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -398,8 +353,6 @@
   outline: none;
 }
 
-
-
 .errors {
   position: fixed;
   right: 400px;
@@ -411,8 +364,6 @@
   font-size: 12px;
   color: white;
 }
-
-
 
 .player h4 {
   display: flex;
@@ -429,10 +380,7 @@
   display: flex;
   justify-content: space-between;
   flex-flow: flex-start;
-
   border-top: 1px solid #1c1c1e;
-  /*border-bottom: 1px solid #1c1c1e;*/
-  /*border-radius: 4px;*/
   padding: 3px;
   margin-top: 3px;
   margin-bottom: 3px;
@@ -441,24 +389,17 @@
 
 .index-item-info {
   border-left: 1px solid #1c1c1e;
-  /*border-radius: 2px;*/
   padding: 3px;
 }
 
 .index-item-title {
-  /*border-bottom;: 1px solid #1c1c1e;*/
-  /*border-radius: 2px;*/
   font-size: 25px;
-  /*background-color: black;*/
   padding: 3px;
 }
 .index-item-user-id {
-  /*border-top: 1px solid #1c1c1e;*/
-  /*border-radius: 2px;*/
   font-size: 10px;
   padding-left: 3px;
   padding-right: 3px;
-  /*padding-top: 3px;*/
   padding-bottom: 3px;
 }
 .index-item-audio-url {
@@ -473,8 +414,6 @@
 }
 
 .index-item-age {
-  /*border-left: 1px solid #1c1c1e;
-  border-bottom: 1px solid #1c1c1e;*/
   border-radius: 2px;
   padding: 3px;
   color: white;
@@ -484,8 +423,6 @@
 .album-art {
   height: 100px;
   width: 100px;
-  /*opacity: 1;
-  box-shadow: rgba(0,0,0,.1)0 0 0 1px inset;*/
 }
 
 
@@ -505,11 +442,6 @@
 
 
 
-
-
- /*font family? "Helvetica Neue", Helvetica, sans-serif*/
-
-/* holds everything: */
 
 
 /* not visible */
@@ -578,7 +510,6 @@
 
 .player-control-title {
   font-size: 12px;
-  /*margin-left: 20px;*/
 }
 
 .seek-bar {
@@ -592,7 +523,6 @@
 .player-artist-name {
   font-size: 12px;
   margin-left: 15px;
-  /*margin-left: 10px;*/
 }
 
 
@@ -610,14 +540,12 @@
 
 .home {
   display: flex;
-  /*border: 1px solid grey;;*/
 }
 
 .artist-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /*border: 1px solid grey;*/
 }
 
 .artist-list-item {
@@ -625,7 +553,6 @@
   border: 2px solid white;
   margin: 5px;
   margin-top: 40px;
-  /*margin-bottom: 20px;*/
   width: 250px;
   height: 250px;
 }
@@ -633,19 +560,15 @@
 
 .home-index-item-name {
   position: absolute;
-  /*border: 1px solid grey;*/
   bottom: 25px;;
   left: -15px;
   font-size: 20px;
   background-color: grey;
-  /*padding-top: 5px;
-  padding-bottom: 5px;*/
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-right: 20px;
-  /*border-radius: 10px;*/
 }
 
 
@@ -655,7 +578,6 @@
 }
 
 .user-page-banner {
-  /*background-color: red;*/
   width: 100%;
   height: 150px;
 }
@@ -670,25 +592,20 @@
 
 .user-page-header {
   display: flex;
-  /*float: left;*/
 
 }
 
 .banner-picture {
-  /*display: fixed;*/
-  /*background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
 
-  /*width: 100%;*/
   height: 300px;
   margin: 0 auto;
 }
 
 .profile-picture {
-  /*float: left;*/
   position: absolute;
   top:150px;
   left:100px;
@@ -732,8 +649,6 @@
 
 progress[value]::-webkit-progress-bar {
   background-color: black;
-  /*border-radius: 2px;*/
-  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;*/
 }
 
 progress[value]::-webkit-progress-value {
