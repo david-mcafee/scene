@@ -57,7 +57,6 @@ class IndexItem extends React.Component {
 
         <div className="track-section-right">
           <ul>
-            <li className="index-item-age">uploaded {age} ago</li>
             <li>
               <div className="edit-buttons">
 
