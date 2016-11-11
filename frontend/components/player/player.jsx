@@ -34,11 +34,13 @@ class Player extends React.Component {
   componentWillReceiveProps(nextProps) {
     // You don't have to do this check first, but it can help prevent an unneeded render
     // console.log(nextProps.currentTrackUrl);
-    this.setState({
-      ["url"]: nextProps.currentTrackUrl,
-      ["playing"]: true,
-      ["played"]: 0,
-      ["loaded"]: 0 });
+    if (nextProps.currentTrackUrl) {
+      this.setState({
+        ["url"]: nextProps.currentTrackUrl,
+        ["playing"]: true,
+        ["played"]: 0,
+        ["loaded"]: 0 });
+    }
   }
 
   playPause() {
@@ -177,7 +179,7 @@ class Player extends React.Component {
           }
           <div>
             <p className="player-track-name">{this.props.current_track ? this.props.current_track.title : ""}</p>
-            
+
           </div>
         </section>
 
