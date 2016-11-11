@@ -105,6 +105,10 @@ class Player extends React.Component {
     // debugger;
     // // console.log("current_track");
     // console.log(this.props.current_track);
+
+
+    // onStart={() => console.log('onStart'}
+    //   onError={e => console.log('onError', e)}
     return(
 
       <div className="player-div">
@@ -119,12 +123,12 @@ class Player extends React.Component {
             volume={this.state.volume}
             playing={this.state.playing}
             onReady={() => this.setState({["playing"]: true}) }
-            onStart={() => console.log('onStart')}
+
             onPlay={() => this.setState({ ["playing"]: true })}
             onPause={() => this.setState({ ["playing"]: false })}
             onBuffer={() => (this.displayMessages(["loading"]))}
             onEnded={() => this.setState({ ["playing"]: false })}
-            onError={e => console.log('onError', e)}
+
             onProgress={this.onProgress}
             onDuration={duration => this.setState({ duration })}
           />
@@ -157,7 +161,7 @@ class Player extends React.Component {
             <p className="seek-title">SEEK</p>
             </li>
             <li>
-              <td><Duration className="time" seconds={this.state.duration * (1 - this.state.played)} /></td>
+              <Duration className="time" seconds={this.state.duration * (1 - this.state.played)} />
             </li>
 
           </ul>
