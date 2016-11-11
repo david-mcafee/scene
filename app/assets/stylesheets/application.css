@@ -54,6 +54,8 @@
   width: 100%;
     margin-bottom: 100px;
   max-width: 1300px;
+  margin: 0 auto !important;
+  float: none !important;
 
 }
 
@@ -667,16 +669,22 @@
 }
 
 .user-page-header {
-  float: left;
+  display: flex;
+  /*float: left;*/
 
 }
 
 .banner-picture {
-  /*float: left;*/
-  width: 100%;
+  /*display: fixed;*/
+  /*background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+
+  /*width: 100%;*/
   height: 300px;
   margin: 0 auto;
-  /*background-image: linear-gradient(-90deg, #B1D2C7, #FFA866);*/
 }
 
 .profile-picture {

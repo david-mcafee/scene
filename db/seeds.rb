@@ -100,7 +100,7 @@ User.create!(username:"Dean Cercone",
   User.create!(username:"Barton Willis",
     email: "bartonwillis@david-mcafee.com",
     artist: true,
-    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_958,w_958/v1478876994/Barton2_j60mwy.jpg",
     password_digest: "#{BCrypt::Password.create("password")}")
 
 #13
@@ -114,7 +114,7 @@ User.create!(username:"Dean Cercone",
   User.create!(username:"Medicine Ship",
     email: "medicineship@david-mcafee.com",
     artist: true,
-    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_1356,w_1356/v1478849603/robcaronaProfile_q4nasx.jpg",
+    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_crop,h_906,w_906/v1478876996/medicineshipprofile_ogaxv5.jpg",
     password_digest: "#{BCrypt::Password.create("password")}")
 #
 # #15
