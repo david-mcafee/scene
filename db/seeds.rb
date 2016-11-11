@@ -93,7 +93,7 @@ User.create!(username:"Dean Cercone",
   User.create!(username:"Aphonos",
     email: "aphonos@david-mcafee.com",
     artist: true,
-    banner_url: "",
+    banner_url: "http://res.cloudinary.com/localscene/image/upload/c_scale,h_244,w_244/v1478878775/01aphonos_pg8zpe.jpg",
     password_digest: "#{BCrypt::Password.create("password")}")
 
 #12

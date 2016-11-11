@@ -483,7 +483,7 @@
 
 .album-art {
   height: 100px;
-  width: auto;
+  width: 100px;
   opacity: 1;
   box-shadow: rgba(0,0,0,.1)0 0 0 1px inset;
 }
