@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import Duration from './Duration';
-
 import { Link, withRouter } from 'react-router';
 
 
@@ -32,7 +31,9 @@ class Player extends React.Component {
   }
 
   componentDidMount() {
-    console.log("entered");
+    // refactor to use this: you should have to have this both here and in the player container
+    // this.props.requestTrack(1);
+
     this.setState({
       ["url"]: "http://res.cloudinary.com/localscene/video/upload/v1478765307/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_02_The_Master_o9h2uz.mp3",
       ["playing"]: false
@@ -40,7 +41,7 @@ class Player extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log("also entered");
+
     // You don't have to do this check first, but it can help prevent an unneeded render
     // console.log(nextProps.currentTrackUrl);
     if (nextProps.currentTrackUrl) {
