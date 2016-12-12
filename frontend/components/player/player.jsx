@@ -182,7 +182,7 @@ class Player extends React.Component {
           }
           <div>
             <p className="player-track-name">{this.props.current_track ? this.props.current_track.title : ""}</p>
-            <p className="player-artist-name">{}</p>
+            <p className="player-artist-name">{this.props.current_track ? this.props.current_track.current_track_username : ""}</p>
 
           </div>
         </section>
