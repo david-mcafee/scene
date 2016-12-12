@@ -45,9 +45,9 @@ class IndexItem extends React.Component {
         <div className="track-section-center">
           <ul className="index-item-info">
             <button className="input-button" onClick={ () => {
-                // debugger;
+                // nameToDisplay = state.users.selectedUserPageUser.username;
                 return(
-                  this.props.playTrack(this.props.track)
+                  this.props.playTrack(this.props.track, this.props.selectedUserPageUser.username)
                 );
               } }>PLAY</button>
             <li className="index-item-title">{title}</li>

@@ -10,7 +10,7 @@ const PlayerReducer = (state = {}, action) => {
 
   switch (action.type) {
     case PLAY_TRACK:
-      return merge({}, state, {["current_track"]: action.track, ["playing"]: true});
+      return merge({}, state, {["current_track"]: action.track, ["current_track_username"]: action.username, ["playing"]: true});
     default:
       return state;
   }

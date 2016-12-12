@@ -47,7 +47,7 @@ const mapDispatchToProps = (dispatch, { location }, OwnProps) => {
   // const processForm = (formType === 'upload') ? postTrack : updateTrack;
 
   return {
-    playTrack: (track) => dispatch(playTrack(track)),
+    playTrack: (track, username) => dispatch(playTrack(track, username)),
     // requestTracks: () => dispatch(requestTracks()),
     // requestUserTracks: (user_id) => dispatch(requestUserTracks(user_id)),
     postTrack: (url) => dispatch(postTrack(url)),

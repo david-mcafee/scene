@@ -10,14 +10,13 @@ const mapStateToProps = (state) => {
     currentTrackUrl = state.player.current_track.audio_url;
   }
 
-  let nameToDisplay;
-  if (state.users.selectedUserPageUser) {
-    nameToDisplay = state.users.selectedUserPageUser.username;
-  }
+  // let nameToDisplay;
+  // if (state.users.selectedUserPageUser) {
+  //   nameToDisplay = state.users.selectedUserPageUser.username;
+  // }
 
   return(
     {
-      nameToDisplay: nameToDisplay,
       current_track: state.player.current_track || {
         "id": 1,
         "title": "Guest Song (Please Edit or Delete!)",
