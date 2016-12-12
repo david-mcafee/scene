@@ -20,18 +20,4 @@ document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(<Root store={store}/>, root);
 
     window.store = store;
-    // window.requestTracks = requestTracks;
-    // store.dispatch(requestTracks());
-
-
-    // test tracks:
-    // window.success = () => console.log("success");
-    // window.fetchTracks = (success) => {
-    //   $.ajax({
-    //     method: "GET",
-    //     url: "/api/tracks",
-    //     success,
-    //     error: () => console.log('error from fetchTracks')
-    //   });
-    // };
 });

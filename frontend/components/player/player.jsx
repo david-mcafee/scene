@@ -31,7 +31,16 @@ class Player extends React.Component {
     this.displayMessages = this.displayMessages.bind(this);
   }
 
+  componentDidMount() {
+    console.log("entered");
+    this.setState({
+      ["url"]: "http://res.cloudinary.com/localscene/video/upload/v1478765307/The_Undercover_Dream_Lovers_-_While_It_s_In_Style_-_02_The_Master_o9h2uz.mp3",
+      ["playing"]: false
+    });
+  }
+
   componentWillReceiveProps(nextProps) {
+    console.log("also entered");
     // You don't have to do this check first, but it can help prevent an unneeded render
     // console.log(nextProps.currentTrackUrl);
     if (nextProps.currentTrackUrl) {
@@ -113,6 +122,8 @@ class Player extends React.Component {
     //   onError={e => console.log('onError', e)}
     return(
 
+      // onReady={() => this.setState({["playing"]: true}) }
+
       <div className="player-div">
         <progress className="loaded-progress" max={1} value={this.state.loaded} />
         <section className="player-section">
@@ -124,7 +135,7 @@ class Player extends React.Component {
             url={this.state.url}
             volume={this.state.volume}
             playing={this.state.playing}
-            onReady={() => this.setState({["playing"]: true}) }
+
 
             onPlay={() => this.setState({ ["playing"]: true })}
             onPause={() => this.setState({ ["playing"]: false })}
