@@ -51,8 +51,6 @@
 .main-content{
   display: flex;
   width: 100%;
-
-  max-width: 1300px;
   margin: 0 auto !important;
   float: none !important;
   margin-bottom: 100px !important;
@@ -84,7 +82,7 @@
    background-image: url("http://res.cloudinary.com/localscene/image/upload/v1478750191/photo-1470229722913-7c0e2dbbafd3_goirjw.jpg");
    background-size: cover;
    background-repeat: no-repeat;
-   background-position: 50% 50%;
+   /*background-position: 50% 50%;*/
  }
 
  .landing-title {

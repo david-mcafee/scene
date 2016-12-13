@@ -7,23 +7,6 @@ class LandingPage extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    // this.props.requestUsers();
-    // debugger;
-  }
-
-  // <h1>tracks: </h1>
-  // {this.props.tracks ? this.props.tracks.map(track => (
-  //   track.id ?
-  //     <TrackIndexItem
-  //       playTrack={ this.props.playTrack }
-  //       track={track}
-  //       key={track.id}
-  //       deleteTrack={this.props.deleteTrack}/>
-  //     :
-  //     <p></p>
-  // )) : <p>all tracks</p>}
-
 
   render() {
     // debugger;
