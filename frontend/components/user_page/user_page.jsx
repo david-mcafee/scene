@@ -24,10 +24,7 @@ class UserPage extends React.Component {
 
             <header className="user-page-header clearfix">
               <div className="user-page-header">
-                  <img
-                    className="banner-picture"
-                    src="http://res.cloudinary.com/localscene/image/upload/v1478727789/banner_bqnwe6.jpg">
-                  </img>
+                  <div className="banner-picture"></div>
                   <img
                     className="profile-picture"
                     src={this.props.selectedUserPageUser.banner_url}>
