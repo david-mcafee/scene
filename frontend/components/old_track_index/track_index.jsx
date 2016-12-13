@@ -15,7 +15,6 @@ class TrackIndex extends React.Component {
   }
 
   render() {
-    // console.log(this.props.selectedTrack);
     return(
       <div>
         <TrackForm

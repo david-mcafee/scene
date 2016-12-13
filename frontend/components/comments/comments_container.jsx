@@ -14,7 +14,6 @@ import { getAllComments } from '../../reducers/selectors';
 
 
 const mapStateToProps = ({comments}, OwnProps) => {
-  // console.log(OwnProps);
   return({
     comments: getAllComments(comments)
   });
@@ -25,10 +24,6 @@ const mapStateToProps = ({comments}, OwnProps) => {
 // call a dispatch with the requestTracks() action creator (see actions/track_actions)
 
 const mapDispatchToProps = (dispatch, { location }, OwnProps) => {
-  // const forType = location.pathname.slice(1);
-  // console.log(formType);
-  // const processForm = (formType === 'upload') ? postComment : updateComment;
-
   return {
     requestComments: (id) => dispatch(requestComments(id)),
     postComment: (url) => dispatch(postComment(url)),

@@ -12,19 +12,12 @@ import {
 } from '../../actions/player_actions';
 
 import TrackForm from './track_form';
-
-
-
 import { getAllTracks } from '../../reducers/selectors';
 
 
 const mapStateToProps = (state, OwnProps) => {
-  // debugger;
-  // console.log(OwnProps.params);
 
   let selectedTrack;
-
-  // debugger;
   if (OwnProps.params.track_id) {
     selectedTrack = state.users.selectedUserPageUser.tracks[OwnProps.params.track_id];
   }
@@ -37,15 +30,10 @@ const mapStateToProps = (state, OwnProps) => {
     };
   }
 
-  // console.log(selectedTrack);
-
   return({
-    // tracks: getAllTracks(state),
     selectedTrackId: OwnProps.params.track_id,
     selectedTrack: selectedTrack,
-    // playTrack: playTrack,
     currentUser: state.session.currentUser
-    // errors: this.state.errors
   });
 };
 
@@ -59,7 +47,6 @@ const mapDispatchToProps = (dispatch, { location }) => {
   let formDescription;
   formType === 'upload' ? formDescription = 'upload' : formDescription = 'update';
 
-  console.log(formType);
   const processForm = (formType === 'upload') ? postTrack : updateTrack;
 
   return {

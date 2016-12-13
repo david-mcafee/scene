@@ -42,7 +42,6 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    // this.props.artist === "true" ? true : false;
     this.props.processForm({user});
   }
 
@@ -53,7 +52,6 @@ class SessionForm extends React.Component {
   guestLogin(e){
     e.preventDefault();
     const user = {username: "Guest", password: "password"};
-    // hashHistory.push("login");
     this.props.processLoginForm({user});
   }
 
@@ -67,7 +65,6 @@ class SessionForm extends React.Component {
 
   renderErrors() {
     if (this.props.errors.length > 0) {
-      // console.log(this.props.errors);
       return(
           <ul className="errors">
             Whoops!
@@ -83,31 +80,17 @@ class SessionForm extends React.Component {
 
   uploadImage(e){
     e.preventDefault();
-    // console.log(e.currentTarget.value);
 
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
       if (!error) {
-        // upload successfull
-        // debugger;
 
         this.setState({
           ["banner_url"]: results[0].url
         });
       }
-      // console.log(this);
     }.bind(this)
     );
   }
-
-  // <label>
-  //   <input
-  //     type="text"
-  //     placeholder="banner url  (optional)"
-  //     value={this.state.banner_url}
-  //     onChange={this.update("banner_url")}
-  //     className="login-input"/>
-  // </label>
-
 
   render() {
     return(

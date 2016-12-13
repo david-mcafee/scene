@@ -7,17 +7,10 @@ class CommentsIndex extends React.Component {
   }
 
   componentDidMount() {
-    // debugger;
     this.props.requestComments(1);
-    // debugger;
   }
 
-
-
   render() {
-    // console.log('comments');
-    // console.log(this.props.comments);
-
     return(
       <div>
         <h4>COMMENTS</h4>

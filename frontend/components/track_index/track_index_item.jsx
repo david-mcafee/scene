@@ -7,13 +7,8 @@ class IndexItem extends React.Component {
     this.editTrack = this.editTrack.bind(this);
   }
 
-  // handleClick() {
-  //   const trackId = this.props.track.id;
-  //   hashHistory.push(`benches/${benchId}`);
-  // }
 
   editTrack (id) {
-    // debugger;
     return (e) => {
       e.preventDefault();
       const url = `/tracks/${id}/edit`;

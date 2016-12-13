@@ -22,18 +22,12 @@ import { getAllTracks } from '../../reducers/selectors';
 
 
 const mapStateToProps = (state, OwnProps) => {
-  // // console.log("users tracks");
-  // console.log(state.users.selectedUserPageUser.tracks);
 
   return({
     tracks: state.users.selectedUserPageUser.tracks,
-
     playTrack: playTrack,
     selectedUserPageUser: state.users.selectedUserPageUser,
     currentUser: state.session.currentUser
-    // selectedTrackId: OwnProps.params.track_id,
-    // selectedTrack: selectedTrack,
-    // tracks: state.users.selectedUserPageUser.tracks,
   });
 };
 
@@ -42,18 +36,11 @@ const mapStateToProps = (state, OwnProps) => {
 // call a dispatch with the requestTracks() action creator (see actions/track_actions)
 
 const mapDispatchToProps = (dispatch, { location }, OwnProps) => {
-  // const formType = location.pathname.slice(1);
-  // console.log(formType);
-  // const processForm = (formType === 'upload') ? postTrack : updateTrack;
 
   return {
     playTrack: (track, username) => dispatch(playTrack(track, username)),
-    // requestTracks: () => dispatch(requestTracks()),
-    // requestUserTracks: (user_id) => dispatch(requestUserTracks(user_id)),
     postTrack: (url) => dispatch(postTrack(url)),
     deleteTrack: (id) => dispatch(deleteTrack(id)),
-    // processForm: track => dispatch(processForm(track)),
-    // formType
     requestComments: (id) => dispatch(requestComments(id))
   };
 };

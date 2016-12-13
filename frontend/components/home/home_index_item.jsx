@@ -4,13 +4,7 @@ import { Link, hashHistory } from 'react-router';
 class HomeIndexItem extends React.Component {
   constructor(props) {
     super(props);
-    // console.log(this.props.user);
   }
-
-
-  // <img src={this.props.user.banner_url}>
-  //
-  // </img>
 
   render() {
     return(

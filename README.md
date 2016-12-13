@@ -8,7 +8,6 @@ Scene is a full-stack web application inspired by SoundCloud and Spotify. Scene 
 
 ## Features & Implementation
 
-
 ### Artist Pages with Track Rendering
 ![Alt text](/docs/AppImages/artistpage.png?raw=true "Optional Title")
 

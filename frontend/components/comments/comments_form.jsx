@@ -38,46 +38,34 @@ class CommentsForm extends React.Component {
       this.props.processForm(track);
   }
 
-  // componentWillReceiveProps(newProps) {
-  //   this.setState(newProps.track || { title: "", image_url: "", audio_url: ""});
-  // }
-
   upload(e){
     e.preventDefault();
 
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
       if (!error) {
-        // console.log(results);
         this.setState({
           ["audio_url"]: results[0].url
         });
       }
-      // console.log(this);
     }.bind(this)
     );
   }
 
   upload1(e){
     e.preventDefault();
-    // console.log(e.currentTarget.value);
-
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, results){
       if (!error) {
-        // upload successfull
-        // debugger;
 
         this.setState({
           ["image_url"]: results[0].url
         });
       }
-      // console.log(this);
     }.bind(this)
     );
   }
 
   renderErrors() {
     if (this.props.errors.length > 0) {
-      // console.log(this.props.errors);
       return(
         <ul className="errors">
           Whoops!
