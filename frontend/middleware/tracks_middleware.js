@@ -49,20 +49,14 @@ const TracksMiddleware = ({ getState, dispatch }) => next => action => {
       fetchTracks(action.id, receiveAllTracksSuccess);
       return next(action);
     case POST_TRACK:
-      // debugger;
       postTrack(action.track, receiveTrackSuccess);
       hashHistory.push(`/users/${action.userId}`);
       return next(action);
     case DELETE_TRACK:
       deleteTrack(action.id, removeTrackSuccess);
-      // hashHistory.goBack();
-      // hashHistory.push(`/tracks`);
     case UPDATE_TRACK:
-      // console.log("update middleware entered");
-      // debugger;
       updateTrack(action.track, updateTrackSuccess);
       hashHistory.goBack();
-      // hashHistory.push(`/tracks`);
       return next(action);
     case REQUEST_TRACK:
       fetchTrack(action.id, receiveTrackSuccess);

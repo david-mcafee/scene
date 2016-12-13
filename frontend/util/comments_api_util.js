@@ -7,15 +7,6 @@ export const fetchComments = (id, success) => {
   });
 };
 
-// export const fetchUserTracks = (user_id, success) => {
-//   $.ajax({
-//     method: "GET",
-//     url: "api/tracks/",
-//     success,
-//     error: () => console.log('error from fetchTracks')
-//   });
-// };
-
 export const postComment = (success, comment) => {
   $.ajax({
     url: "/api/comments",
@@ -40,12 +31,3 @@ export const deleteComment = (id, success) => {
     success
   });
 };
-
-// export const updateComment = (track, success) => {
-//   $.ajax({
-//     url: `/api/tracks/${track.id}`,
-//     method: "PATCH",
-//     data: { track },
-//     success
-//   });
-// };

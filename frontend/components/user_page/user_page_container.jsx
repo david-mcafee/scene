@@ -1,20 +1,22 @@
 import { connect } from 'react-redux';
 import UserPage from './user_page';
+import { resetSelectedUser } from '../../actions/user_actions';
 
 const mapStateToProps = ({users, comments}, OwnProps) => {
-  // console.log(users);
   return(
     {
       selectedUserPageUser: users.selectedUserPageUser
-      // comments: comments
     }
   );
 };
 
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch) => {
+  return {
+    resetSelectedUser: () => dispatch(resetSelectedUser())
+  };
+};
 
-});
 
 export default connect(
   mapStateToProps,

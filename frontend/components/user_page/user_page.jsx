@@ -8,20 +8,15 @@ class UserPage extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    // console.log("user-componentDidMount");
+  componentWillUnmount() {
+    this.props.resetSelectedUser();
   }
-
-  // <section className="col col-1-3">
-  //   <CommentsContainer/>
-  // </section>
 
   render() {
     return(
       <div className="user-page">
         {this.props.selectedUserPageUser ?
           <div>
-
             <header className="user-page-header clearfix">
               <div className="user-page-header">
                   <div className="banner-picture"></div>

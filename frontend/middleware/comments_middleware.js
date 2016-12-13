@@ -35,7 +35,6 @@ const CommentsMiddleware = ({ getState, dispatch }) => next => action => {
   let removeCommentSuccess = comment => dispatch(removeComment(comment));
   let updateCommentSuccess = comment => {
     dispatch(receiveComment(comment));
-    // hashHistory.push("/");
   };
 
   switch (action.type) {
@@ -52,15 +51,6 @@ const CommentsMiddleware = ({ getState, dispatch }) => next => action => {
       return next(action);
     case DELETE_COMMENT:
       deleteComment(action.id, removeCommentSuccess);
-      // hashHistory.goBack();
-      // hashHistory.push(`/tracks`);
-    // case UPDATE_COMMENT:
-    //   console.log("update middleware entered");
-    //   // debugger;
-    //   updateTrack(action.comment, updateTrackSuccess);
-    //   hashHistory.goBack();
-    //   // hashHistory.push(`/tracks`);
-    //   return next(action);
     default:
       return next(action);
   }

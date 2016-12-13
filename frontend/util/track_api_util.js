@@ -7,15 +7,6 @@ export const fetchTracks = (success) => {
   });
 };
 
-// export const fetchUserTracks = (user_id, success) => {
-//   $.ajax({
-//     method: "GET",
-//     url: "api/tracks/",
-//     success,
-//     error: () => console.log('error from fetchTracks')
-//   });
-// };
-
 export const postTrack = (track, success) => {
   debugger;
   $.ajax({

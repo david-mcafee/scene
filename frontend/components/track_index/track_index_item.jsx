@@ -19,8 +19,6 @@ class IndexItem extends React.Component {
 // <li className="index-item-user-id">{this.props.username}</li>
 // <button className="input-button-solid" onClick={
 //     () => {
-//             // console.log("comments callback entered");
-//             debugger;
 //             return(
 //               this.props.requestComments(id)
 //             );

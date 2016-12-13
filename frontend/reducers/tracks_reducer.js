@@ -17,16 +17,6 @@ const TracksReducer = (state = {}, action) => {
     case RECEIVE_TRACKS:
 
       return merge({}, action.tracks);
-    // case RECEIVE_TRACK:
-    //
-    //   return merge({}, state, {[action.track.id]: action.track});
-    // case REMOVE_TRACK:
-    //   debugger;
-    //   let newState = merge({}, state);
-    //   delete newState[action.track.id]; // NOTE: REVIEW DELETE
-    //   return newState;
-    // // case UPDATE_TRACK:
-    // //   retu
     default:
       return state;
   }

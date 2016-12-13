@@ -1,6 +1,7 @@
 import {
   RECEIVE_USERS,
-  RECEIVE_USER
+  RECEIVE_USER,
+  RESET_SELECTED_USER
 } from '../actions/user_actions';
 
 import {
@@ -12,7 +13,6 @@ import merge from 'lodash/merge';
 
 const UsersReducer = (state = {}, action) => {
   Object.freeze(state);
-  // debugger;
 
   let newState;
 
@@ -22,12 +22,10 @@ const UsersReducer = (state = {}, action) => {
     case RECEIVE_TRACK:
 
       newState = merge({}, state);
-      // debugger;
       newState.selectedUserPageUser.tracks.push(action.track);
       return newState;
 
     case REMOVE_TRACK:
-      debugger;
       newState = merge({}, state);
 
       let returnArray = [];
@@ -40,9 +38,11 @@ const UsersReducer = (state = {}, action) => {
       newState.selectedUserPageUser.tracks = returnArray;
       return newState;
     case RECEIVE_USER:
-      // debugger;
       //NOTE: state not included here, to avoid appending
       return merge({}, {["selectedUserPageUser"]: action.user});
+
+    case RESET_SELECTED_USER:
+      return merge({}, {["selectedUserPageUser"]: {}});
     default:
       return state;
   }

@@ -12,9 +12,7 @@ const personalGreeting = (currentUser, logout) => {
   let redirectUrl = `/users/${currentUser.id}`;
 
   return(
-
       <ul className="personal-greeting">
-
           <li className="user-box">
             <Link to={redirectUrl}>
             <img src={currentUser.banner_url} className="user-avatar"></img>
